@@ -1,12 +1,11 @@
-# Women Empowerment Trust
+# Abroad Manager
 
-## A Unit of [IRDRP](www.irdrp.in)
 
-> This repo consist all the codes created for the Development of a website for the new unit of a South-India based NGO -- IRDRP, namely **Women Empowerment Trust**
+> This repo consist all the codes created for the Development of a website for the student platform, namely **Abroad Manager**
 
 
 ##### _Whole webite is created using `HTML5` , `CSS3` , `Bootstrap 3.3` , `JavaScript` , `JQuery`_
 
-#### _Click [here](http://rishavpandey.me/irdrp-website/) to open the website._
+#### _Click [here](http://rishavpandey.me/abroadmanager-website/) to open the website._
 
 **_Thanks for watching :)_**
