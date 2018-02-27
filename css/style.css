@@ -42,7 +42,10 @@
 	border-radius: 5px;
 }
 
-
+.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
 
 
 
@@ -69,7 +72,16 @@
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+	/*HEADER*/
 
+	.navbar-brand {
+		padding-top: 10px;
+	}
+
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;
+	}
 
 }
 
