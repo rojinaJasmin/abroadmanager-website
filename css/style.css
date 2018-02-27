@@ -26,5 +26,55 @@
 }
 
 .navbar-brand > a:hover, .navbar-brand > a:focus {
-	text-decoration-style: none;
+	text-decoration: none;
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+
+#nav-list a {
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background-color: #E7E7E7;
+	border-radius: 5px;
+}
+
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  
+	#nav-list {
+    height: 50px;
+ 	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+
+}
+
+/********** Extra Extra small devices only **********/
+@media (max-width: 550px) {
+  
+
 }
