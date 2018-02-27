@@ -2,4 +2,29 @@
 	background: url(../images/logo.png);
 	width: 60px;
 	height: 60px;
+	margin: 10px 15px 10px 0;
+}
+
+#header-nav {
+	background-color: #fff;
+	/*border-radius: 0;
+	border: 0;*/
+}
+
+.navbar-brand {
+	padding: 25px;
+}
+
+.navbar-brand h1 {
+	font-family: 'Montserrat';
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navbar-brand > a:hover, .navbar-brand > a:focus {
+	text-decoration-style: none;
 }
