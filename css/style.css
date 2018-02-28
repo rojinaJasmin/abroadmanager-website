@@ -1,3 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
+#header-nav  {
+	background: linear-gradient(167deg,#002590 20%,#0bb6d7 70%,#dbf6c8),linear-gradient(#4e1b4e,#4e1b4e););
+	padding-bottom: 150px;
+}
+
 #logo-img {
 	background: url(../images/logo.png);
 	width: 60px;
@@ -23,6 +32,7 @@
 	text-shadow: 0px 1px 1px #222;
 	margin-top: 0;
 	margin-bottom: 0;
+	color: #fff;
 }
 
 .navbar-brand > a:hover, .navbar-brand > a:focus {
@@ -31,21 +41,27 @@
 
 #nav-list {
 	margin-top: 10px;
+	margin-right: 20px;
+	font-size: 1.3em;
 }
 
 #nav-list a {
 	text-align: center;
+	color: #fff;
 }
 
 #nav-list a:hover {
 	background-color: #E7E7E7;
 	border-radius: 5px;
+	color: black;
 }
 
 .navbar-toggle {
 	clear: both;
 	margin-top: -30px;
 }
+
+
 
 
 
