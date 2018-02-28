@@ -2,8 +2,16 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: #eee;
+#innerbanner {
+	background: -webkit-radial-gradient(100% 100%,ellipse farthest-side,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
+	height: 1200px;
+}
+
+/*HEADER*/
+#header {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
 }
 
 #header-nav  {
@@ -17,11 +25,6 @@ body {
 	margin: 10px 15px 10px 0;
 }
 
-#header-nav {
-	background-color: #fff;
-	/*border-radius: 0;
-	border: 0;*/
-}
 
 .navbar-brand {
 	padding: 25px;
@@ -35,7 +38,7 @@ body {
 	text-shadow: 0px 1px 1px #222;
 	margin-top: 0;
 	margin-bottom: 0;
-	color: black;
+	color: #fff;
 }
 
 .navbar-brand > a:hover, .navbar-brand > a:focus {
@@ -50,11 +53,10 @@ body {
 
 #nav-list a {
 	text-align: center;
-	color: black;
+	color: #eee;
 }
 
 #nav-list a:hover {
-	background-color: #E7E7E7;
 	border-radius: 5px;
 	color: black;
 }
@@ -64,19 +66,18 @@ body {
 	margin-top: -30px;
 }
 
-/*jumbotron*/
-
-.jumbotron {
-	background-color: #fff;
+.navbar-toggle span{
+	border: 1px solid #fff;
 }
+/*HEADER*/
+
+/*JUMBOTRON*/
 #main-content {
-	height: 600px;
-	padding-top: 100px;
+	padding-top: 200px;
   text-align: center;
-  background: -webkit-radial-gradient(100% 100%,ellipse farthest-side,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
 }
 
-#main-content > .container > h1 {
+#main-content > h1 {
 	font-family: brandon-grotesque,Helvetica,sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -169,7 +170,7 @@ body {
 	transform: scale(1.05);
 }
 
-/*jumbotrom*/
+/*JUMBOTRON*/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -224,10 +225,6 @@ body {
 	#dashboard-list > li {
 		padding: 10px;
 		font-size: 1.2em;
-	}
-
-	#main-content-button {
-
 	}
 
 }
