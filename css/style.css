@@ -2,8 +2,11 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #eee;
+}
+
 #header-nav  {
-	backgrond: linear-gradient(167deg,#002590 20%,#0bb6d7 70%,#dbf6c8),linear-gradient(#4e1b4e,#4e1b4e););
 	padding-bottom: 10px;
 }
 
@@ -61,22 +64,91 @@
 	margin-top: -30px;
 }
 
+/*jumbotron*/
+
+.jumbotron {
+	background-color: #fff;
+}
 #main-content {
-	height: 1000px;
+	height: 600px;
 	padding-top: 100px;
   text-align: center;
   background: -webkit-radial-gradient(100% 100%,ellipse farthest-side,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
 }
 
-#main-content p {
+#main-content > .container > h1 {
 	font-family: brandon-grotesque,Helvetica,sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   color: #fff;
-  font-size: 3.5em;
+  font-size: 3.5rem;
 }
 
-#main-content button {
+#main-content-button {
+	background-color: #ff978d;
+  text-transform: uppercase;
+  border: 0;
+  padding: 20px 50px 20px 50px;
+  border-radius: 5px;
+  font-family: brandon-grotesque,Helvetica,sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 50px;
+  color: #fff;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+}
+
+
+#main-content-button:hover {
+	transform: scale(1.05);
+}
+
+#dashboard {
+	background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 9px 0 rgba(23,28,33,.06);
+  left: 0;
+  margin: -140px auto 0;
+  padding: 60px 80px;
+  position: absolute;
+  right: 0;
+  top: 700px;
+  width: 1180px;
+  text-align: left;
+}
+
+#dashboard-heading {
+	font-family: 'Open Sans';
+	font-weight: 500;
+	font-style: italic;
+	font-size: 5.5em;
+}
+
+#dashboard-list {
+	list-style-type: none;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+#dashboard-list > li {
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+#dashboard-list > li > span {
+	padding: 25px;
+}
+
+#dashboard-image {
+	background: url(../images/dashboard-demo.jpg);
+	width: 340px;
+	height: 360px;
+	margin-left: 50px;
+}
+
+#dashboard-button {
 	background-color: #ff978d;
 	font-size: 13px;
   text-transform: uppercase;
@@ -84,19 +156,20 @@
   padding: 20px 50px 20px 50px;
   border-radius: 5px;
   font-family: brandon-grotesque,Helvetica,sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   margin-top: 50px;
   color: #fff;
-  transition: font-size 2s;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
 }
 
-
-#main-content button:hover {
-	font-size: 2.2em;
+#dashboard-button:hover {
+	transform: scale(1.05);
 }
 
-
+/*jumbotrom*/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -109,12 +182,22 @@
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+	#dashboard {
+		margin-left: 30px;
+		margin-right: 30px;
+		width: auto;
+	}
 
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+	#dashboard {
+		margin-left: 30px;
+		margin-right: 30px;
+		width: auto;
+	}
 
 }
 
@@ -130,6 +213,21 @@
 	.navbar-brand h1 {
 		padding-top: 10px;
 		font-size: 5vw;
+	}
+
+	#dashboard {
+		margin-left: 30px;
+		margin-right: 30px;
+		width: auto;
+	}
+
+	#dashboard-list > li {
+		padding: 10px;
+		font-size: 1.2em;
+	}
+
+	#main-content-button {
+
 	}
 
 }
