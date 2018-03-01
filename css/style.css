@@ -147,10 +147,9 @@
 }
 
 #dashboard-image {
-	background: url(../images/dashboard-demo.jpg);
-	width: 340px;
+	background: url(http://via.placeholder.com/450x360);
+	width: 450px;
 	height: 360px;
-	margin-left: 50px;
 }
 
 #dashboard-button {
@@ -214,10 +213,9 @@
 	}
 
 	#dashboard-image {
-		background: url(../images/dashboard-demo.jpg);
+		background: url(http://via.placeholder.com/300x320);
 		width: 300px;
 		height: 320px;
-		margin-left: 35px;
 	}
 
 	#dashboard-button {
@@ -256,9 +254,9 @@
 	}
 
 	#dashboard-image {
-		background: url(../images/dashboard-demo.jpg);
-		width: 300px;
-		height: 320px;
+		background: url(http://via.placeholder.com/420x220);
+		width: 420px;
+		height: 220px;
 	}
 
 	#dashboard-button {
@@ -286,20 +284,19 @@
 	}
 
 	#dashboard-list > li {
-		padding: 15px 0px 15px 0px;
+		padding: 12px 0px 12px 0px;
 		font-size: 1em;
 	}
 
 	#dashboard-image {
-		background: url(../images/dashboard-demo.jpg);
-		width: 200px;
+		background: url(http://via.placeholder.com/280x200);
+		width: 280px;
 		height: 200px;
-		margin-left: 45px;
 	}
 
 	#dashboard-button {
-  padding: 5px;
-  font-size: 1.2em;
+	  padding: 10px;
+	  font-size: 1.2em;
 	}
 
 	#dashboard {
