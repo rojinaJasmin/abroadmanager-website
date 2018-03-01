@@ -10,10 +10,18 @@
 /*Section body*/
 
 /*HEADER*/
-#header {
-	position: fixed;
-	width: 100%;
-	z-index: 999;
+
+.fixed {
+	background-color: #fff;
+	color: black;
+}
+
+#header-nav .fixed .header-content {
+	border-bottom: 0;
+	padding: 25px 0;
+}
+#header-nav.fixed .nav-toggle {
+	top: 18px;
 }
 
 #header-nav  {
@@ -42,6 +50,7 @@
 	margin-bottom: 0;
 	color: #fff;
 }
+
 
 .navbar-brand > a:hover, .navbar-brand > a:focus {
 	text-decoration: none;
