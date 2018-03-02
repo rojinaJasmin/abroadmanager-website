@@ -38,7 +38,7 @@
 
 
 .navbar-brand {
-	padding: 28px 25px 25px 0px;
+	padding: 28px 25px 35px 15px;
 }
 
 .navbar-brand h1 {
@@ -229,7 +229,7 @@
 	.discussion-list {
 		text-align: left;
 		text-transform: uppercase;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		padding: 10px;
 	}
 
@@ -294,10 +294,42 @@
 		width: auto;
 	}
 
+	#dashboard-list > li {
+		padding: 15px 0px 15px 0px;
+		font-size: 1.2em;
+	}
+
 	#dashboard-button {
- 		margin-right: 103px;
+  	font-size: 2em;
  	}
- 	/*Dashboard*/
+
+ 	#dashboard-image {
+		background: url(http://via.placeholder.com/420x320);
+		width: 420px;
+		height: 320px;
+	}
+
+	/*Dashboard*/
+
+	/*Query*/
+
+	#query {
+		margin-top: 200px;
+	}
+
+	#discussion-image1 {
+		background: url(http://via.placeholder.com/180x240);
+		width: 180px;
+		height: 240px;
+	}
+
+	#discussion-image2 {
+		background: url(http://via.placeholder.com/180x240);
+		width: 180px;
+		height: 240px;
+	}
+	
+	/*Query*/
 }
 
 /********** Small devices only **********/
@@ -374,6 +406,11 @@
 		width: auto;
 	}
 
+	#dashboard-list > li {
+		padding: 10px;
+		font-size: 1.3em;
+	}
+
 	#dashboard-image {
 		background: url(http://via.placeholder.com/420x220);
 		width: 420px;
@@ -389,7 +426,7 @@
 	/*Query*/
 	
 	#query {
-		margin-top: 400px;
+		margin-top: 300px;
 	}
 
 	#discussion-image1 {
@@ -409,8 +446,68 @@
 	/*Query*/
 }
 
-/********** Extra Extra small devices only **********/
-@media (max-width: 550px) {
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+  
+  /*Main Content*/
+  #main-content {
+		padding-top: 100px;
+	  text-align: center;
+	}
+	/*Main Content*/
+
+	/*Dashboard*/
+  #dashboard {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+		padding: 40px 20px 40px 20px;
+	}
+
+	#dashboard-list > li {
+		padding: 12px 0px 12px 0px;
+		font-size: 1em;
+	}
+
+	#dashboard-image {
+		background: url(http://via.placeholder.com/340x200);
+		width: 340px;
+		height: 200px;
+	}
+
+	#dashboard-button {
+	  padding: 10px;
+	  font-size: 1.2em;
+	}
+
+	/*Dashboard*/
+
+	/*Query*/
+	
+	#query {
+		margin-top: 200px;
+	}
+
+	#discussion-image1 {
+		background: url(http://via.placeholder.com/340x260);
+		width: 340px;
+		height: 260px;
+		margin-left: 10px;
+	}
+
+	#discussion-image2 {
+		background: url(http://via.placeholder.com/340x260);
+		width: 340px;
+		height: 260px;
+		margin-left: 10px;
+	}
+
+	/*Query*/
+
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 380px) {
   
   /*Main Content*/
   #main-content {
@@ -452,15 +549,75 @@
 	}
 
 	#discussion-image1 {
-		background: url(http://via.placeholder.com/300x260);
+		background: url(http://via.placeholder.com/280x260);
 		width: 280px;
 		height: 260px;
 		margin-left: 10px;
 	}
 
 	#discussion-image2 {
-		background: url(http://via.placeholder.com/300x260);
+		background: url(http://via.placeholder.com/280x260);
 		width: 280px;
+		height: 260px;
+		margin-left: 10px;
+	}
+
+	/*Query*/
+
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+  
+  /*Main Content*/
+  #main-content {
+		padding-top: 100px;
+	  text-align: center;
+	}
+	/*Main Content*/
+
+	/*Dashboard*/
+  #dashboard {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+		padding: 40px 20px 40px 20px;
+	}
+
+	#dashboard-list > li {
+		padding: 12px 0px 12px 0px;
+		font-size: 1em;
+	}
+
+	#dashboard-image {
+		background: url(http://via.placeholder.com/230x200);
+		width: 230px;
+		height: 200px;
+	}
+
+	#dashboard-button {
+	  padding: 10px;
+	  font-size: 1.2em;
+	}
+
+	/*Dashboard*/
+
+	/*Query*/
+	
+	#query {
+		margin-top: 300px;
+	}
+
+	#discussion-image1 {
+		background: url(http://via.placeholder.com/230x260);
+		width: 230px;
+		height: 260px;
+		margin-left: 10px;
+	}
+
+	#discussion-image2 {
+		background: url(http://via.placeholder.com/230x260);
+		width: 230px;
 		height: 260px;
 		margin-left: 10px;
 	}
