@@ -205,6 +205,7 @@
 
 	#query-heading {
 		color: #02b3e4;
+		text-transform: uppercase;
 	}
 
 	.discussion {
@@ -280,9 +281,20 @@
 /*Connect-abroad*/
 
 #connect-abroad {
-	background: linear-gradient(160deg,#4f4af4,#4ac2cb);
+	background: linear-gradient(200deg,#4f4af4,#4ac2cb);
 	height: 600px;
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#connect-heading {
+	padding: 50px;
+	font-family: brandon-grotesque,Helvetica,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+
 }
 
 
@@ -324,7 +336,7 @@
 	/*Query*/
 
 	#query {
-		margin-top: 200px;
+		margin-top: 100px;
 	}
 
 	#discussion-image1 {
@@ -340,6 +352,15 @@
 	}
 	
 	/*Query*/
+
+	/*Connect-abroad*/
+	#connect-heading {
+		padding: 10px 5px 10px 5px;
+		font-size: 1.2em;
+	}
+	
+	/*Connect-abroad*/
+
 }
 
 /********** Small devices only **********/
@@ -371,6 +392,10 @@
 
 	/*Query*/
 
+	#query-heading > h1{
+		font-size: 2em;
+	}
+
 	#discussion-image1 {
 		background: url(http://via.placeholder.com/440x260);
 		width: 440px;
@@ -384,8 +409,15 @@
 		height: 260px;
 		margin-left: 120px;
 	}
-	
 	/*Query*/
+
+	/*Connect-abroad*/
+	#connect-heading {
+		padding: 10px 5px 10px 5px;
+		font-size: 1em;
+	}
+	
+	/*Connect-abroad*/
 }
 
 
@@ -452,8 +484,8 @@
 		height: 260px;
 		margin-left: 80px;
 	}
-
 	/*Query*/
+
 }
 
 /********** Large Mobile devices only **********/
@@ -498,6 +530,10 @@
 		margin-top: 200px;
 	}
 
+	#query-heading > h1{
+		font-size: 5vw;
+	}
+
 	#discussion-image1 {
 		background: url(http://via.placeholder.com/340x260);
 		width: 340px;
@@ -513,6 +549,14 @@
 	}
 
 	/*Query*/
+
+	/*Connect-abroad*/
+	#connect-heading {
+		padding: 10px 5px 10px 5px;
+		font-size: 3.5vw;
+	}
+
+	/*Connect-abroad*/
 
 }
 
@@ -556,6 +600,10 @@
 	
 	#query {
 		margin-top: 200px;
+	}
+
+	#query-heading > h1{
+		font-size: 5vw;
 	}
 
 	#discussion-image1 {
@@ -616,6 +664,10 @@
 	
 	#query {
 		margin-top: 300px;
+	}
+
+	#query-heading > h1{
+		font-size: 4.5vw;
 	}
 
 	#discussion-image1 {
