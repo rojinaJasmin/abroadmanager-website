@@ -12,14 +12,6 @@
 
 /*HEADER*/
 
-#header-nav .fixed .header-content {
-	border-bottom: 0;
-	padding: 25px 0;
-}
-#header-nav.fixed .nav-toggle {
-	top: 18px;
-}
-
 #header-nav  {
 	padding-bottom: 10px;
 }
@@ -53,19 +45,43 @@
 }
 
 #nav-list {
-	margin-top: 10px;
-	margin-right: 20px;
+	margin-top: 20px;
 	font-size: 1.3em;
-}
-
-#nav-list a {
 	text-align: center;
-	color: #fff;
+	text-transform: uppercase;
 }
 
-#nav-list a:hover {
-	border: 1px solid;
+#nav-list >li > a {
+	text-align: center;
+	color: #eee;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+}
+
+#nav-list > li >a:hover {
+	color: #fff;
+	transform: scale(1.05);
+}
+
+#nav-list button {
+	background-color: #FF8DB2;
+	padding: 10px;
+	margin-left: 20px;
 	border-radius: 5px;
+	border: 0;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+}
+
+#nav-list button:hover {
+	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+	transform: scale(1.05);
+}
+
+#nav-list .notification { 	/*WILL DISPLAY, WHEN LOGGED IN*/
+	display: none;
 }
 
 .navbar-toggle {
@@ -75,6 +91,21 @@
 
 .navbar-toggle span{
 	border: 1px solid #fff;
+}
+
+.dropdown-menu > li > a {
+	color: #eee;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+}
+
+.dropdown-menu > li {
+	text-align: center;
+}
+.dropdown-menu > li > a:hover {
+	color: #fff;
+	transform: scale(1.05);
 }
 /*HEADER*/
 
@@ -134,7 +165,7 @@
 }
 
 #dashboard:hover {
-  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);	
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
 }
 
 #dashboard-heading {
@@ -399,6 +430,15 @@ footer {
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+	#nav-list button {
+		margin-left: 0px;
+	}
+
+	.dropdown-menu {
+		position: absolute;
+		top: 100%;
+		left: 50px;
+	}
 	/*Dashboard*/
 	#dashboard {
 		margin-left: 30px;
@@ -456,8 +496,11 @@ footer {
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+	
 	/*HEADER*/
-
+	#nav-list button {
+		margin-left: 0px;
+	}
 	.navbar-brand {
 		padding-top: 10px;
 	}
@@ -524,6 +567,9 @@ footer {
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
   
+  #nav-list button {
+  	margin: 0px;
+  }
   /*Main Content*/
   #main-content {
 		padding-top: 10px;
