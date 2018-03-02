@@ -275,8 +275,18 @@
 	transform: scale(1.05);
 	color: #fff;
 }
-
 /*Query*/
+
+/*Connect-abroad*/
+
+#connect-abroad {
+	background: linear-gradient(160deg,#4f4af4,#4ac2cb);
+	height: 600px;
+	margin-bottom: 50px;	
+}
+
+
+/*Connect-abroad*/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
