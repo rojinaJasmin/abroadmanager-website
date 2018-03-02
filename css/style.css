@@ -12,12 +12,6 @@
 
 /*HEADER*/
 
-.fixed {
-	background-color: #fff;
-	color: black;
-	box-shadow: 5px 5px 23px 0 #595f61;
-}
-
 #header-nav .fixed .header-content {
 	border-bottom: 0;
 	padding: 25px 0;
@@ -86,7 +80,7 @@
 
 /*Main Content*/
 #main-content {
-	padding-top: 150px;
+	padding-top: 50px;
   text-align: center;
 }
 
@@ -532,8 +526,12 @@ footer {
   
   /*Main Content*/
   #main-content {
-		padding-top: 100px;
+		padding-top: 10px;
 	  text-align: center;
+	}
+
+	#main-content h1{
+		font-size: 2em;
 	}
 	/*Main Content*/
 
@@ -543,6 +541,7 @@ footer {
 		margin-right: 20px;
 		width: auto;
 		padding: 40px 20px 40px 20px;
+		top: 550px;
 	}
 
 	#dashboard-list > li {
@@ -566,7 +565,7 @@ footer {
 	/*Query*/
 	
 	#query {
-		margin-top: 200px;
+		margin-top: 100px;
 	}
 
 	#query-heading > h1{
@@ -604,8 +603,12 @@ footer {
   
   /*Main Content*/
   #main-content {
-		padding-top: 100px;
-	  text-align: center;
+		padding-top: 10px;
+	  text-align: center; 
+	}
+
+	#main-content h1{
+		font-size: 2em;
 	}
 	/*Main Content*/
 
@@ -615,6 +618,7 @@ footer {
 		margin-right: 20px;
 		width: auto;
 		padding: 40px 20px 40px 20px;
+		top: 550px;
 	}
 
 	#dashboard-list > li {
@@ -638,7 +642,7 @@ footer {
 	/*Query*/
 	
 	#query {
-		margin-top: 200px;
+		margin-top: 100px;
 	}
 
 	#query-heading > h1{
@@ -668,8 +672,12 @@ footer {
   
   /*Main Content*/
   #main-content {
-		padding-top: 100px;
+		padding-top: 10px;
 	  text-align: center;
+	}
+
+	#main-content h1{
+		font-size: 2em;
 	}
 	/*Main Content*/
 
@@ -679,6 +687,7 @@ footer {
 		margin-right: 20px;
 		width: auto;
 		padding: 40px 20px 40px 20px;
+		top: 550px;
 	}
 
 	#dashboard-list > li {
@@ -702,7 +711,7 @@ footer {
 	/*Query*/
 	
 	#query {
-		margin-top: 300px;
+		margin-top: 200px;
 	}
 
 	#query-heading > h1{
