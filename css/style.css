@@ -4,7 +4,7 @@
 
 /*Section body*/
 #innerbanner {
-	background: -webkit-radial-gradient(100% 100%,ellipse farthest-side,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
+	background: linear-gradient(160deg,#02cbba,#aa7efd);
 	height: 1150px;
 }
 /*Section body*/
@@ -14,6 +14,7 @@
 .fixed {
 	background-color: #fff;
 	color: black;
+	box-shadow: 5px 5px 23px 0 #595f61;
 }
 
 #header-nav .fixed .header-content {
@@ -37,7 +38,7 @@
 
 
 .navbar-brand {
-	padding: 25px;
+	padding: 28px 25px 25px 0px;
 }
 
 .navbar-brand h1 {
@@ -64,7 +65,7 @@
 
 #nav-list a {
 	text-align: center;
-	color: #eee;
+	color: #fff;
 }
 
 #nav-list a:hover {
@@ -123,14 +124,21 @@
 #dashboard {
 	background-color: #fff;
   border-radius: 10px;
-  left: 0;
-  margin: -140px auto 0;
-  padding: 60px 80px;
   position: absolute;
+  left: 0;
   right: 0;
   top: 650px;
+  margin: -140px auto 0;
+  padding: 60px 80px;
   width: 1180px;
   text-align: left;
+  box-shadow: 5px 10px 23px 0 #aba;
+ 	-webkit-transition: all .3s ease; 
+ 	transition: all .3s ease; 
+}
+
+#dashboard:hover {
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);	
 }
 
 #dashboard-heading {
@@ -138,6 +146,7 @@
 	font-weight: 500;
 	font-style: italic;
 	font-size: 5.5em;
+	color: #02b3e4;
 }
 
 #dashboard-list {
@@ -183,6 +192,88 @@
 }
 
 /*Dashboard*/
+
+/*Query*/
+	
+	#query {
+		margin-top: 80px;
+		text-align: center;
+		position: relative;
+	}
+
+	#query-heading {
+		color: #02b3e4;
+	}
+
+	.discussion {
+		border-radius: 10px;
+		margin: 30px 5px;
+		box-shadow: 5px 10px 23px 0 #aba;
+		padding: 10px;
+	}
+
+	.discussion:hover {
+  	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);	
+	}
+
+	.discussion-heading {
+		font-family: 'Open Sans';
+		font-weight: 500;
+		font-style: italic;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	.discussion-list {
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 1.5em;
+		padding: 10px;
+	}
+
+	.discussion-list span {
+		padding: 15px;
+	}
+
+	.discussion-list p 
+	{
+		padding-left: 50px;
+	}
+
+	#discussion-image1 {
+		background: url(http://via.placeholder.com/240x260);
+		width: 240px;
+		height: 260px;
+	}
+
+	#discussion-image2 {
+		background: url(http://via.placeholder.com/240x260);
+		width: 240px;
+		height: 260px;
+	}
+
+	.discussion-button {
+	background-color: #ff978d;
+	font-size: 13px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  font-family: brandon-grotesque,Helvetica,sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 50px;
+  color: #fff;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+}
+
+.discussion-button:hover {
+	transform: scale(1.05);
+}
+
+/*Query*/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -232,6 +323,24 @@
   font-size: 1.5em;
 	}	
 	/*Dashboard*/
+
+	/*Query*/
+
+	#discussion-image1 {
+		background: url(http://via.placeholder.com/440x260);
+		width: 440px;
+		height: 260px;
+		margin-left: 120px;
+	}
+
+	#discussion-image2 {
+		background: url(http://via.placeholder.com/440x260);
+		width: 440px;
+		height: 260px;
+		margin-left: 120px;
+	}
+	
+	/*Query*/
 }
 
 
@@ -273,6 +382,28 @@
   font-size: 1.5em;
 	}
 	/*Dashboard*/
+
+	/*Query*/
+	
+	#query {
+		margin-top: 400px;
+	}
+
+	#discussion-image1 {
+		background: url(http://via.placeholder.com/440x260);
+		width: 440px;
+		height: 260px;
+		margin-left: 80px;
+	}
+
+	#discussion-image2 {
+		background: url(http://via.placeholder.com/440x260);
+		width: 440px;
+		height: 260px;
+		margin-left: 80px;
+	}
+
+	/*Query*/
 }
 
 /********** Extra Extra small devices only **********/
@@ -290,6 +421,7 @@
 		margin-left: 20px;
 		margin-right: 20px;
 		width: auto;
+		padding: 40px 20px 40px 20px;
 	}
 
 	#dashboard-list > li {
@@ -308,9 +440,28 @@
 	  font-size: 1.2em;
 	}
 
-	#dashboard {
-		padding: 40px 20px 40px 20px;
-	}
 	/*Dashboard*/
+
+	/*Query*/
+	
+	#query {
+		margin-top: 200px;
+	}
+
+	#discussion-image1 {
+		background: url(http://via.placeholder.com/300x260);
+		width: 280px;
+		height: 260px;
+		margin-left: 10px;
+	}
+
+	#discussion-image2 {
+		background: url(http://via.placeholder.com/300x260);
+		width: 280px;
+		height: 260px;
+		margin-left: 10px;
+	}
+
+	/*Query*/
 
 }
