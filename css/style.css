@@ -98,7 +98,7 @@
 }
 
 #main-content-button {
-	background-color: #ff978d;
+	background-color: #FF8DB2;
   text-transform: uppercase;
   border: 0;
   padding: 20px 50px 20px 50px;
@@ -107,7 +107,7 @@
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 50px;
-  color: #fff;
+  color: #eee;
   transform: perspective(1px) translateZ(0); /*for hover effect*/
   box-shadow: 0 0 1px transparent;
   transition-duration: 0.5s;
@@ -116,6 +116,7 @@
 
 #main-content-button:hover {
 	transform: scale(1.05);
+	color: #fff;
 }
 /*Main Content*/
 
@@ -171,7 +172,7 @@
 }
 
 #dashboard-button {
-	background-color: #ff978d;
+	background-color: #02b3e4;
 	font-size: 13px;
   text-transform: uppercase;
   border: 0;
@@ -181,7 +182,7 @@
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 50px;
-  color: #fff;
+  color: #eee;
   transform: perspective(1px) translateZ(0); /*for hover effect*/
   box-shadow: 0 0 1px transparent;
   transition-duration: 0.5s;
@@ -189,6 +190,7 @@
 
 #dashboard-button:hover {
 	transform: scale(1.05);
+	color: #fff;
 }
 
 /*Dashboard*/
@@ -253,7 +255,7 @@
 	}
 
 	.discussion-button {
-	background-color: #ff978d;
+	background-color: #02b3e4;
 	font-size: 13px;
   text-transform: uppercase;
   border: 0;
@@ -263,7 +265,7 @@
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 50px;
-  color: #fff;
+  color: #eee;
   transform: perspective(1px) translateZ(0); /*for hover effect*/
   box-shadow: 0 0 1px transparent;
   transition-duration: 0.5s;
@@ -271,6 +273,7 @@
 
 .discussion-button:hover {
 	transform: scale(1.05);
+	color: #fff;
 }
 
 /*Query*/
