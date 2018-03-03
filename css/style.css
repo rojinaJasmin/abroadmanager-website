@@ -506,17 +506,17 @@ footer {
 	}
 
 	#discussion-image1 {
-		background: url(../images/general_440x260.jpg);
-		width: 440px;
+		background: url(../images/general_600x260.jpg);
+		width: 600px;
 		height: 260px;
-		margin-left: 120px;
+		margin: 40px 40px 0px 40px;
 	}
 
 	#discussion-image2 {
-		background: url(../images/university_440x260.jpg);
-		width: 440px;
+		background: url(../images/university_600x260.jpg);
+		width: 600px;
 		height: 260px;
-		margin-left: 120px;
+		margin: 40px 40px 0px 40px;
 	}
 	/*Query*/
 
@@ -597,6 +597,17 @@ footer {
 		margin-left: 80px;
 	}
 	/*Query*/
+
+	/*Connect-abroad*/
+
+	#connect-animate {
+		margin: 20px;
+		background: url(../images/roommate_550x400.jpg);
+		width: 550px;
+		height: 400px;
+	}
+
+	/*Connect-abroad*/
 
 }
 
@@ -766,7 +777,7 @@ footer {
 	/*Connect-abroad*/
 
 	#connect-animate {
-		margin: 20px;
+		margin: 10px;
 		background: url(../images/roommate_290x200.jpg);
 		width: 290px;
 		height: 200px;
