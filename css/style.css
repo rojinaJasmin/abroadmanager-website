@@ -192,7 +192,7 @@
 }
 
 #dashboard-image {
-	background: url(http://via.placeholder.com/450x360);
+	background: url(../images/dashboard_450x360.jpg);
 	width: 450px;
 	height: 360px;
 }
@@ -270,13 +270,13 @@
 	}
 
 	#discussion-image1 {
-		background: url(http://via.placeholder.com/240x260);
+		background: url(../images/general_240x260.jpg);
 		width: 240px;
 		height: 260px;
 	}
 
 	#discussion-image2 {
-		background: url(http://via.placeholder.com/240x260);
+		background: url(../images/university_240x260.jpg);
 		width: 240px;
 		height: 260px;
 	}
@@ -390,7 +390,7 @@ footer {
  	}
 
  	#dashboard-image {
-		background: url(http://via.placeholder.com/420x320);
+		background: url(../images/dashboard_420x320.jpg);
 		width: 420px;
 		height: 320px;
 	}
@@ -404,13 +404,13 @@ footer {
 	}
 
 	#discussion-image1 {
-		background: url(http://via.placeholder.com/180x240);
+		background: url(../images/general_180x240.jpg);
 		width: 180px;
 		height: 240px;
 	}
 
 	#discussion-image2 {
-		background: url(http://via.placeholder.com/180x240);
+		background: url(../images/university_180x240.jpg);
 		width: 180px;
 		height: 240px;
 	}
@@ -452,9 +452,10 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(http://via.placeholder.com/300x320);
+		background: url(../images/dashboard_300x320.jpg);
 		width: 300px;
 		height: 320px;
+		padding-top: 20px;
 	}
 
 	#dashboard-button {
@@ -470,14 +471,14 @@ footer {
 	}
 
 	#discussion-image1 {
-		background: url(http://via.placeholder.com/440x260);
+		background: url(../images/general_440x260.jpg);
 		width: 440px;
 		height: 260px;
 		margin-left: 120px;
 	}
 
 	#discussion-image2 {
-		background: url(http://via.placeholder.com/440x260);
+		background: url(../images/university_440x260.jpg);
 		width: 440px;
 		height: 260px;
 		margin-left: 120px;
@@ -530,7 +531,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(http://via.placeholder.com/420x220);
+		background: url(../images/dashboard_420x220.jpg);
 		width: 420px;
 		height: 220px;
 	}
@@ -548,14 +549,14 @@ footer {
 	}
 
 	#discussion-image1 {
-		background: url(http://via.placeholder.com/440x260);
+		background: url(../images/general_440x260.jpg);
 		width: 440px;
 		height: 260px;
 		margin-left: 80px;
 	}
 
 	#discussion-image2 {
-		background: url(http://via.placeholder.com/440x260);
+		background: url(../images/university_440x260.jpg);
 		width: 440px;
 		height: 260px;
 		margin-left: 80px;
@@ -596,7 +597,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(http://via.placeholder.com/340x200);
+		background: url(../images/dashboard_340x200.jpg);
 		width: 340px;
 		height: 200px;
 	}
@@ -619,14 +620,14 @@ footer {
 	}
 
 	#discussion-image1 {
-		background: url(http://via.placeholder.com/340x260);
+		background: url(../images/general_340x260.jpg);
 		width: 340px;
 		height: 260px;
 		margin-left: 10px;
 	}
 
 	#discussion-image2 {
-		background: url(http://via.placeholder.com/340x260);
+		background: url(../images/university_340x260.jpg);
 		width: 340px;
 		height: 260px;
 		margin-left: 10px;
@@ -673,7 +674,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(http://via.placeholder.com/280x200);
+		background: url(../images/dashboard_280x200.jpg);
 		width: 280px;
 		height: 200px;
 	}
@@ -696,14 +697,14 @@ footer {
 	}
 
 	#discussion-image1 {
-		background: url(http://via.placeholder.com/280x260);
+		background: url(../images/general_280x260.jpg);
 		width: 280px;
 		height: 260px;
 		margin-left: 10px;
 	}
 
 	#discussion-image2 {
-		background: url(http://via.placeholder.com/280x260);
+		background: url(../images/university_280x260.jpg);
 		width: 280px;
 		height: 260px;
 		margin-left: 10px;
@@ -742,7 +743,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(http://via.placeholder.com/230x200);
+		background: url(../images/dashboard_230x200.jpg);
 		width: 230px;
 		height: 200px;
 	}
@@ -765,14 +766,14 @@ footer {
 	}
 
 	#discussion-image1 {
-		background: url(http://via.placeholder.com/230x260);
+		background: url(../images/general_230x260.jpg);
 		width: 230px;
 		height: 260px;
 		margin-left: 10px;
 	}
 
 	#discussion-image2 {
-		background: url(http://via.placeholder.com/230x260);
+		background: url(../images/university_230x260.jpg);
 		width: 230px;
 		height: 260px;
 		margin-left: 10px;
