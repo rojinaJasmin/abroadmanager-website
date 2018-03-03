@@ -6,7 +6,7 @@
 /*Section body*/
 #innerbanner {
 	background: linear-gradient(160deg,#02cbba,#aa7efd);
-	height: 1150px;
+	height: 1250px;
 }
 /*Section body*/
 
@@ -154,12 +154,12 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 650px;
+  top: 600px;
   margin: -140px auto 0;
   padding: 60px 80px;
   width: 1180px;
   text-align: left;
-  box-shadow: 5px 10px 23px 0 #aba;
+  box-shadow: 5px 5px 23px 0 #aaa;
  	-webkit-transition: all .3s ease; 
  	transition: all .3s ease; 
 }
@@ -450,6 +450,9 @@ footer {
 	/*Query*/
 
 	/*Connect-abroad*/
+	#connect-abroad {
+		height: 900px;
+	}
 	#connect-heading {
 		padding: 10px 5px 10px 5px;
 		font-size: 1.2em;
@@ -670,14 +673,30 @@ footer {
 	/*Connect-abroad*/
 	#connect-heading {
 		padding: 10px 5px 10px 5px;
-		font-size: 3.5vw;
+		font-size: 3vw;
+	}
+
+
+	#connect-abroad {
+		height: 550px;
+	}
+
+	#connect-more > h2 {
+		font-size: 1.2em;
+	}
+
+	#connect-animate {
+		margin: 20px;
+		background: url(../images/roommate_330x200.jpg);
+		width: 330px;
+		height: 200px;
 	}
 
 	/*Connect-abroad*/
 
 }
 
-/********** Large Mobile devices only **********/
+/********** Medium Mobile devices only **********/
 @media (max-width: 380px) {
   
   /*Main Content*/
@@ -743,6 +762,17 @@ footer {
 	}
 
 	/*Query*/
+
+	/*Connect-abroad*/
+
+	#connect-animate {
+		margin: 20px;
+		background: url(../images/roommate_290x200.jpg);
+		width: 290px;
+		height: 200px;
+	}
+
+	/*Connect-abroad*/
 
 }
 
@@ -812,5 +842,20 @@ footer {
 	}
 
 	/*Query*/
+
+	/*Connect-abroad*/
+
+	#connect-abroad {
+		height: 500px;
+	}
+
+	#connect-animate {
+		margin: 10px;
+		background: url(../images/roommate_250x180.jpg);
+		width: 250px;
+		height: 180px;
+	}
+
+	/*Connect-abroad*/
 
 }
