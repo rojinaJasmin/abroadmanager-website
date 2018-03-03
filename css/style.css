@@ -308,7 +308,7 @@
 
 #connect-abroad {
 	background: linear-gradient(200deg,#4f4af4,#4ac2cb);
-	height: 600px;
+	height: 1000px;
 	margin-bottom: 10px;
 	text-align: center;
 }
@@ -321,6 +321,38 @@
   color: #fff;
   font-size: 2rem;
 
+}
+
+#connect-more {
+	border-radius: 10px;
+	box-shadow: 5px 5px 23px 0 #aaa;
+	padding: 10px;
+	background-color: #fff;
+	text-transform: uppercase;
+}
+
+#connect-more:hover {
+	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+}
+
+#connect-more > h2 {
+	padding: 20px;
+	font-weight: 500;
+}
+
+#connect-animate {
+	border-radius: 10px;
+	box-shadow: 1px 1px 23px 0 #eee;
+	/*padding: 50px;*/
+	margin: 50px;
+	background-color: #fff;
+	text-transform: uppercase;
+	height: 450px;
+	background: url(../images/roommate_1024x450.jpg);
+}
+
+#connect-animate:hover {
+	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
 }
 
 /*Connect-abroad*/
