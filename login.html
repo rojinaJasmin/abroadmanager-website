@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login/Sign-Up</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="images" href="images/logo_favi.ico">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/login-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+<body>
+  <section id="innerbanner" role="banner">
+    <header style="margin: 0px; padding: 0px;">
+      <div class="header-content clearfix">
+        <nav id="header-nav" class="navbar-dfault">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
+                  <div id="logo-img" alt="Logo Image"></div>
+                </a>
+                <div class="navbar-brand">
+                  <a href="index.html">
+                    <h1>Abroad Manager</h1>
+                  </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div> <!-- navbar-header -->
+
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">General Discussions</a></li>
+                      <li><a href="#">University Specific Discussions</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#">Room-mate Finder</a>
+                  </li>
+                  <li>
+                    <a href="#" class="notification">Notifications</a>
+                  </li>
+                  <li>
+                    <a href="login.html" style="padding-top: 0px;"><button><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </div> <!-- container-fluid -->
+        </nav>
+      </div>
+    </header>
+  </section>
+  <div class="container">
+    <div class="form">
+        <ul class="tab-group">
+          <li class="tab active"><a href="#signup"><b>SIGN UP</b></a></li>
+          <li class="tab"><a href="#login"><b>SIGN IN</b></a></li>
+        </ul>
+      <div class="tab-content">
+        <div id="signup">   
+          <header>
+            <h1>Create Your Student Account</h1>
+            <br>
+            <h4>Your student account is your portal to all things: your classroom, projects, forums, career resources, and more!</h4>
+          </header>
+          <form class="signup" action="" method="post">
+            
+            <div class="top-row row">
+              <div id="topRow">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="field-wrap">
+                      <input id="input-data" type="text" required="required" autocomplete="off"  placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="field-wrap">
+                      <input id="input-data" type="text" required="required" autocomplete="off" placeholder="Last name">
+                  </div>
+                </div>
+              </div>
+            </div> <!-- .top-row -->
+
+            <div class="field-wrap" id="email-input">
+              <input id="input-data" type="email" required="required" autocomplete="off" placeholder="Email">
+            </div>
+
+            <div class="top-row row">
+              <div id="topRow">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="field-wrap">
+                      <input id="input-data" type="text" required="required" autocomplete="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Phone No">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="field-wrap">
+                      <input id="input-data" type="password" required="required" autocomplete="off" placeholder="Password" minlength="7">
+                  </div>
+                </div>
+              </div>
+            </div> <!-- .top-row -->
+
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div>
+                  <input type="checkbox" required="required" id="checkbox-input">
+                  <span style="font-size:14px;line-height:1.7">I agree to the <a href="" target="_blank" style="color:#02b3e4"> Terms of Service</a> </span>
+                </div>
+                
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button type="submit" class="button">CREATE A FREE ACCOUNT</button>
+              </div>
+            </div>
+          </form>
+        </div> <!-- signup -->
+        <div id="login"> 
+          <header>
+            <h1>Log Into Your Student Account</h1><br/>
+            <h4>Your student account is your portal to all things: your classroom, projects, forums, career resources, and more!</h4>
+          </header>
+          <form class="signin" action="" method="post">
+            <div class="field-wrap">
+              <input id="input-data" type="email" required="required" autocomplete="off" placeholder="Email">
+            </div>
+            <div class="field-wrap">
+              <input id="input-data" type="password" required="required" autocomplete="off" placeholder="Password" minlength="7">
+            </div>
+            <div>
+              <button class="button">LOG IN</button>
+            </div>
+            <div>
+              <p class="forgot"><a href="#"><b>Forgot Password?</b></a></p>
+            </div>
+            <hr>
+            <button class="loginBtn loginBtn--facebook">
+              Login with Facebook
+            </button>
+            <button class="loginBtn loginBtn--google">
+              Login with Google
+            </button>
+          </form>
+        </div> <!-- #login -->
+      </div> <!-- .tab-content -->
+    </div> <!-- .form -->
+  </div>
+  <footer>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
+            <div class="footer-content">
+              <h2>Social Media</h2>
+            </div>
+            <div class="footer-list">
+              <ul>
+                <li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
+                <li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
+                <li><a href=""><i class="fa fa-youtube"></i>YouTube</a></li>
+                <li><a href=""><i class="fa fa-linkedin"></i>Linkedln</a></li>
+                <li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <h2>Features</h2>
+            </div>
+            <div class="footer-list">
+              <ul>
+                <li><a href="">General Discussions</a></li>
+                <li><a href="">University Discussions</a></li>
+                <li><a href="">Room-mate finder</a></li>
+                <li><a href="">Personal Dashboard</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <h2>More</h2>
+            </div>
+            <div class="footer-list">
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- .row -->
+    </div>
+  </footer>
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+<input id="input-data" type = "checkbox" name="agreement" checked="checked" required="required" style="margin-top: 12px;">
+                  <h4>I agree to the <a href="#">Terms of Service.</a></h4>

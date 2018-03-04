@@ -223,65 +223,65 @@
 
 /*Query*/
 	
-	#query {
-		margin-top: 80px;
-		text-align: center;
-		position: relative;
-	}
+#query {
+	margin-top: 80px;
+	text-align: center;
+	position: relative;
+}
 
-	#query-heading {
-		color: #02b3e4;
-		text-transform: uppercase;
-	}
+#query-heading {
+	color: #02b3e4;
+	text-transform: uppercase;
+}
 
-	.discussion {
-		border-radius: 10px;
-		margin: 30px 5px;
-		box-shadow: 5px 10px 23px 0 #aba;
-		padding: 10px;
-	}
+.discussion {
+	border-radius: 10px;
+	margin: 30px 5px;
+	box-shadow: 5px 10px 23px 0 #aba;
+	padding: 10px;
+}
 
-	.discussion:hover {
-  	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);	
-	}
+.discussion:hover {
+	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);	
+}
 
-	.discussion-heading {
-		font-family: 'Open Sans';
-		font-weight: 500;
-		font-style: italic;
-		text-transform: uppercase;
-		text-align: left;
-	}
+.discussion-heading {
+	font-family: 'Open Sans';
+	font-weight: 500;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: left;
+}
 
-	.discussion-list {
-		text-align: left;
-		text-transform: uppercase;
-		font-size: 1.2em;
-		padding: 10px;
-	}
+.discussion-list {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	padding: 10px;
+}
 
-	.discussion-list span {
-		padding: 15px;
-	}
+.discussion-list span {
+	padding: 15px;
+}
 
-	.discussion-list p 
-	{
-		padding-left: 50px;
-	}
+.discussion-list p 
+{
+	padding-left: 50px;
+}
 
-	#discussion-image1 {
-		background: url(../images/general_240x260.jpg);
-		width: 240px;
-		height: 260px;
-	}
+#discussion-image1 {
+	background: url(../images/general_240x260.jpg);
+	width: 240px;
+	height: 260px;
+}
 
-	#discussion-image2 {
-		background: url(../images/university_240x260.jpg);
-		width: 240px;
-		height: 260px;
-	}
+#discussion-image2 {
+	background: url(../images/university_240x260.jpg);
+	width: 240px;
+	height: 260px;
+}
 
-	.discussion-button {
+.discussion-button {
 	background-color: #02b3e4;
 	font-size: 13px;
   text-transform: uppercase;
@@ -376,6 +376,7 @@ footer {
 .footer-list ul {
 	list-style-type: none;
 	text-transform: uppercase;
+	padding-left: 40px;
 }
 
 .footer-list li {
