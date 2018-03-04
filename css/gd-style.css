@@ -1,0 +1,70 @@
+#innerbanner {
+    height: 140px;
+}
+
+#ask-page {
+	height: 700px;
+	padding: 30px 20px 30px 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+#ask-page-head {
+	font-size: 2em;
+}
+
+.discussion-card {
+	border-radius: 10px;
+	margin: 30px 5px;
+	box-shadow: 5px 5px 23px 0 #aba;
+	padding-top: 10px;
+	position: relative;
+}
+
+.discussion-card:hover {
+	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+}
+
+.discussion-card h2 {
+	color: #02b3e4;
+	font-style: italic;
+}
+
+#discussion-bg-img1 {
+	background: url(http://via.placeholder.com/545x300);
+	width: 545px;
+	height: 300px;
+}
+
+#discussion-bg-img2 {
+	background: url(http://via.placeholder.com/545x300);
+	width: 545px;
+	height: 300px;
+}
+
+.discussion-card button {
+	position: absolute;
+	bottom: 0px;
+	left: 200px;
+	margin-bottom: 20px;
+	background-color: #02b3e4;
+	font-size: 13px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  font-family: brandon-grotesque,Helvetica,sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 50px;
+  color: #eee;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+}
+
+.discussion-card button:hover {
+	transform: scale(1.05);
+	color: #fff;
+}
