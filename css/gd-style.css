@@ -6,8 +6,7 @@
 	text-align: center;
 	padding: 20px;
 	text-transform: uppercase;
-	margin: 100px;
-	margin-bottom: 250px;
+	margin: 100px 20px 250px 20px;
 }
 
 .button button {
@@ -84,7 +83,10 @@
 
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
-  
+  #general {
+  	margin: 30px 20px 50px 20px;
+  }
+
 }
 
 /********** Medium Mobile devices only **********/
@@ -95,8 +97,8 @@
 /********** small Mobile devices only (eg: Iphone 4, ) **********/
 @media (max-width: 330px) {
 
-	.button button {
-		width: 250px;
-	}
+  .button button {
+  	width: 250px;
+  }
 
 }
