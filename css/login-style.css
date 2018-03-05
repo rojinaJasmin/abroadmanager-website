@@ -319,7 +319,9 @@ hr{
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-	
+	#innerbanner {
+		height: 100px;
+	}
 
 }
 

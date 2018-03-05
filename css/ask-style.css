@@ -176,19 +176,19 @@
 	}
 
   #discussion-bg-img1 {
-		background: url(http://via.placeholder.com/295x250);
-		width: 295px;
+		background: url(http://via.placeholder.com/280x250);
+		width: 280px;
 		height: 250px;
 	}
 
 	#discussion-bg-img2 {
-		background: url(http://via.placeholder.com/295x250);
-		width: 295px;
+		background: url(http://via.placeholder.com/280x250);
+		width: 280px;
 		height: 250px;
 	}
 
 	.discussion-card button {
-		left: 70px;
+		left: 65px;
 	}
 }
 

@@ -1,0 +1,45 @@
+#innerbanner {
+	height: 140px;
+}
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	#innerbanner {
+		height: 140px;
+	}	
+
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+  
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+  
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+
+}

@@ -40,7 +40,7 @@ $(document).ready(function() {
       	}
     	}
 
-});
+  });
 
 	$('.tab a').on('click', function (e) {
 	  
