@@ -20,7 +20,7 @@ a{
 
 #innerbanner {
 	background: linear-gradient(160deg,#02cbba,#aa7efd);
-	height: 140px;
+	height: 100px;
 }
 
 #form-page::before {
@@ -300,6 +300,9 @@ hr{
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+	#innerbanner {
+		height: 150px;
+	}
 }
 
 /********** Small devices only **********/
@@ -308,6 +311,7 @@ hr{
 	#innerbanner {
 		height: 150px;
 	}
+
 	.nav > li > a {
     position: relative;
     display: block;

@@ -407,6 +407,10 @@ footer {
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+	.dropdown-menu {
+		background: linear-gradient(160deg,#02cbba,#aa7efd);
+	}
+
 	/*Dashboard*/
 	#dashboard {
 		margin-left: 30px;
@@ -481,7 +485,9 @@ footer {
 		position: absolute;
 		top: 100%;
 		left: 50px;
+		background: linear-gradient(160deg,#02cbba,#aa7efd);
 	}
+
 	/*Dashboard*/
 	#dashboard {
 		margin-left: 30px;

@@ -1,7 +1,38 @@
 #innerbanner {
-	height: 140px;
+	height: 80px;
 }
 
+#general {
+	text-align: center;
+	padding: 20px;
+	text-transform: uppercase;
+	margin: 100px;
+}
+
+.button button {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 13px;
+	width: 300px;
+  text-transform: uppercase;
+  border: solid #FF8DB2;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  font-family: brandon-grotesque,'Helvetica',sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #02b3e4;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+  background-color: #fff;
+}
+
+.button button:hover {
+	transform: scale(1.05);
+	color: #fff;
+	background-color: #FF8DB2;
+}
 /***###*** MEDIA QUERIES ***###***/
 
 /********** Large devices only **********/
@@ -13,10 +44,23 @@
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+	#innerbanner {
+		height: 150px;
+	}
+
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
+	#innerbanner {
+		height: 150px;
+	}
+
+	.button button {
+		width: 200px;
+	}
+
 
 }
 
@@ -24,8 +68,16 @@
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
 	#innerbanner {
-		height: 140px;
+		height: 100px;
 	}	
+
+	#general h1 {
+		font-size: 1.8em;
+	}
+
+	#general h2 {
+		font-size: 1.5em;
+	}
 
 }
 
@@ -41,5 +93,9 @@
 
 /********** small Mobile devices only (eg: Iphone 4, ) **********/
 @media (max-width: 330px) {
+
+	.button button {
+		width: 250px;
+	}
 
 }
