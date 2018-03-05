@@ -289,6 +289,8 @@ hr{
   background: #E74B37;
 }
 
+/***###*** MEDIA QUERIES ***###***/
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   
@@ -303,6 +305,14 @@ hr{
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+	#innerbanner {
+		height: 150px;
+	}
+	.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+	}
 
 }
 

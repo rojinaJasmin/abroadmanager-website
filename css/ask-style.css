@@ -1,26 +1,27 @@
 #innerbanner {
-    height: 140px;
+    height: 750px;
 }
 
 #ask-page {
 	height: 700px;
-	padding: 30px 20px 30px 20px;
+	padding: 20px;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: 
 }
 
 
 #ask-page-head {
 	font-size: 2em;
+	color: #eee;
 }
 
 .discussion-card {
 	border-radius: 10px;
 	margin: 30px 5px;
-	box-shadow: 5px 5px 23px 0 #aba;
+	box-shadow: 5px 5px 23px 0 #baf;
 	padding-top: 10px;
 	position: relative;
+	background-color: #fff;
 }
 
 .discussion-card:hover {
@@ -48,6 +49,7 @@
 	position: absolute;
 	bottom: 0px;
 	left: 200px;
+	margin-top: 50px;
 	margin-bottom: 20px;
 	background-color: #02b3e4;
 	font-size: 13px;
@@ -55,10 +57,9 @@
   border: 0;
   padding: 20px 40px 20px 40px;
   border-radius: 5px;
-  font-family: brandon-grotesque,Helvetica,sans-serif;
+  font-family: brandon-grotesque,'Helvetica',sans-serif;
   font-size: 1.5em;
   font-weight: 600;
-  margin-top: 50px;
   color: #eee;
   transform: perspective(1px) translateZ(0); /*for hover effect*/
   box-shadow: 0 0 1px transparent;
@@ -68,4 +69,164 @@
 .discussion-card button:hover {
 	transform: scale(1.05);
 	color: #fff;
+}
+
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	#discussion-bg-img1 {
+		background: url(http://via.placeholder.com/445x250);
+		width: 445px;
+		height: 250px;
+	}
+
+	#discussion-bg-img2 {
+		background: url(http://via.placeholder.com/445x250);
+		width: 445px;
+		height: 250px;
+	}
+
+	.discussion-card button {
+		left: 140px;
+	}
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+	}
+
+	#discussion-bg-img1 {
+		background: url(http://via.placeholder.com/335x250);
+		width: 335px;
+		height: 250px;
+	}
+
+	#discussion-bg-img2 {
+		background: url(http://via.placeholder.com/335x250);
+		width: 335px;
+		height: 250px;
+	}
+
+	.discussion-card button {
+		left: 87px;
+	}
+
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	
+
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+  
+  #innerbanner {
+    height: 1200px;
+	}
+
+	#ask-page-head {
+		font-size: 1.3em;
+	}
+
+  #discussion-bg-img1 {
+		background: url(http://via.placeholder.com/345x250);
+		width: 345px;
+		height: 250px;
+	}
+
+	#discussion-bg-img2 {
+		background: url(http://via.placeholder.com/345x250);
+		width: 345px;
+		height: 250px;
+	}
+
+	.discussion-card button {
+		left: 90px;
+	}
+
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+  
+  #innerbanner {
+    height: 1200px;
+	}
+
+	#ask-page-head {
+		font-size: 1.2em;
+	}
+
+  #discussion-bg-img1 {
+		background: url(http://via.placeholder.com/295x250);
+		width: 295px;
+		height: 250px;
+	}
+
+	#discussion-bg-img2 {
+		background: url(http://via.placeholder.com/295x250);
+		width: 295px;
+		height: 250px;
+	}
+
+	.discussion-card button {
+		left: 70px;
+	}
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+
+	#innerbanner {
+    height: 1100px;
+	}
+
+	#ask-page-head {
+		font-size: 1.2em;
+	}
+
+	#ask-page {
+		height: 700px;
+		padding: 0px;
+	}
+
+	.discussion-card {
+		margin: 30px 5px;
+	}
+
+
+	#discussion-bg-img1 {
+		background: url(http://via.placeholder.com/280x250);
+		width: 280px;
+		height: 250px;
+	}
+
+	#discussion-bg-img2 {
+		background: url(http://via.placeholder.com/280x250);
+		width: 280px;
+		height: 250px;
+	}
+
+	.discussion-card button {
+		left: 60px;
+	}
+
 }

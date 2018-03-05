@@ -393,9 +393,10 @@ footer {
 	text-decoration: none;
 }
 
-
-
 /*FOOTER*/
+
+
+/***###*** MEDIA QUERIES ***###***/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -468,6 +469,12 @@ footer {
 
 	#nav-list button {
 		margin-left: 0px;
+	}
+
+	.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
 	}
 
 	.dropdown-menu {

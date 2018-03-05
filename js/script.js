@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	// navigation onmouseover
 	$('.dropdown').on('mouseover', function () {
-		$('#nav-list > li:first').addClass("open");
+		$('#nav-list > li.dropdown').addClass("open");
 
 	})
 
 	$('.dropdown').on('mouseout', function () {
-		$('#nav-list > li:first').removeClass("open");
+		$('#nav-list > li.dropdown').removeClass("open");
 	})
 
 	// Login Page
