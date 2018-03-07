@@ -3,7 +3,6 @@
 }
 
 #main-section {
-	height: 800px;
 	margin: 30px;
 }
 
@@ -21,14 +20,15 @@
 	margin: 10px;
 }
 
-.dropdown-menu {
+.drop .dropdown-menu {
 	box-shadow: 5px 5px 23px 0 #aba;
 	background-color: #fff;
-	color: black !important; 
 }
 
-.dropdown-menu:hover {
-	color: black !important;
+
+
+.drop .dropdown-menu > li > a{
+	color: black;
 }
 
 #second-card {
@@ -63,9 +63,44 @@
 
 #third-card {
 	text-transform: uppercase;
-	border-radius: 5px;
+	border: 2px solid #ddd;
 	margin: 20px 5px;
-	box-shadow: 1px 1px 23px 0 #aba;
 	padding: 20px;
 	width: 70%;
 }
+
+#add-discussion {
+	font-family: Arial,  sans-serif;
+	font-weight: 500;
+}
+
+#third-card .style {
+	border: 1px solid;
+	margin: 5px;
+	padding: 5px;
+	background-color: #02b3e4;
+	color: #fff;
+}
+
+
+#add-comment {
+	margin: 5px 20px 5px 20px;
+	padding: 10px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+#comment-button {
+	text-align: center;
+}
+
+#comment-button button {
+	background-color: #02b3e4;
+	color: #eee;
+	font-size: 1.2em;
+  font-weight: 600;
+}
+
+#comment-button button:hover {
+	color: #fff;
+}
+
