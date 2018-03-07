@@ -407,7 +407,7 @@ footer {
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
-	.dropdown-menu {
+	#header-dropdown {
 		background: linear-gradient(160deg,#02cbba,#aa7efd);
 	}
 
@@ -481,10 +481,7 @@ footer {
     padding: 10px 10px;
 	}
 
-	.dropdown-menu {
-		position: absolute;
-		top: 100%;
-		left: 50px;
+	#header-dropdown {
 		background: linear-gradient(160deg,#02cbba,#aa7efd);
 	}
 

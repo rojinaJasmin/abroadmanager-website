@@ -20,7 +20,7 @@
 	margin: 10px;
 }
 
-.dropdown-menu {
+.dropdown-filter {
 	width: 1000px;
 	padding: 10px;
 	text-align: center;
@@ -86,7 +86,7 @@
 } 
 
 textarea {
-	width: 500px;
+	width: 100%;
 	height: 100px;
 }
 
@@ -174,6 +174,12 @@ textarea {
 		height: 150px;
 	}
 
+	.dropdown-filter {
+		width: 800px;
+		padding: 10px;
+		text-align: center;
+	}
+
 }
 
 /********** Small devices only **********/
@@ -185,6 +191,32 @@ textarea {
 	
 	#second-card {
 		width: 65%;
+	}
+
+	.dropdown-filter {
+		width: 700px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	#dropdown1 {
+		left: -80px;
+	}
+
+	#dropdown2 {
+		left: -200px;
+	}
+
+	#dropdown3 {
+		left: -200px;
+	}
+
+	#dropdown4 {
+		left: -300px;
+	}
+
+	#dropdown5 {
+		left: -450px;
 	}
 
 }
@@ -204,10 +236,6 @@ textarea {
 		width: 98%;
 	}
 
-	textarea {
-		width: 290px;
-	}
-
 	#third-card-heading {
 		width: 70%;
 		padding-left: 30px;
@@ -218,14 +246,90 @@ textarea {
 	}
 }
 
+/********** Large Mobile devices only (ON SCREEN ROTATION) **********/
+
+@media (max-width: 640px) {
+	
+	.dropdown-filter {
+		width: 600px;
+	}
+
+	#dropdown1 {
+		left: -77px;
+	}
+
+	#dropdown2 {
+		left: -200px;
+	}
+
+	#dropdown3 {
+		left: -165px;
+	}
+
+	#dropdown4 {
+		left: -220px;
+	}
+
+	#dropdown5 {
+		left: -350px;
+	}
+}
+
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
+	
+  .dropdown-filter {
+		width: 400px;
+	}
+
+	#dropdown1 {
+		left: -90px;
+	}
+
+	#dropdown2 {
+		left: -210px;
+	}
+
+	#dropdown3 {
+		left: -180px;
+	}
+
+	#dropdown4 {
+		left: -80px;
+	}
+
+	#dropdown5 {
+		left: -200px;
+	}
 
 }
 
 /********** Medium Mobile devices only **********/
 @media (max-width: 380px) {
   
+  .dropdown-filter {
+		width: 350px;
+	}
+
+	#dropdown1 {
+		left: -90px;
+	}
+
+	#dropdown2 {
+		left: -210px;
+	}
+
+	#dropdown3 {
+		left: -180px;
+	}
+
+	#dropdown4 {
+		left: -50px;
+	}
+
+	#dropdown5 {
+		left: -50px;
+	}
 }
 
 /********** small Mobile devices only (eg: Iphone 4, ) **********/
@@ -235,12 +339,32 @@ textarea {
 		width: 98%;
 	}
 
-	textarea {
-		width: 250px;
-	}
-
 	#third-card {
 		width: 100%;
+	}
+
+	.dropdown-filter {
+		width: 300px;
+	}
+
+	#dropdown1 {
+		left: -90px;
+	}
+
+	#dropdown2 {
+		left: -40px;
+	}
+
+	#dropdown3 {
+		left: -185px;
+	}
+
+	#dropdown4 {
+		left: -45px;
+	}
+
+	#dropdown5 {
+		left: -45px;
 	}
 
 }
