@@ -20,6 +20,47 @@
 	margin: 10px;
 }
 
+.dropdown-menu {
+	width: 1000px;
+	padding: 10px;
+	text-align: center;
+}
+
+#dropdown1 {
+	left: -40px;
+}
+
+#dropdown2 {
+	left: -80px;
+}
+
+#dropdown3 {
+	left: -40px;
+}
+
+#dropdown4 {
+	left: -400px;
+}
+
+#dropdown5 {
+	left: -600px;
+}
+
+.dropdown-button {
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px;
+	border: 2px solid #02b3e4;
+	font-weight: 500;
+}
+
+.dropdown-button:hover {
+	background-color: #02b3e4;
+	color: #fff;
+	border-color: #02b3e4;
+	font-weight: 600;
+}
+
 .drop .dropdown-menu {
 	box-shadow: 5px 5px 23px 0 #aba;
 	background-color: #fff;
@@ -45,7 +86,7 @@
 } 
 
 textarea {
-	width: 400px;
+	width: 500px;
 	height: 100px;
 }
 
@@ -196,11 +237,6 @@ textarea {
 
 	textarea {
 		width: 250px;
-	}
-
-	#third-card-heading {
-		width: 80%;
-		padding-left: 30px;
 	}
 
 	#third-card {
