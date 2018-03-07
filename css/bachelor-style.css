@@ -40,6 +40,15 @@
 	width: 50%;
 }
 
+.filter {
+	margin: 0px;
+} 
+
+textarea {
+	width: 400px;
+	height: 100px;
+}
+
 .button {
 	text-transform: uppercase;
   border: 2px solid #FF8DB2;
@@ -59,6 +68,11 @@
 	transform: scale(1.05);
 	color: #fff;
 	background-color: #FF8DB2;
+}
+
+#third-card-heading {
+	width: 70%;
+	padding-left: 30px;
 }
 
 #third-card {
@@ -104,3 +118,93 @@
 	color: #fff;
 }
 
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	#innerbanner {
+		height: 150px;
+	}
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#innerbanner {
+		height: 150px;
+	}
+	
+	#second-card {
+		width: 65%;
+	}
+
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	#innerbanner {
+		height: 100px;
+	}	
+
+	#main-section {
+		margin: 0px;
+	}
+
+	#second-card {
+		width: 98%;
+	}
+
+	textarea {
+		width: 290px;
+	}
+
+	#third-card-heading {
+		width: 70%;
+		padding-left: 30px;
+	}
+
+	#third-card {
+		width: 98%;
+	}
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+  
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+
+	#second-card {
+		width: 98%;
+	}
+
+	textarea {
+		width: 250px;
+	}
+
+	#third-card-heading {
+		width: 80%;
+		padding-left: 30px;
+	}
+
+	#third-card {
+		width: 100%;
+	}
+
+}
