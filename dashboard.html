@@ -91,12 +91,12 @@
           <hr>
           <div id="side-bar-content">
             <ul class="nav">
-              <li class="active"><a href="#"><button class="contentlink" onclick="opensection(event, 'your-feed')"><i class="material-icons">explore</i> &nbsp; Your Feed</button></a></li>
+              <li class="active"><a href="#"><button id="defaultOpen" class="contentlink" onclick="opensection(event, 'your-feed')"><i class="material-icons">explore</i> &nbsp; Your Feed</button></a></li>
               <li><a href="#"><button class="contentlink" onclick="opensection(event, 'profile')"><i class="material-icons">perm_identity</i> &nbsp; Profile</button></a></li>
               <li><a href="#"><button class="contentlink" onclick="opensection(event, 'edit-documents')"><i class="material-icons">description</i> &nbsp; Edit Documents</button></a></li>
               <li><a href="#"><button class="contentlink" onclick="opensection(event, 'financial-help')"><i class="material-icons">help</i> &nbsp; Financial Help</button></a></li>
-              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'interest')"><i class="material-icons">dashboard</i> &nbsp; Interests</button></a></li>
-              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'university')"><i class="material-icons">account_balance</i> &nbsp; Universities</button></a></li>
+              <li><a href="#"><button class="contentlink" nclick="opensection(event, 'interest')"><i class="material-icons">dashboard</i> &nbsp; Interests</button></a></li>
+              <li><a href="#"><button class="contentlink" nclick="opensection(event, 'university')"><i class="material-icons">account_balance</i> &nbsp; Universities</button></a></li>
             </ul>
           </div>
         </div> <!-- #left-panel -->
@@ -202,10 +202,10 @@
                 </div>
             </div>
           </div>
-          <div id="interest" class="mycontent">
+          <div id="#interest" class="mycontent">
             
           </div>
-          <div id="university" class="mycontent">
+          <div id="#university" class="mycontent">
             
           </div>
         </div> <!-- #right-panel -->
@@ -264,7 +264,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-    function opensection(evnt, divName) {
+    function opensection(event, divName) {
       var i, mycontent, contentlink;
       mycontent = document.getElementsByClassName("mycontent");
       for (i = 0; i < mycontent.length; i++) {
@@ -277,10 +277,10 @@
       }
 
       document.getElementById(divName).style.display = "block";
-      evnt.currentTarget.className += "active";
+      event.currentTarget.addClass() += "active";
     }
 
-    document.getElementById("your-feed").click();
+    document.getElementById("defaultOpen").click();
   </script>
 </body>
 </html>
