@@ -86,7 +86,7 @@
         <div id="left-panel">
           <div id="panel-logo" style="text-align: center;">
             <img src="images/user.png" alt="user-image" width="70px" height="70px">
-            <h3>John Dae</h3>
+            <h3>John Doe</h3>
           </div>
           <hr>
           <div id="side-bar-content">
@@ -105,7 +105,7 @@
         <div id="right-panel">
           <div id="your-feed" class="mycontent">
             <div id="feed-heading">
-              <h1>Hello John Dae,</h1>
+              <h1>Hello John Doe,</h1>
               <h3>Welcome to your personalised Dashboard</h3>
             </div>
             <h2 style="margin-left: 20px;">Below are the questions asked from you in discussion forum</h2>
@@ -138,8 +138,15 @@
             </div>
           </div> <!-- #your-feed --> 
           <div id="profile" class="mycontent">
-            <div>
-              
+            <div id="profile-card">
+              <p><strong>Gre Score:</strong></p>
+              <hr>
+              <p><strong>Gmat Score:</strong></p>
+              <hr>
+              <p><strong>Sat Score:</strong></p>
+              <hr>
+              <p><strong>Tofel Score:</strong></p>
+              <hr>
             </div>
           </div>
           <div id="edit-documents" class="mycontent">
@@ -162,7 +169,9 @@
           <div id="financial-help" class="mycontent">
             <div id="finance-card">
               <h3>Finance your education using the help of Abroad Manager's network of partners.</h3>
+              <hr>
                 <form style="margin: 20px;">
+                  <h4>Applicant Details:</h4>
                   <label for="name">Name: &nbsp;</label> <br>
                   <input type="text" name="name" placeholder="Full Name"><br>
                   <label for="contact">Contact: &nbsp;</label> <br>
@@ -171,18 +180,18 @@
                   <input type="text" name="birthdate" placeholder="DD/MM/YYYY"><br>
                   <label for="profile">Profile: &nbsp;</label> <br>
                   <input type="text" name="profile" placeholder=""><br>
-                  <h4 >Co-Applicant Details:</h4>
+                  <h4>Co-Applicant Details:</h4>
                   <label for="full-name">Full Name: &nbsp;</label> <br>
                   <input type="text" name="full-name" placeholder="Full Name"><br>
                   <label for="annual-income">Annual Income: &nbsp;</label> <br>
-                  <input type="number" name="annual-income" placeholder=""><br>
+                  <input type="text" name="annual-income" placeholder=""><br>
                   <label for="relationship">Relationship: &nbsp;</label> <br>
                   <input type="text" name="relationship" placeholder=""><br>
                   <label for="collateral-detail">Collateral details: &nbsp;</label> <br>
                   <input type="text" name="collateral-detail" placeholder=""><br>
                   <label for="will-provide-collateral">Will You Provide Collateral: &nbsp;</label> <br>
-                  <input type="radio" name="will-provide-collateral" placeholder="" value="yes" required>Yes 
-                  <input type="radio" name="will-provide-collateral" value="no" required>No<br>
+                  <input style="height: auto; width: auto;" type="radio" name="will-provide-collateral" placeholder="" value="yes" required><span>Yes</span> 
+                  <input style="height: auto; width: auto;" type="radio" name="will-provide-collateral" value="no" required><span>No</span><br>
                   <label for="collateral-type">Collateral Type: &nbsp;</label> <br>
                   <input type="text" name="collateral-type" placeholder=""><br>
                   <label for="estimated-value">Estimated Value: &nbsp;</label> <br>
@@ -194,10 +203,10 @@
             </div>
           </div>
           <div id="interest" class="mycontent">
-            <h1>interest</h1>
+            
           </div>
           <div id="university" class="mycontent">
-            <h1>university</h1>
+            
           </div>
         </div> <!-- #right-panel -->
       </div>
