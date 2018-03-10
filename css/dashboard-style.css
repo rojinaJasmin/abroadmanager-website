@@ -1,0 +1,156 @@
+
+#innerbanner {
+	height: 140px;
+}
+
+#main-dashboard {
+	position: relative;
+	top: 0;
+	background-color: #eee;
+}
+
+#column-1 {
+	width: 20%;
+	padding: 0px;
+}
+
+#column-2 {
+	width: 80%;
+}
+
+#left-panel {
+	width: 100%;
+	text-transform: uppercase;
+	box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+	height: 1000px;
+	padding: 20px;
+	font-weight: 300;
+	background-color: #fff;
+}
+
+#panel-logo {
+	padding: 10px;
+}
+
+#side-bar-content li button {	
+	border-radius: 5px;
+	border:2px solid #02b3e4;
+	background-color: #fff;
+	box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.42); 
+	color: #02b3e4;
+	font-weight: 500;
+	padding: 5px 10px 5px 30px;
+	width: 200px;
+	text-align: left;
+}
+
+#side-bar-content li button:hover {
+	background-color: #eee;
+}
+
+#side-bar-content li button .active {
+	background-color: #02b3e4;
+	color: #fff;
+}
+
+
+
+#right-panel {
+	margin: 10px;
+}
+
+#feed-heading {
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.question-card{
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);	
+	padding: 20px;
+}
+
+#question-button {
+	text-align: center;
+}
+
+#question-button button {
+	font-size: 2em;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid #02b3e4;
+	border-radius: 5px;
+	color: #02b3e4;
+	background-color: #fff;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+  transition-duration: 0.5s;
+}
+
+#question-button button:hover {
+	color: #fff;
+	background-color: #02b3e4;
+	transform: scale(1.05);
+}
+
+#document-card{
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);	
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+}
+
+#document-card button {
+	margin-top: 25%;
+	padding: 5px 20px 5px 20px;
+	font-size: 1.8em;
+	border-radius: 5px;
+	border: 2px solid #02b3e4;
+	color: #eee;
+	background-color: #02b3e4;
+	text-transform: uppercase;
+}
+
+#document-card button:hover {
+	color: #fff;
+	font-weight: 600;
+}
+
+#finance-card {
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);	
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+#finance-card label {
+	paddig: 10px;
+}
+
+#finance-card button {
+	margin-top: 25px;
+	padding: 5px 20px 5px 20px;
+	font-size: 1.8em;
+	border-radius: 5px;
+	border: 2px solid #02b3e4;
+	color: #eee;
+	background-color: #02b3e4;
+	text-transform: uppercase;
+}
+
+#finance-card button:hover {
+	color: #fff;
+	font-weight: 600;
+}

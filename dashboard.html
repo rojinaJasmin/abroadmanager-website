@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109559667-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109559667-1');
+    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <title>Abroad Manager</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="images" href="images/logo_favi.ico">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/dashboard-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <section id="innerbanner" role="banner">
+    <header>
+      <div class="header-content clearfix">
+        <nav id="header-nav" class="navbar-dfault">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
+                  <div id="logo-img" alt="Logo Image"></div>
+                </a>
+                <div class="navbar-brand">
+                  <a href="index.html">
+                    <h1>Abroad Manager</h1>
+                  </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div> <!-- navbar-header -->
+
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="#">Dashboard</a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="ask.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+					            <li><a href="gd.html">General Discussions</a></li>
+					            <li><a href="ud.html">University Specific Discussions</a></li>
+					          </ul>
+                  </li>
+                  <li>
+                    <a href="#">Room-mate Finder</a>
+                  </li>
+                  <li>
+                  	<a href="#" class="notification">Notifications</a>
+                  </li>
+                  <li>
+                  	<a href="login.html" style="padding-top: 0px;"><button><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
+                  	</a>
+                  </li>
+                </ul>
+            </div>
+          </div> <!-- container-fluid -->
+        </nav>
+      </div>
+    </header>
+  </section> <!-- #innerbanner -->
+
+  <div id="main-dashboard" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="column-1">
+        <div id="left-panel">
+          <div id="panel-logo" style="text-align: center;">
+            <img src="images/user.png" alt="user-image" width="70px" height="70px">
+            <h3>John Dae</h3>
+          </div>
+          <hr>
+          <div id="side-bar-content">
+            <ul class="nav">
+              <li class="active"><a href="#"><button class="contentlink" onclick="opensection(event, 'your-feed')"><i class="material-icons">explore</i> &nbsp; Your Feed</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'profile')"><i class="material-icons">perm_identity</i> &nbsp; Profile</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'edit-documents')"><i class="material-icons">description</i> &nbsp; Edit Documents</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'financial-help')"><i class="material-icons">help</i> &nbsp; Financial Help</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'interest')"><i class="material-icons">dashboard</i> &nbsp; Interests</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'university')"><i class="material-icons">account_balance</i> &nbsp; Universities</button></a></li>
+            </ul>
+          </div>
+        </div> <!-- #left-panel -->
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="column-2">
+        <div id="right-panel">
+          <div id="your-feed" class="mycontent">
+            <div id="feed-heading">
+              <h1>Hello John Dae,</h1>
+              <h3>Welcome to your personalised Dashboard</h3>
+            </div>
+            <h2 style="margin-left: 20px;">Below are the questions asked from you in discussion forum</h2>
+            <div id="question-card1" class="question-card">
+              <p><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</strong></p>
+              <p>Posted in <strong>Lorem Ipsum</strong> on</p>
+              <p><strong><time>08 march, 2018</time></strong></p>
+              <hr>
+              <div id="question-button">
+                <button>CHECK IT</button>
+              </div>
+            </div>
+            <div id="question-card2" class="question-card">
+              <p><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</strong></p>
+              <p>Posted in <strong>Lorem Ipsum</strong> on</p>
+              <p><strong><time>08 march, 2018</time></strong></p>
+              <hr>
+              <div id="question-button">
+                <button>CHECK IT</button>
+              </div>
+            </div>
+            <div id="question-card3" class="question-card">
+              <p><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</strong></p>
+              <p>Posted in <strong>Lorem Ipsum</strong> on</p>
+              <p><strong><time>08 march, 2018</time></strong></p>
+              <hr>
+              <div id="question-button">
+                <button>CHECK IT</button>
+              </div>
+            </div>
+          </div> <!-- #your-feed --> 
+          <div id="profile" class="mycontent">
+            <div>
+              
+            </div>
+          </div>
+          <div id="edit-documents" class="mycontent">
+            <div id="document-card">
+              <h3>Get your documents edited through the best professionals.</h3>
+              <hr>
+              <h3 style="margin-bottom: 50px;">Tell us your requirements snd we will contact you.</h3>
+              <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                  <textarea></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div style="text-align: center;">
+                    <button>send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="financial-help" class="mycontent">
+            <div id="finance-card">
+              <h3>Finance your education using the help of Abroad Manager's network of partners.</h3>
+                <form style="margin: 20px;">
+                  <label for="name">Name: &nbsp;</label> <br>
+                  <input type="text" name="name" placeholder="Full Name"><br>
+                  <label for="contact">Contact: &nbsp;</label> <br>
+                  <input type="text" name="contact" placeholder=""><br>
+                  <label for="birthdate">BirthDate: &nbsp;</label> <br>
+                  <input type="text" name="birthdate" placeholder="DD/MM/YYYY"><br>
+                  <label for="profile">Profile: &nbsp;</label> <br>
+                  <input type="text" name="profile" placeholder=""><br>
+                  <h4 >Co-Applicant Details:</h4>
+                  <label for="full-name">Full Name: &nbsp;</label> <br>
+                  <input type="text" name="full-name" placeholder="Full Name"><br>
+                  <label for="annual-income">Annual Income: &nbsp;</label> <br>
+                  <input type="number" name="annual-income" placeholder=""><br>
+                  <label for="relationship">Relationship: &nbsp;</label> <br>
+                  <input type="text" name="relationship" placeholder=""><br>
+                  <label for="collateral-detail">Collateral details: &nbsp;</label> <br>
+                  <input type="text" name="collateral-detail" placeholder=""><br>
+                  <label for="will-provide-collateral">Will You Provide Collateral: &nbsp;</label> <br>
+                  <input type="radio" name="will-provide-collateral" placeholder="" value="yes" required>Yes 
+                  <input type="radio" name="will-provide-collateral" value="no" required>No<br>
+                  <label for="collateral-type">Collateral Type: &nbsp;</label> <br>
+                  <input type="text" name="collateral-type" placeholder=""><br>
+                  <label for="estimated-value">Estimated Value: &nbsp;</label> <br>
+                  <input type="number" name="estimated-value" placeholder=""><br>
+                </form>
+                <div style="text-align: center;">
+                  <button>Submit</button>
+                </div>
+            </div>
+          </div>
+          <div id="interest" class="mycontent">
+            <h1>interest</h1>
+          </div>
+          <div id="university" class="mycontent">
+            <h1>university</h1>
+          </div>
+        </div> <!-- #right-panel -->
+      </div>
+    </div> <!-- .row -->
+  </div> <!-- #main-dashboard -->
+
+  <footer>
+  	<div class="container">
+  			<div class="row">
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
+  					<div class="footer-content">
+  						<h2>Social Media</h2>
+  					</div>
+  					<div class="footer-list">
+  						<ul>
+  							<li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
+  							<li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
+  							<li><a href=""><i class="fa fa-youtube"></i>YouTube</a></li>
+  							<li><a href=""><i class="fa fa-linkedin"></i>Linkedln</a></li>
+  							<li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
+  						</ul>
+  					</div>
+  				</div>
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  					<div class="footer-content">
+  						<h2>Features</h2>
+  					</div>
+  					<div class="footer-list">
+  						<ul>
+  							<li><a href="">General Discussions</a></li>
+  							<li><a href="">University Discussions</a></li>
+  							<li><a href="">Room-mate finder</a></li>
+  							<li><a href="">Personal Dashboard</a></li>
+  						</ul>
+  					</div>
+  				</div>
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  					<div class="footer-content">
+  						<h2>More</h2>
+  					</div>
+  					<div class="footer-list">
+  						<ul>
+  							<li><a href="">About Us</a></li>
+  							<li><a href="">Contact Us</a></li>
+  							<li><a href="">Privacy Policy</a></li>
+  							<li><a href="">Terms of Use</a></li>
+  						</ul>
+  					</div>
+  				</div>
+  			</div> <!-- .row -->
+  	</div>
+  </footer>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function opensection(evnt, divName) {
+      var i, mycontent, contentlink;
+      mycontent = document.getElementsByClassName("mycontent");
+      for (i = 0; i < mycontent.length; i++) {
+        mycontent[i].style.display = "none";
+      }
+      
+      contentlink = document.getElementsByClassName("contentlink");
+      for (i = 0; i < contentlink.length; i++) {
+        contentlink[i].className = contentlink[i].className.replace(" active", "");
+      }
+
+      document.getElementById(divName).style.display = "block";
+      evnt.currentTarget.className += "active";
+    }
+
+    document.getElementById("your-feed").click();
+  </script>
+</body>
+</html>
