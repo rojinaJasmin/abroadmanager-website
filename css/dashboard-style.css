@@ -152,6 +152,13 @@ textarea {
 	text-transform: uppercase;
 }
 
+.financer-img {
+	margin: 20px;
+	border-radius: 50px; 
+	background-color: #eee;
+	padding: 10px;
+}
+
 #finance-card h4 {
 	margin: 20px;
 	font-style: italic;
