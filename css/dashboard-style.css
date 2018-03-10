@@ -7,6 +7,7 @@
 	position: relative;
 	top: 0;
 	background-color: #eee;
+	padding-bottom: 20px;
 }
 
 #column-1 {
@@ -39,7 +40,7 @@
 	color: #02b3e4;
 	font-weight: 500;
 	padding: 5px 10px 5px 30px;
-	width: 200px;
+	width: 100%;
 	text-align: left;
 }
 
@@ -47,7 +48,7 @@
 	background-color: #eee;
 }
 
-#side-bar-content li button .active {
+#side-bar-content li button.active {
 	background-color: #02b3e4;
 	color: #fff;
 }
@@ -96,7 +97,7 @@
 }
 
 #profile-card {
-	margin: 50px;
+	margin: 30px;
 	text-transform: uppercase;
 	border-radius: 5px;
 	background-color: #fff;
@@ -123,9 +124,6 @@ textarea {
 	height: 200px;
 }
 
-#profile-card {
-	margin: 30px;
-}
 
 #document-card button {
 	margin-top: 25%;
@@ -192,4 +190,147 @@ textarea {
 #finance-card button:hover {
 	color: #fff;
 	font-weight: 600;
+}
+
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	#column-1 {
+		width: 30%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 70%;
+	}
+
+	#finance-card input {
+		width: 40%;
+	}
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#column-1 {
+		width: 35%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 65%;
+	}
+
+	#finance-card input {
+		width: 50%;
+	}
+
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+	#innerbanner {
+		height: 100px;
+	}
+
+	#column-1 {
+		width: 35%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 65%;
+	}
+
+	#finance-card input {
+		width: 100%;
+	}
+
+}
+
+/********** Large Mobile devices only (ON SCREEN ROTATION) **********/
+
+@media (max-width: 640px) {
+
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+
+	#column-1 {
+		width: 100%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 100%;
+	}
+
+	#finance-card input {
+		width: 100%;
+	}
+
+	#feed-heading, .question-card, #profile-card, #document-card, #finance-card {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+
+	#column-1 {
+		width: 100%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 100%;
+	}
+
+	#finance-card input {
+		width: 100%;
+	}
+
+	#feed-heading, .question-card, #profile-card, #document-card, #finance-card {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+
+	#column-1 {
+		width: 100%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 100%;
+	}
+
+	#finance-card input {
+		width: 100%;
+	}
+
+	#feed-heading, .question-card, #profile-card, #document-card, #finance-card {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
 }
