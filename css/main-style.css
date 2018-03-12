@@ -198,7 +198,7 @@
 }
 
 #dashboard-image {
-	background: url(../images/dashboard_450x360.jpg);
+	background: url(../images/dashboard_450x360.png);
 	width: 450px;
 	height: 360px;
 }
@@ -439,7 +439,7 @@ footer {
  	}
 
  	#dashboard-image {
-		background: url(../images/dashboard_420x320.jpg);
+		background: url(../images/dashboard_420x320.png);
 		width: 420px;
 		height: 320px;
 	}
@@ -514,7 +514,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(../images/dashboard_300x320.jpg);
+		background: url(../images/dashboard_300x320.png) no-repeat;
 		width: 300px;
 		height: 320px;
 		padding-top: 20px;
@@ -601,7 +601,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(../images/dashboard_420x220.jpg);
+		background: url(../images/dashboard_420x220.png);
 		width: 420px;
 		height: 220px;
 	}
@@ -682,7 +682,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(../images/dashboard_340x200.jpg);
+		background: url(../images/dashboard_340x200.png);
 		width: 340px;
 		height: 200px;
 	}
@@ -779,7 +779,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(../images/dashboard_280x200.jpg);
+		background: url(../images/dashboard_280x200.png);
 		width: 280px;
 		height: 200px;
 	}
@@ -863,7 +863,7 @@ footer {
 	}
 
 	#dashboard-image {
-		background: url(../images/dashboard_230x200.jpg);
+		background: url(../images/dashboard_230x200.png);
 		width: 230px;
 		height: 200px;
 	}
