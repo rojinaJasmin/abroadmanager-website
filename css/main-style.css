@@ -348,17 +348,17 @@
 
 #connect-animate {
 	border-radius: 10px;
-	box-shadow: 1px 1px 23px 0 #eee;
+	ox-shadow: 1px 1px 23px 0 #eee;
 	/*padding: 50px;*/
 	margin: 50px;
 	background-color: #fff;
 	text-transform: uppercase;
 	height: 450px;
-	background: url(../images/roommate_1024x450.jpg);
+	background: url(../images/roommate_1024x450.png);
 }
 
 #connect-animate:hover {
-	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+	ox-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
 }
 
 /*Connect-abroad*/
