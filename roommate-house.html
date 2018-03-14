@@ -29,7 +29,7 @@
 <body>
   <div id="img-nav" class="sliding-img">
     <div class="closebtn"><a href="" onclick=""><i class="material-icons">clear</i></a></div>
-    <div class="container" style="text-align: center;">
+    <div class="container" id="slide-section">
       <div class="mySlides">
         <div class="number-text">1 / 10</div>
         <img src="http://via.placeholder.com/950x400" width="100%">
@@ -170,6 +170,51 @@
       <div><button id="nav-button"><span class="fa fa-plus"></span> View more Photos</button></div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+        <div id="room-detail">
+
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+        <div id="room-booking">
+          <div>
+            <span class="room-price">₹4,014</span>
+            <span class="room-duration">per night</span>
+          </div>
+          <hr>
+          <div class="row">
+            <form action="">
+              <h4 style="margin-left: 25px;">Date</h4>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div id="column1">
+                    <span>Check In</span>
+                    <input required type="date" name="checkin-date">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h4> </h4>
+                <div id="column2">
+                    <span>Check Out</span>
+                    <input required type="date" name="checkout-date">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4 style="margin-left: 10px;">Guests</h4>
+                <div id="column3">
+                    <input required type="number" name="guest" min="1">
+                </div>
+              </div>
+            </form>
+          </div>
+          <hr>
+          <div style="text-align: center;"><button id="button">Check Availablity</button></div>
+        </div> <!-- #room-booking -->
+      </div>
+    </div> <!-- .row -->
+  </div>
 
   <footer>
   	<div class="container">
@@ -275,3 +320,17 @@
   </script>
 </body>
 </html>
+
+
+
+<!--         <div id="room-detail">
+          <div>
+            <div id="heading1">
+              <h2>La Salentina, sea, nature &amp; relax</h2>
+            </div>
+            <div id="room-owner" style="margin-top: 20px;">
+              <img src="http://via.placeholder.com/64x64">
+            </div>
+          </div>
+          <h1>v jd jd jhdjhb</h1>
+        </div> -->

@@ -10,7 +10,7 @@
 #main-image {
 	padding: 10px;
 	position: relative;
-	margin-left: 20px;
+	margin-left: 50px;
 }
 
 #main-image div{
@@ -24,7 +24,7 @@
 	color: #02b3e4;
 	position: absolute;
 	left: 25px;
-	bottom: -280px;
+	bottom: -260px;
 }
 
 
@@ -58,9 +58,10 @@ img {
 	vertical-align: middle;
 }
 
-.container {
+#slide-section {
 	position: relative;
-	padding: 50px;
+	margin-top: 20px;
+	text-align: center;
 }
 
 .mySlides {
@@ -133,13 +134,97 @@ img {
 	color: #fff;
 }
 
+#room-detail {
+	margin: 50px 5px;
+	width: 100%;
+	height: 100%;
+}
+
+#room-detail #heading1 {
+	float: left !important;
+	width: 90% !important;
+}
+
+#heading1 h2 {
+	font-size: 3em;
+	font-weight: 800px;
+}
+
+#room-detail #room-owner {
+	float: right !important;
+	width: 10% !important;
+}
+
+#room-detail #room-owner img {
+	border-radius: 50px;
+}
+
+#room-booking {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #e4e4e4;
+}
+
+.room-price {
+	font-size: 22px !important;
+  line-height: 28px !important;
+  letter-spacing: -0.2px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  color: #484848 !important;
+  font-weight: 700 !important;
+  display: inline !important;
+}
+
+.room-duration {
+	font-weight: normal !important;
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  letter-spacing: 0.2px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  color: #484848 !important;
+  display: inline !important;
+}
+
+#column1, #column2, #column3 {
+	margin: 10px;
+	border: 1px solid #e4e4e4;
+	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+#column3 {
+	width: 50%;
+}
+
+
+#column1, #column2, #column3 input {
+	width: 100%;
+	border: 0px;
+}
+
+#room-booking #button {
+	padding: 5px 10px;
+	width: 100%;
+	border: 2px solid #02b3e4;
+	background-color: #02b3e4;
+	color: #fff;
+	font-weight: 600;
+	font-size: 19px;
+	border-radius: 5px;
+}
 
 
 /***###*** MEDIA QUERIES ***###***/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  
+  #img1, #img2, #img3 {
+		width: 31%;
+	}
 
 }
 
@@ -177,6 +262,10 @@ img {
 		left: 20px;
 		bottom: -220px;
 	}
+
+	#slide-section {
+		margin-top: 100px;
+	}
 }
 
 
@@ -197,6 +286,10 @@ img {
 		margin-left: 20px;
 	}
 
+	#slide-section {
+		margin-top: 100px;
+	}
+
 }
 
 /********** Large Mobile devices only (ON SCREEN ROTATION) **********/
@@ -211,22 +304,30 @@ img {
 	#main-image {
 		margin-left: 20px;
 	}
+
+	#slide-section {
+		margin-top: 100px;
+	}
 }
 
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
 
 	#main-image {
-		margin-left: 5px;
+		margin-left: 20px;
 	}
 
 	#main-image button {
 		left: 20px;
-		bottom: -200px;
+		bottom: -180px;
 	}
 
 	#img2, #img3 {
 		display: none;	
+	}
+
+	#slide-section {
+		margin-top: 100px;
 	}
 
 }
