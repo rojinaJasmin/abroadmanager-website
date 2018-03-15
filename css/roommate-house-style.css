@@ -334,6 +334,17 @@ img {
 	#slide-section {
 		margin-top: 100px;
 	}
+
+	#heading1 h1 {
+		font-size: 2em;
+		font-weight: 800px;
+	}
+
+
+	#owner-img img {
+		border-radius: 50px;
+		margin-top: 20px;
+	}
 }
 
 /********** Large Mobile devices only **********/
@@ -354,8 +365,9 @@ img {
 
 	#slide-section {
 		margin-top: 100px;
-	
-}
+	}
+
+
 }
 
 /********** Medium Mobile devices only **********/
