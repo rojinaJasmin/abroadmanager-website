@@ -189,6 +189,16 @@ img {
 	font-size: 1.2em;
 }
 
+#amenties {
+	padding: 20px 5px;
+	font-size: 1.5em;
+}
+
+#amenties ul {
+	list-style-type: none;
+	margin-left: -40px;
+}
+
 #rules{
 	padding: 20px 5px;
 	font-size: 1.5em;	
@@ -199,6 +209,41 @@ img {
 	margin-left: -40px;
 }
 
+
+#rent {
+	border-radius: 5px;
+	box-shadow: 5px 5px 23px 0 #aaa;
+	margin: 10px;
+	padding: 10px;
+}
+
+#relative {
+	position: relative;
+}
+
+
+#host {
+	margin: 20px 0px;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 23px 0 #aaa;
+}
+
+.remove {
+	position: absolute;
+	top: 10px;
+}
+
+.remove2 {
+	position: absolute;
+	top: 300px;
+}
+
+.sticky {
+  position: fixed;
+  top: 10px;
+  width: 35%;
+}
 
 #detail h2{
 	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
@@ -233,75 +278,6 @@ img {
 	border: 2px solid #02b3e4;
 	color: #02b3e4;
 	background-color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#room-booking {
-	margin: 10px;
-	padding: 10px;
-	border: 1px solid #e4e4e4;
-}
-
-.room-price {
-	font-size: 22px !important;
-  line-height: 28px !important;
-  letter-spacing: -0.2px !important;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-  color: #484848 !important;
-  font-weight: 700 !important;
-  display: inline !important;
-}
-
-.room-duration {
-	font-weight: normal !important;
-  margin: 0px !important;
-  word-wrap: break-word !important;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
-  font-size: 12px !important;
-  line-height: 16px !important;
-  letter-spacing: 0.2px !important;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-  color: #484848 !important;
-  display: inline !important;
-}
-
-#column1, #column2, #column3 {
-	margin: 10px;
-	border: 1px solid #e4e4e4;
-	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
-}
-
-#column3 {
-	width: 50%;
-}
-
-
-#column1, #column2, #column3 input {
-	width: 100%;
-	border: 0px;
-}
-
-#room-booking #button {
-	padding: 5px 10px;
-	width: 100%;
-	border: 2px solid #02b3e4;
-	background-color: #02b3e4;
-	color: #fff;
-	font-weight: 600;
-	font-size: 19px;
-	border-radius: 5px;
 }
 
 
@@ -353,6 +329,22 @@ img {
 	#slide-section {
 		margin-top: 100px;
 	}
+
+	.remove {
+		position: absolute;
+		top: 10px;
+	}
+
+	.remove2 {
+		position: absolute;
+		top: 400px;
+	}
+
+	.sticky {
+	  position: fixed;
+	  top: 10px;
+	  width: 47%;
+	}
 }
 
 
@@ -375,6 +367,27 @@ img {
 
 	#slide-section {
 		margin-top: 100px;
+	}
+
+		.remove {
+		position: absolute;
+		top: 10px;
+		margin-bottom: 500px;
+	}
+
+	.remove2 {
+		position: absolute;
+		margin-bottom: 500px;
+		top: 10px;
+	}
+
+	.sticky {
+		position: absolute;
+		top: 10px;
+	}
+
+	footer {
+		margin-top: 500px;
 	}
 
 }
@@ -428,7 +441,9 @@ img {
 		margin-top: 100px;
 	}
 
-
+	footer {
+		margin-top: 600px;
+	}
 }
 
 /********** Medium Mobile devices only **********/
