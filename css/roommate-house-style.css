@@ -131,6 +131,34 @@ img {
 	color: #fff;
 }
 
+/*MAP*/
+
+#location h2{
+	font-weight: ;
+}
+
+#location #span1 {
+	font-size: 1.5em;
+}
+
+#location #span2 {
+	font-size: 1.2em;
+}
+
+#distance{
+	margin-top: 135px;
+	margin-left: 100px;
+}
+
+#distance span {
+	font-size: 1.2em;
+}
+
+#map-tile {
+	margin-top: 20px;
+}
+/*MAP*/
+
 #room-detail {
 	margin: 10px;
 }
@@ -168,11 +196,44 @@ img {
 
 #rules ul {
 	list-style-type: none;
+	margin-left: -40px;
 }
 
 
+#detail h2{
+	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+	font-weight: 500;
+	font-size: 2.5em;
+}
 
+#detail span {
+	color: #484848;
+	font-size: 1.2em;
+}
 
+#host-info {
+	font-size: 1.5em;
+	color: #484848;
+	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+#host-detail {
+	font-size: 1.5em;
+	color: #484848;
+	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+#host-detail ul {
+	list-style-type: none;
+	margin-left: -40px;
+}
+
+#host-detail button {
+	border-radius: 5px;
+	border: 2px solid #02b3e4;
+	color: #02b3e4;
+	background-color: #fff;
+}
 
 
 
