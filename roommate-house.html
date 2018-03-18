@@ -424,9 +424,6 @@
   $(document).ready(function(){
   $(window).scroll(function() {
     if ($(document).scrollTop() > 1200) {
-      // $("#host").css("position", "fixed");
-      // $("#host").css("top", "20px");
-      // $("#host").css("width", "36.5%");
       $("#host").addClass("sticky");
       $("#host").removeClass("remove");
     } 
@@ -434,7 +431,7 @@
       $("#host").removeClass("sticky");
       $("#host").removeClass("remove2");
       $("#host").addClass("remove");
-    if ($(document).scrollTop() > 1500) {
+    if ($(document).scrollTop() > 1600) {
       $("#host").removeClass("sticky");
       $("#host").addClass("remove2");
     }
