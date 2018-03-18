@@ -65,6 +65,9 @@
                     <a href="roommate-search.html">Room-mate Finder</a>
                   </li>
                   <li>
+                    <a href="">Rent a Room</a>
+                  </li>
+                  <li>
                   	<a href="#" id="notification">Notifications</a>
                   </li>
                   <li>
@@ -123,7 +126,7 @@
 						<a href=""><button class="dropdown-button btn btn-default">Pharmacy</button></a>
 						<a href=""><button class="dropdown-button btn btn-default">Pure Sciences</button></a>
 						<a href=""><button class="dropdown-button btn btn-default">Veterinary Science</button></a>
-		      </div>
+		   		</div>
         </div>
         <div class="drop">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
@@ -146,8 +149,14 @@
       </div>  <!-- #first-card --> 
       <div id="second-card">
         <h1>Ask a Question</h1>
-        <div>
+        <div id="question">
           <textarea name="question" placeholder="Enter your question..."></textarea>
+        </div>
+        <div id="suggestion">
+        	<a href=""><button>Post Your Profile</button></a>
+        	<a href=""><button>Admit Date</button></a>
+        	<a href=""><button>Review Date</button></a>
+        	<a href=""><button>Applied Date</button></a>
         </div>
         <div class="pull-left" style="margin-top: 15px;">
           <p><strong>Choose Category:</strong></p>
@@ -348,7 +357,14 @@
     if ($('.navbar-collapse').hasClass("in")) {
       $('#innerbanner').css("height", "100px");
     }
+  });
 
+  // popup the suggestion bar
+  $('#question').on('keyup', function () {
+  	$('#suggestion').css("display", "block");
+  });
+  $('#question').on('focusout', function () {
+  	$('#suggestion').css("display", "none");
   });
   </script>
 </body>

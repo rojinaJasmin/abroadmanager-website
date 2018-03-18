@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="bg-light" >
+
+
+
+<div style="width:800px;">
+<div class="card bg-primary text-white fixed-top">
+    <div class="card-body" style="letter-spacing:3px;font-size:22px;">YOU ARE POSTING A ROOM NEAR UNIVERSITY X.</div>
+	<p class="card-text" style="letter-spacing:3px;font-size:15px;">&nbsp&nbsp&nbspFILL OUT THE DETAILS OF YOUR ROOM IN VERY EASY FORMAT</p>
+	
+  
+  </div>
+<br><br><br><br><br><br><br><br>
+<div class="card bg-light text-primary">
+    <div class="card-body" style="letter-spacing:3px;font-size:18px;">1&gtChoose a right location.<br>	<br>
+	<form>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 1</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 2</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 3</label>
+    </div>
+	 <div class="radio">
+      <label><input type="radio" name="optradio">Option 4</label>
+    </div>
+  </form>
+	</div>
+  </div>
+  <br>
+  <div class="card bg-light text-primary"><br>
+    <div class="card-body" style="letter-spacing:3px;font-size:18px;">2&gtUpload room images.</div>
+	<div class="col-md-4 col-sm-6">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input  type="file" id="uploadfiles" multiple="multiple"/><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input  type="button" class="btn btn-primary"  value="+Upload"/>
+
+</div>
+	
+  </div><br>
+  <div class="card bg-light text-primary">
+    <div class="card-body" style="letter-spacing:3px;font-size:18px;">3&gtRent per month</div>
+	<div class="row"><div class="col-md-3 offset-1" >
+	<form>
+    <div class="form-group">
+      
+      <select class="form-control" style="width:110px;height:35px;" id="sel1">
+       <option>Currency</option>
+        <option>Euro</option>
+        <option>euro</option>
+        <option>pond</option>
+		<option>Rupees</option>
+        
+      </select>
+	  </form>
+</div></div>
+<div class="col-md-2">
+<form>
+    <div class="form-group">
+      
+      <select class="form-control" style="width:110px;height:35px;" id="sel1">
+       <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+		<option></option>
+        
+      </select>
+	  </form></div>
+	</div></div>
+  </div><br>
+  <div class="card bg-light text-primary">
+    <div class="card-body" style="letter-spacing:3px;font-size:18px;">4&gtOne line about your Room.</div>
+	 <form>
+	 <div class="col-md-4">
+    <div class="form-group">
+      &nbsp&nbsp
+      <textarea class="form-control" rows="1" placeholder="Please give details in one line" style="width:350px;" id="comment1"></textarea>
+    </div></div>
+  </form>
+	
+  </div><br>
+  <div class="card bg-light text-primary">
+    <div class="card-body" style="letter-spacing:3px;font-size:18px;">5&gtType of room.</div>
+<div class="col-md-4">
+	<form>
+    <div class="radio">
+      <label><input type="radio" name="optradio">&nbsp&nbspStudio</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">&nbsp&nbsp1 BHK</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">&nbsp&nbsp2 BHK</label>
+    </div>
+	 <div class="radio">
+      <label><input type="radio" name="optradio">&nbsp&nbsp3 BHK</label>
+    </div>
+  </form>
+	Enter your own type:
+	<form>
+    <div class="form-group">
+      
+      <textarea class="form-control" style="width:150px;" placeholder="mention your own type" rows="1" id="comment"></textarea>
+    </div>
+  </form></div>
+  </div><br>
+  
+  <div class="card bg-light text-primary">
+    <div class="card-body" style="letter-spacing:3px;font-size:18px;">6&gtFull descripion of room (What you have to offer).</div>
+	<div class="col-md-2 offset-1"> <form>
+    <div class="form-group">
+      
+      <textarea class="form-control" placeholder="Please give details about your room" rows="8" style="width:500px;" id="comment"></textarea>
+    </div>
+  </form>
+	</div>
+  </div><br>
+
+  <div class="card bg-light text-primary">
+    <div class="card-body" style="letter-spacing:3px;font-size:18px;">7&gt.Mention the Rules to be followed</div> 
+<div class="container">
+<div class="row">
+	<div class="col-md-4 col-sm-6">	
+	<form>
+    <div class="form-group">
+      
+      <input type="text" class="form-control" style="width:200px;"  placeholder="Rule 1" id="usr"><br>
+	  <input type="text" class="form-control"  style="width:200px;" placeholder="Rule 2" id="usr"><br>
+      
+	
+	
+	  <input type="text" class="form-control" style="width:200px;" placeholder="Rule 3" id="usr"><br>
+	  <input type="text" class="form-control" style="width:200px;" placeholder="Rule 4" id="usr"><br>
+	  <button type="button" class="btn btn-primary" style="width:200px;">Add rule</button>
+    </div>
+  </form>
+	</div></div></div> </div>
+  <br>
+   <div class="card bg-light text-primary">
+    <div class="card-body" style="letter-spacing:3px;font-size:18px;">8&gtHow many people are living currently(Girls & Boys).</div>
+<div class="container">
+<div class="row">
+	<div class="col-md-2 col-sm-6">	<div class="form-group">
+  <label for="sel1"> Boys:</label>
+  <select class="form-control" style="width:80px;" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div></div>
+<div class="col-md-4 col-sm-6">
+	<div class="form-group">
+  <label for="sel1">Girls:</label>
+  <select class="form-control" style="width:80px;" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div></div></div></div>
+  </div><br>
+
+  
+<div class="container" >
+    <button type="submit" value="search" class="btn btn-primary">Submit</button>
+  
+  &nbsp; &nbsp; &nbsp;  <button type="button" class="btn btn-primary">Cancel</button></div>
+</form> 
+</div>
+
+</body>
