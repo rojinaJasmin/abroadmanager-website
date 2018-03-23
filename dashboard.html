@@ -142,15 +142,237 @@
           </div> <!-- #your-feed --> 
           <div id="profile" class="mycontent">
             <div id="profile-card">
-              <p><strong>Gre Score:</strong></p>
-              <hr>
-              <p><strong>Gmat Score:</strong></p>
-              <hr>
-              <p><strong>Sat Score:</strong></p>
-              <hr>
-              <p><strong>Tofel Score:</strong></p>
-              <hr>
+              <h1 style="color:#ff3396"><i>Manage your profiles here</i></h1>
+              <br>
+              <h2>Test Scores</h2>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <label for="sel1">Select Course (select one):</label>
+                      <select class="form-control text-line" id="sel1" style="width:100px;height:30px;">
+                      <option>GRE</option>
+                      <option>GMAT</option>
+                      <option>TOFFEL</option>
+                      <option>IELTS</option>
+                      <option>MCAT</option>
+                      <option>SAT</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="sel1">Select score:</label>
+                        <select class="form-control text-line" id="sel1" style="width:100px;height:30px;">
+                          <option>350</option>
+                          <option>340</option>
+                          <option>200</option>
+                          <option>300</option>
+                          <option>344</option>
+                          <option>360</option>
+                        </select>
+                    </div> 
+                  </div> <!-- .row -->
+                  <div>
+                    <button type="submit" class="btn btn-info" onclick="click()" style="margin-top: 10px;">SAVE</button>
+                  </div>
+                </div> <!-- .form-group -->
+                <hr>
+                <h2>Academic Qualifications</h2>
+                <div class="addMoreItemContainer" data-toggle="modal" data-dismiss="modal" data-target="#myModal" style="color:#02b3e4;">
+                <span style="cursor: pointer;">+ Add Qualifications</span>
+                </div>
+                <hr>
+                <form>
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="container">
+                        <div class="row" style="background-color:#00dfee;width:150px;">
+                          <div class="card bg-danger text-white">
+                            <h4 class="modal-title"> Qualifications</h4>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="modal-body">
+                            <div class="col-md-6">
+                              <b>School Name</b>:
+                              <div class="input-group">
+                                <input id="msg" type="text" class="form-control text-line" name="msg" placeholder="enter your score">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="modal-body">
+                          <div class="col-md-3">
+                            <b>From</b>:
+                            <div class="input-group">
+                              <input id="msg" type="date" class="form-control text-line" name="msg4" placeholder="Start date">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <b>To:</b>
+                            <div class="input-group">
+                              <input id="msg" type="date" class="form-control text-line" name="msg6" placeholder="End date" class="text-line">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="modal-body">
+                          <div class="col-md-3">
+                            <b>Intermediate</b>:
+                            <div class="input-group">
+                              <input id="msg" type="text" class="form-control text-line" name="msg3" placeholder="college name">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <b>Graduation</b>:
+                            <div class="input-group">
+                              <input id="msg" type="text" class="form-control text-line" name="msg2" placeholder="Course">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="modal-body">
+                          <div class="col-md-3">
+                            <b>Grades</b>:
+                            <div class="input-group">
+                              <input id="msg" type="text" class="form-control text-line" name="msg1" placeholder="enter your grade">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer bg-warning">
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>  <!-- .modal -->
+          </form>
+
+          <div class="conatiner">
+            <div class="row">
+              <div class="col-md-4">
+                <h2>Work Experience</h2>
+              </div>
+              <div class="col-md-4">
+                <label for="sel1">months:</label>
+                  <select class="form-control text-line" id="sel1" style="width:100px;height:30px;">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+                </div>
+              </div>
+            </div> <!-- .container -->
+            <hr>
+            <h2>Internships</h2>
+            <div class="addMoreItemContainer" data-toggle="modal" data-dismiss="modal" data-target="#myModal1" style="color:#1295c9">
+              <span style="cursor: pointer;">+ Add intern work</span>
             </div>
+            <hr>
+
+            <form action="modal.php" method="post">
+              <div class="modal fade" id="myModal1" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <div class="container">
+                        <div class="row">
+                          <h4 class="modal-title" >Internships</h4>
+                        </div>
+                        <div class="row">
+                          <div class="modal-body">
+                            <div class="col-md-6">
+                              <b>Worked as</b>:
+                              <div class="input-group">
+                                <input id="msg" type="text" class="form-control text-line"  name="m1" placeholder="Front end developer">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="modal-body">
+                            <div class="col-md-3">
+                              <span>From:</span>
+                              <div class="input-group">
+                                <input id="msg" type="date" class="form-control text-line" name="m2" placeholder="Start date">
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <b>To:</b>
+                              <div class="input-group">
+                                <input id="msg" type="date" class="form-control text-line" name="m3" placeholder="End date">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="modal-body">
+                            <div class="col-md-3">
+                              <b>Organisation</b>:
+                              <div class="input-group">
+                                <input id="msg" type="text" class="form-control text-line" name="m4" placeholder="Company">
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <b>Location</b>:
+                              <div class="input-group">
+                                <input id="msg" type="text" class="form-control text-line" name="m5" placeholder="Hyderabad">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer bg-warning">
+                      <button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <h2>Projects done</h2>
+  <div class="addMoreItemContainer" data-toggle="modal" data-dismiss="modal" data-target="#myModal2" style="color:#33acff">
+    <span style="cursor: pointer;">+ Add project work</span>
+  </div>
+  <hr>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div> <!-- #profile-card -->
           </div>
           <div id="edit-documents" class="mycontent">
             <div id="document-card">
