@@ -346,21 +346,83 @@
             </form>
 
             <h2>Projects done</h2>
-  <div class="addMoreItemContainer" data-toggle="modal" data-dismiss="modal" data-target="#myModal2" style="color:#33acff">
-    <span style="cursor: pointer;">+ Add project work</span>
-  </div>
-  <hr>
+            <div class="addMoreItemContainer" data-toggle="modal" data-dismiss="modal" data-target="#myModal2" style="color:#33acff">
+              <span style="cursor: pointer;">+ Add project work</span>
+            </div>
+            <hr>
+          
+          <form action="modal.php" method="post">
+            <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog">    
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="container">
+                      <div class="row"> 
+                        <h4 class="modal-title">Project </h4>
+                      </div>
+                      <div class="row">
+                        <div class="modal-body">
+                          <div class="col-md-6">
+                            <b>Name:</b>
+                            <div class="input-group">
+                              <input id="msg" type="text" class="form-control text-line" name="m1" placeholder="Front end developer">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="modal-body">
+                          <div class="col-md-3">
+                            <b>Worked From:</b>
+                            <div class="input-group">
+                              <input id="msg" type="date" class="form-control text-line" name="m2" placeholder="Start date">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <b>To:</b>
+                            <div class="input-group">
+                              <input id="msg" type="date" class="form-control text-line" name="m3" placeholder="End date">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="modal-body">
+                          <div class="col-md-3">
+                            <b>Project link:</b>
+                            <div class="input-group">
+                              <input id="msg" type="text" class="form-control text-line" name="m4" placeholder="Company">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <b>Location:</b>
+                            <div class="input-group">
+                              <input id="msg" type="text" class="form-control text-line" name="m5" placeholder="Hyderabad">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer bg-warning">
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
 
-  
-
-
-
-
-
-
-
-
-
+          <h2>Additional information</h2>
+          <a href="#" id="info" style="color:#33acff">+ Add information</a>
+          <div id="myDiv">
+            <br>
+            <form>
+              <textarea class="form-control text-line" placeholder="Please add your lines here" rows="5" id="comment">
+              </textarea>
+            </form>
+          </div>
 
 
 
@@ -551,6 +613,31 @@
     }
 
   });
+
+  // profile section 
+  var button = document.getElementById("info");
+  var myDiv = document.getElementById("myDiv");
+
+  function show() {
+      myDiv.style.visibility = "visible";
+  }
+
+  function hide() {
+      myDiv.style.visibility = "hidden";
+  }
+
+  function toggle() {
+      if (myDiv.style.visibility === "hidden") {
+          show();
+      } else {
+          hide();
+      }
+  }
+
+  hide();
+
+  button.addEventListener("click", toggle, false);</script>
+  
   </script>
 </body>
 </html>
