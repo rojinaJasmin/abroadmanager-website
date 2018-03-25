@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/bachelor-style.css">
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> 
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
@@ -54,7 +54,7 @@
                   <li>
                     <a href="dashboard.html">Dashboard</a>
                   </li>
-                  <li class="dropdown">
+                  <li class="dropdown dropdown1">
                     <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
                     <ul class="dropdown-menu" id="header-dropdown">
 					            <li><a href="#">General Discussions</a></li>
@@ -79,9 +79,9 @@
           </div> <!-- container-fluid -->
         </nav>
       </div>
-    </header> 
+    </header>
   </section> <!-- #innerbanner -->
-  
+
   <div id="main-section">
     <div class="container">
       <div id="first-card">
@@ -145,8 +145,8 @@
 						<a href=""><button class="dropdown-button btn btn-default">HOUSE BOOKINGS</button></a>
 						<a href=""><button class="dropdown-button btn btn-default">OTHER</button></a>
 		      </div>
-        </div> 
-      </div>  <!-- #first-card --> 
+        </div>
+      </div>  <!-- #first-card -->
       <div id="second-card">
         <h1>Ask a Question</h1>
         <div id="question">
@@ -183,10 +183,10 @@
           <button class="button">Submit</button>
         </div>
       </div> <!-- #second-card-->
-      
+
       <div id="third-card-heading">
         <h1>Latest Discussions:</h1>
-        
+
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="pull-left">
@@ -266,7 +266,7 @@
               <div><p><i class="fa fa-user"></i> &nbsp; Lorem Ipsum</p></div>
               <time><i class="fa fa-clock-o"></i> &nbsp; on 07 march, 2018</time>
             </div>
-          </div> 
+          </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             <div class="pull-right">
               <div style="margin-left: 50px;">
@@ -295,8 +295,8 @@
       </div>
     </div>
   </div> <!-- #main-section -->
-  
-  <footer> 
+
+  <footer>
     <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
@@ -360,7 +360,7 @@
   });
 
   // popup the suggestion bar
-  $('#question').on('keyup', function () {
+  $('#question').on('click', function () {
   	$('#suggestion').css("display", "block");
   });
   $('#question').on('focusout', function () {

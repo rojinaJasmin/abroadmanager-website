@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootd.css">
+</head><style>
+body{
+background-color:#ddeeff;}
+ .card-text{
+ font-size:25px;
+ font-style:italic;
+
+ }
+ .card-text{
+
+ font-style:italic;
+
+ }
+ </style>
+<body>
+
+<div class="container">
+  <h1 style="color:#ff3396">MANAGE YOUR DREAM UNIVERSITIES HERE</h1><hr>
+  <!-- Trigger the modal with a button -->
+ <center> <button type="button" class="btn btn-cyan z-depth-3"   style="width:104px;height:45px;font-size:27px;" data-toggle="modal" data-target="#myModal">ADD</button>
+</center>
+</div>
+<div class="container">
+<div class="row">
+
+
+ <br>
+<div class="view overlay">
+<div class="card z-depth-4"  style="width:500px;height:400px;background-color:#ffffff;"><!--Card image-->
+
+    <div class="card-body z-depth-5">
+      <div  style="width:500px;height:60px;font-size:40px;color:blue;" ><center>Universities</center></div>
+      <hr style="color:#000;font-size:20px;">
+
+	<!--  <a href="#" id="info" class="pull-right" data-toggle="modal" data-target="#myModal1" style="color:#33acff"><i class="material-icons" style="font-size:30px">mode_edit</i></a>
+  --> <p class="card-text" style="font-size:27px;">&nbsp; &nbsp; <b>Applied On</b>:</p><br>
+	<p class="card-text" style="font-size:27px;">&nbsp&nbsp<b>Review started on</b>:</p><br>
+   <p class="card-text" style="font-size:27px;">&nbsp&nbsp<b>Decision review on</b>:</p><br>
+   <p class="card-text" style="font-size:27px;">&nbsp&nbsp<b>Current Status</b>:</p>
+
+  </div>
+  </div>
+  <div class="mask flex-center rgba-blue-light" style="width:500px;height:350px;"><button  style="width:115px;height:55px;font-size:30px;" class=" btn btn-pink" data-toggle="modal" data-target="#myModal1">EDIT</button>
+   </div></div></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Current Status</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+  <label for="sel1">Current Staus:</label>
+  <select class="form-control" id="sel1">
+    <option>pending</option>
+    <option>admin</option>
+    <option>reject</option>
+
+  </select>
+</div>
+        </div>
+        <div class="modal-footer bg-warning">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">SAVE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Want to edit  your details</h4>
+        </div>
+        <div class="modal-body">
+          <!----My details-->
+		  My details
+        </div>
+        <div class="modal-footer bg-warning">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">SAVE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var button = document.getElementById("info");
+var myDiv = document.getElementById("myDiv");
+
+function show() {
+    myDiv.style.visibility = "visible";
+}
+
+function hide() {
+    myDiv.style.visibility = "hidden";
+}
+
+function toggle() {
+    if (myDiv.style.visibility === "hidden") {
+        show();
+    } else {
+        hide();
+    }
+}
+
+hide();
+
+button.addEventListener("click", toggle, false);</script>
+</body>
+</html>

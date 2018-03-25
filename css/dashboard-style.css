@@ -32,11 +32,11 @@
 	padding: 10px;
 }
 
-#side-bar-content li button {	
+#side-bar-content li button {
 	border-radius: 5px;
 	border:2px solid #02b3e4;
 	background-color: #fff;
-	box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.42); 
+	box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.42);
 	color: #02b3e4;
 	font-weight: 500;
 	padding: 5px 10px 5px 30px;
@@ -71,7 +71,7 @@
 	margin: 20px;
 	border-radius: 5px;
 	background-color: #fff;
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);	
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 	padding: 20px;
 }
 
@@ -101,7 +101,7 @@
 	text-transform: uppercase;
 	border-radius: 5px;
 	background-color: #fff;
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);	
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 	padding: 20px;
 
 }
@@ -110,11 +110,23 @@
 	font-size: 2em;
 }
 
+input.text-line {
+    background-color: transparent;
+    color: #black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000 1px;
+    padding: 3px 10px;
+}
+
 #document-card{
 	margin: 20px;
 	border-radius: 5px;
 	background-color: #fff;
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);	
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 	padding: 20px;
 	text-transform: uppercase;
 }
@@ -145,14 +157,14 @@ textarea {
 	margin: 20px;
 	border-radius: 5px;
 	background-color: #fff;
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);	
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 	padding: 20px;
 	text-transform: uppercase;
 }
 
 .financer-img {
 	margin: 20px;
-	border-radius: 50px; 
+	border-radius: 50px;
 	background-color: #eee;
 	padding: 10px;
 }
@@ -192,12 +204,47 @@ textarea {
 	font-weight: 600;
 }
 
+#interest {
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+#university {
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+#university button {
+	font-size: 2em;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #02b3e4;
+    border-radius: 5px;
+    color: #02b3e4;
+    background-color: #fff;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.5s;
+}
+
+#university button:hover {
+	color: #fff;
+	background-color: #02b3e4;
+	transform: scale(1.05);
+}
+
 
 /***###*** MEDIA QUERIES ***###***/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  
+
 
 }
 

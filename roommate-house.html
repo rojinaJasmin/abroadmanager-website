@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/roommate-house-style.css">
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> 
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -137,7 +137,7 @@
                   <li>
                     <a href="dashboard.html">Dashboard</a>
                   </li>
-                  <li class="dropdown">
+                  <li class="dropdown dropdown1">
                     <a href="ask.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
                     <ul class="dropdown-menu">
 		            			<li><a href="gd.html">General Discussions</a></li>
@@ -257,7 +257,7 @@
             <hr>
             <h2>Reviews</h2>
             <div id="reviews">
-              
+
             </div>
             <hr>
           </div> <!-- #room-detail -->
@@ -312,7 +312,7 @@
                 <a href="">
                   <button>Contact host</button>
                 </a>
-              </div> 
+              </div>
             </div> <!-- #host-detail -->
           </div> <!-- #host -->
         </div>
@@ -392,7 +392,7 @@
   });
 
   // img-slide gallery
-  
+
   var slideIndex = 1;
   showSlides(slideIndex);
 
@@ -423,13 +423,13 @@
   }
 
   // sticky card of host on scrolling
-  
+
   $(document).ready(function(){
   $(window).scroll(function() {
     if ($(document).scrollTop() > 1200) {
       $("#host").addClass("sticky");
       $("#host").removeClass("remove");
-    } 
+    }
     else
       $("#host").removeClass("sticky");
       $("#host").removeClass("remove2");

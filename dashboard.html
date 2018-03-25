@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/dashboard-style.css">
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> 
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -55,7 +55,7 @@
                   <li>
                     <a href="#">Dashboard</a>
                   </li>
-                  <li class="dropdown">
+                  <li class="dropdown dropdown1">
                     <a href="ask.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
                     <ul class="dropdown-menu">
 					            <li><a href="gd.html">General Discussions</a></li>
@@ -63,7 +63,7 @@
 					          </ul>
                   </li>
                   <li>
-                    <a href="#">Room-mate Finder</a>
+                    <a href="roommate-search.html">Room-mate Finder</a>
                   </li>
                   <li>
                     <a href="">Rent a Room</a>
@@ -98,8 +98,8 @@
               <li><a href="#"><button class="contentlink" onclick="opensection(event, 'profile')"><i class="material-icons">perm_identity</i> &nbsp; Profile</button></a></li>
               <li><a href="#"><button class="contentlink" onclick="opensection(event, 'edit-documents')"><i class="material-icons">description</i> &nbsp; Edit Documents</button></a></li>
               <li><a href="#"><button class="contentlink" onclick="opensection(event, 'financial-help')"><i class="material-icons">help</i> &nbsp; Financial Help</button></a></li>
-              <li><a href="#"><button class="contentlink" nclick="opensection(event, 'interest')"><i class="material-icons">dashboard</i> &nbsp; Interests</button></a></li>
-              <li><a href="#"><button class="contentlink" nclick="opensection(event, 'university')"><i class="material-icons">account_balance</i> &nbsp; Universities</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'interest')"><i class="material-icons">dashboard</i> &nbsp; Interests</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'university')"><i class="material-icons">account_balance</i> &nbsp; Universities</button></a></li>
             </ul>
           </div>
         </div> <!-- #left-panel -->
@@ -139,10 +139,12 @@
                 <button>CHECK IT</button>
               </div>
             </div>
-          </div> <!-- #your-feed --> 
+          </div> <!-- #your-feed -->
           <div id="profile" class="mycontent">
             <div id="profile-card">
-              <h1 style="color:#ff3396"><i>Manage your profiles here</i></h1>
+              <div style="text-align: center;">
+                <h1 style="color:#02b3e4"><i>Manage your profiles here</i></h1>
+              </div>
               <br>
               <h2>Test Scores</h2>
                 <div class="form-group">
@@ -168,7 +170,7 @@
                           <option>344</option>
                           <option>360</option>
                         </select>
-                    </div> 
+                    </div>
                   </div> <!-- .row -->
                   <div>
                     <button type="submit" class="btn btn-info" onclick="click()" style="margin-top: 10px;">SAVE</button>
@@ -350,16 +352,16 @@
               <span style="cursor: pointer;">+ Add project work</span>
             </div>
             <hr>
-          
+
           <form action="modal.php" method="post">
             <div class="modal fade" id="myModal2" role="dialog">
-              <div class="modal-dialog">    
+              <div class="modal-dialog">
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <div class="container">
-                      <div class="row"> 
+                      <div class="row">
                         <h4 class="modal-title">Project </h4>
                       </div>
                       <div class="row">
@@ -423,16 +425,6 @@
               </textarea>
             </form>
           </div>
-
-
-
-
-
-
-
-
-
-
 
             </div> <!-- #profile-card -->
           </div>
@@ -510,7 +502,7 @@
                   <label for="collateral-detail">Collateral details: &nbsp;</label> <br>
                   <input type="text" name="collateral-detail" placeholder=""><br>
                   <label for="will-provide-collateral">Will You Provide Collateral: &nbsp;</label> <br>
-                  <input style="height: auto; width: auto;" type="radio" name="will-provide-collateral" placeholder="" value="yes" required><span>Yes</span> 
+                  <input style="height: auto; width: auto;" type="radio" name="will-provide-collateral" placeholder="" value="yes" required><span>Yes</span>
                   <input style="height: auto; width: auto;" type="radio" name="will-provide-collateral" value="no" required><span>No</span><br>
                   <label for="collateral-type">Collateral Type: &nbsp;</label> <br>
                   <input type="text" name="collateral-type" placeholder=""><br>
@@ -522,11 +514,18 @@
                 </div>
             </div>
           </div>
-          <div id="#interest" class="mycontent">
-            
+          <div id="interest" class="mycontent">
+            <h1>.skadjvljdbv</h1>
           </div>
-          <div id="#university" class="mycontent">
-            
+          <div id="university" class="mycontent">
+            <h1>Manage all your Dream Universities here</h1>
+            <hr>
+            <div style="text-align: center;">
+              <button data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> &nbsp; ADD</button>
+            </div>
+            <div id="university-detail">
+
+            </div>
           </div>
         </div> <!-- #right-panel -->
       </div>
@@ -590,7 +589,7 @@
       for (i = 0; i < mycontent.length; i++) {
         mycontent[i].style.display = "none";
       }
-      
+
       contentlink = document.getElementsByClassName("contentlink");
       for (i = 0; i < contentlink.length; i++) {
         contentlink[i].className = contentlink[i].className.replace(" active", "");
@@ -614,7 +613,7 @@
 
   });
 
-  // profile section 
+  // profile section
   var button = document.getElementById("info");
   var myDiv = document.getElementById("myDiv");
 
@@ -636,8 +635,7 @@
 
   hide();
 
-  button.addEventListener("click", toggle, false);</script>
-  
-  </script>
+  button.addEventListener("click", toggle, false);
+</script>
 </body>
 </html>

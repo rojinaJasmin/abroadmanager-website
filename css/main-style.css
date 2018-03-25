@@ -167,8 +167,8 @@
   width: 1180px;
   text-align: left;
   box-shadow: 5px 5px 23px 0 #aaa;
- 	-webkit-transition: all .3s ease; 
- 	transition: all .3s ease; 
+ 	-webkit-transition: all .3s ease;
+ 	transition: all .3s ease;
 }
 
 #dashboard:hover {
@@ -229,7 +229,7 @@
 /*Dashboard*/
 
 /*Query*/
-	
+
 #query {
 	margin-top: 500px;
 	text-align: center;
@@ -249,7 +249,7 @@
 }
 
 .discussion:hover {
-	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);	
+	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
 }
 
 .discussion-heading {
@@ -271,7 +271,7 @@
 	padding: 15px;
 }
 
-.discussion-list p 
+.discussion-list p
 {
 	padding-left: 50px;
 }
@@ -388,7 +388,7 @@ footer {
 
 .footer-list li {
 	padding: 5px;
-	font-size: 1.2em;	
+	font-size: 1.2em;
 }
 
 .footer-list i {
@@ -411,7 +411,7 @@ footer {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  
+
 
 }
 
@@ -468,7 +468,7 @@ footer {
 		width: 180px;
 		height: 240px;
 	}
-	
+
 	/*Query*/
 
 	/*Connect-abroad*/
@@ -479,7 +479,7 @@ footer {
 		padding: 10px 5px 10px 5px;
 		font-size: 1.2em;
 	}
-	
+
 	/*Connect-abroad*/
 
 }
@@ -528,7 +528,7 @@ footer {
 	#dashboard-button {
   padding: 20px;
   font-size: 1.5em;
-	}	
+	}
 	/*Dashboard*/
 
 	/*Query*/
@@ -560,14 +560,14 @@ footer {
 		padding: 10px 5px 10px 5px;
 		font-size: 1em;
 	}
-	
+
 	/*Connect-abroad*/
 }
 
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-	
+
 	/*HEADER*/
 	#nav-list button {
 		margin-left: 0px;
@@ -618,7 +618,7 @@ footer {
 	/*Dashboard*/
 
 	/*Query*/
-	
+
 	#query {
 		margin-top: 300px;
 	}
@@ -653,7 +653,7 @@ footer {
 
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
-  
+
   #nav-list button {
   	margin: 0px;
   }
@@ -700,7 +700,7 @@ footer {
 	/*Dashboard*/
 
 	/*Query*/
-	
+
 	#query {
 		margin-top: 50px;
 	}
@@ -753,11 +753,11 @@ footer {
 
 /********** Medium Mobile devices only **********/
 @media (max-width: 380px) {
-  
+
   /*Main Content*/
   #main-content {
 		padding-top: 10px;
-	  text-align: center; 
+	  text-align: center;
 	}
 
 	#main-content h1{
@@ -797,7 +797,7 @@ footer {
 	/*Dashboard*/
 
 	/*Query*/
-	
+
 	#query {
 		margin-top: 50px;
 	}
@@ -837,7 +837,7 @@ footer {
 
 /********** small Mobile devices only (eg: Iphone 4, ) **********/
 @media (max-width: 330px) {
-  
+
   /*Main Content*/
   #main-content {
 		padding-top: 10px;
@@ -881,7 +881,7 @@ footer {
 	/*Dashboard*/
 
 	/*Query*/
-	
+
 	#query {
 		margin-top: 100px;
 	}
