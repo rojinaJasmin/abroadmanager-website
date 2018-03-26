@@ -5,7 +5,7 @@
 
 /*Section body*/
 #innerbanner {
-	background: linear-gradient(200deg,#3751a2,#da6799, #ffe49a);
+	background: linear-gradient(160deg,#02cbba,#aa7efd);
 	height: 1250px;
 }
 /*Section body*/
@@ -55,8 +55,8 @@
 	text-align: center;
 	color: #eee;
 	transform: perspective(1px) translateZ(0); /*for hover effect*/
-  box-shadow: 0 0 1px transparent;
-  transition-duration: 0.5s;
+	box-shadow: 0 0 1px transparent;
+	transition-duration: 0.5s;
 }
 
 #nav-list > li >a:hover {
@@ -65,14 +65,14 @@
 }
 
 #nav-list button {
-	background-color: #02b3e4;
+	background-color: #ee6bab;
 	padding: 10px;
 	margin-left: 20px;
 	border-radius: 5px;
 	border: 0;
 	transform: perspective(1px) translateZ(0); /*for hover effect*/
-  box-shadow: 0 0 1px transparent;
-  transition-duration: 0.5s;
+	box-shadow: 0 0 1px transparent;
+	transition-duration: 0.5s;
 }
 
 #nav-list button:hover {
@@ -124,7 +124,7 @@ font-family: brandon-grotesque,Helvetica,sans-serif;
 }
 
 #main-content-button {
-	background-color: #02b3e4;
+	background-color: #ee6bab;
   text-transform: uppercase;
   border: 0;
   padding: 20px 50px 20px 50px;

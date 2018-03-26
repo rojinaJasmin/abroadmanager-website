@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="bootd.css">
 </head>
 <body>
   <section id="innerbanner" role="banner">
@@ -424,7 +425,7 @@
               <textarea class="form-control text-line" placeholder="Please add your lines here" rows="5" id="comment">
               </textarea>
             </form>
-          </div>
+          </div> <!-- #myDic -->
 
             </div> <!-- #profile-card -->
           </div>
@@ -443,7 +444,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> <!-- #document-card -->
           </div>
           <div id="financial-help" class="mycontent">
             <div id="finance-card">
@@ -514,19 +515,52 @@
                 </div>
             </div>
           </div>
-          <div id="interest" class="mycontent">
+          <div id="#interest" class="mycontent">
             <h1>.skadjvljdbv</h1>
           </div>
           <div id="university" class="mycontent">
             <h1>Manage all your Dream Universities here</h1>
             <hr>
             <div style="text-align: center;">
-              <button data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> &nbsp; ADD</button>
+              <button onclick="university();"><span class="fa fa-plus"></span> &nbsp; ADD</button>
             </div>
+            <hr>
             <div id="university-detail">
+              <div>
+                <h1>University Name</h1>
+              </div>
+              <hr>
+              <div id="university-info">
+                <ul>
+                  <li>
+                    <span><strong>Applied On:</strong></span>
+                  </li>
+                  <li>
+                    <span><strong>Review started on:</strong></span>
+                  </li>
+                  <li>
+                    <span><strong>Decision reviewed on:</strong></span>
+                  </li>
+                  <li>
+                    <span><strong>Current Status:</strong></span>
+                    <label>Current Status:</label>
+                    <select>
+                      <option>--- Choose Status From Here ---</option>
+                      <option>Pending</option>
+                      <option>Admited</option>
+                      <option>Rejected</option>
+                    </select>
+                  </li>
+                </ul>
+              </div> <!-- #university-info -->
+              <div id="edit">
+                <button>EDIT </button>
+              </div>
+            </div> <!-- #university-detail -->
+            <div id="">
 
             </div>
-          </div>
+          </div> <!-- #university -->
         </div> <!-- #right-panel -->
       </div>
     </div> <!-- .row -->
@@ -611,6 +645,19 @@
       $('#innerbanner').css("height", "100px");
     }
 
+  });
+
+  // display of university detail on click of button
+  function university() {
+    $('#university-detail').css("display", "block");
+  }
+
+  $('#university-detail').on('mouseover', function () {
+    $('#edit').css("display", "block");
+  });
+
+  $('#university-detail').on('mouseout', function () {
+    $('#edit').css("display", "none");
   });
 
   // profile section
