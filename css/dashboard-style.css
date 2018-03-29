@@ -110,34 +110,75 @@
 	font-size: 2em;
 }
 
-#test-list button {
-  width: 300px;
-  margin: 5px 0px;
-  padding: 5px;
+#test-name {
+  width: 100%;
+}
+
+#drop {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+#drop button {
+  width: 200px;
   font-size: 1.5em;
   border: 2px solid #02b3e4;
   color: #02b3e4;
-  border-radius: 5px;
   background-color: #fff;
 }
 
-#test-list button.active {
-  background-color: #02b3e4;
-  color: #fff;
+#academic-detail, #work-detail {
+  margin: 10px;
+}
+
+#academic-detail span, .modal-footer button, #work-detail span, #internship-detail span, #research-detail span, #more-detail span{
+  font-size: 1.2em;
+  color: #02b3e4 !important;
+  padding: 5px 10px;
+  background-color: #fff !important;
+  cursor: pointer;
+}
+
+.modal-footer button {
+  border: 2px solid #02b3e4 !important;
+}
+
+
+#dropdown1 {
+  margin: 0px;
+  margin-top: -2px;
+  width: 100%;
+  border: 2px solid #02b3e4;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 5px;
+  background-color: #fff;
+}
+
+#dropdown1 ul {
+  list-style-type: none;
+  margin-left: -40px;
+  padding-left: -10px;
+}
+
+#dropdown1 li:hover {
+  cursor: pointer;
+  background-color: #eee;
+  width: 100%;
 }
 
 #test-score {
   position: relative;
 }
 
-#edit-score {
+.edit-score {
   position: absolute;
   bottom: 5px;
   right: 20px;
   font-size: 2em;
   color: #02b3e4;
   cursor: pointer;
-  display: none;
 }
 
 #test-score h3{
@@ -156,6 +197,10 @@
 
 .score li {
   padding: 10px 0px;
+}
+
+.tabContent {
+  display: none;
 }
 
 #document-card{

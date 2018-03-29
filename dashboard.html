@@ -147,27 +147,49 @@
               <hr>
               <div id="test">
                 <h3>Test Scores:</h3>
-                <hr>
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div id="test-name">
-                      <h3>SELECT COURSE (SELECT ONE):</h3>
+                      <h4>SELECT COURSE (SELECT ONE):</h4>
                       <br>
                       <div id="test-list">
-                        <div><button id="default" class="tabLink" onclick="openScore(event, 'gre')">GRE SCORES</button></div>
-                        <div><button class="tabLink" onclick="openScore(event, 'gmat')">GMAT SCORES</button></div>
-                        <div><button class="tabLink" onclick="openScore(event, 'toefl')">TOEFL SCORES</button></div>
-                        <div><button class="tabLink" onclick="openScore(event, 'ielts')">IELTS SCORES</button></div>
-                        <div><button class="tabLink" onclick="openScore(event, 'lsat')">LSAT SCORES</button></div>
-                        <div><button class="tabLink" onclick="openScore(event, 'mcat')">MCAT SCORES</button></div>
-                        <div><button class="tabLink" onclick="openScore(event, 'sat')">SAT SCORES</button></div>
-                      </div>
+                        <div id="drop">
+                          <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                            Course Score <i class="caret"></i>
+                          </button>
+                          <div class="dropdown-menu dropdown-filter" id="dropdown1">
+                            <ul>
+                              <li>
+                                <span id="default" class="tabLink" onclick="openScore(event, 'gre')">GRE SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'gmat')">GMAT SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'toefl')">TOEFL SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'ielts')">IELTS SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'lsat')">LSAT SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'mcat')">MCAT SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'sat')">SAT SCORES</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div> <!-- #test-list -->
                     </div> <!-- #test-name -->
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div id="test-score">
                         <div id="gre" class="tabContent">
-                          <h3>Your Score in GRE</h3>
+                          <h4>Your Score in GRE</h4>
                           <div class="score">
                               <ul>
                                 <li>
@@ -184,8 +206,28 @@
                                 </li>
                               </ul>
                           </div>
-                          <div id="edit-score">
-                            <span class="fa fa-edit"></span>
+                          <div class="edit-score">
+                            <span class="fa fa-edit" data-toggle="modal" data-target="#myModal"></span>
+                          </div>
+                          <div>
+                            <div class="modal fade" id="myModal" role="dialog">
+                              <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Current Status</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="form-group">
+
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer bg-warning">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">SAVE</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div> <!-- #gre -->
                         <div id="gmat" class="tabContent">
@@ -210,7 +252,7 @@
                                 </li>
                               </ul>
                           </div>
-                          <div id="edit-score">
+                          <div class="edit-score">
                             <span class="fa fa-edit"></span>
                           </div>
                         </div> <!-- #gmat -->
@@ -236,7 +278,7 @@
                                 </li>
                               </ul>
                           </div>
-                          <div id="edit-score">
+                          <div class="edit-score">
                             <span class="fa fa-edit"></span>
                           </div>
                         </div> <!-- #toefl -->
@@ -262,7 +304,7 @@
                                 </li>
                               </ul>
                           </div>
-                          <div id="edit-score">
+                          <div class="edit-score">
                             <span class="fa fa-edit"></span>
                           </div>
                         </div> <!-- #ielts -->
@@ -276,7 +318,7 @@
                                 </li>
                               </ul>
                           </div>
-                          <div id="edit-score">
+                          <div class="edit-score">
                             <span class="fa fa-edit"></span>
                           </div>
                         </div> <!-- #lsat -->
@@ -290,7 +332,7 @@
                                 </li>
                               </ul>
                           </div>
-                          <div id="edit-score">
+                          <div class="edit-score">
                             <span class="fa fa-edit"></span>
                           </div>
                         </div> <!-- #mcat -->
@@ -312,17 +354,223 @@
                                 </li>
                               </ul>
                           </div>
+                          <div class="edit-score">
+                            <span class="fa fa-edit"></span>
+                          </div>
                         </div> <!-- #sat -->
-                        <div id="edit-score">
-                          <span class="fa fa-edit"></span>
-                        </div>
                     </div> <!-- #test-score -->
                   </div>
                 </div>
               </div> <!-- #test -->
               <hr>
+
+              <div id="academic">
+                <h2>Academic Qualification</h2>
+                <div id="academic-detail">
+                  <span data-toggle="modal" data-target="#academicModal">
+                    <i class="fa fa-plus">&nbsp; Add Academic Details</i>
+                  </span>
+                </div>
+                <!-- ACADEMIC-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="academicModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Qualification</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <div>
+                              <label>University Name:</label><br>
+                              <input type="text" name="university">
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-lg-6 col-xs-6">
+                                <label>From:</label><br>
+                                <input type="date" name="">
+                              </div>
+                              <div class="col-lg-6 col-xs-6">
+                                <label>To:</label><br>
+                                <input type="date" name="">
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Degree</label><br>
+                                <input type="text" name="">
+                              </div>
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Program</label><br>
+                                <input type="text" name="">
+                              </div>
+                            </div>
+                            <br>
+                            <div>
+                              <label>Enter your grade:</label><br>
+                              <input type="text" name="grade" placeholder="YOUR SCORE/TOTAL">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #academicModal -->
+                </div>
+              </div> <!-- #academic -->
+              <hr>
+
+              <div id="work">
+                <h2>Work Experience</h2>
+                <div id="work-detail">
+                  <span data-toggle="modal" data-target="#workModal">
+                    <i class="fa fa-plus">&nbsp; Add Your Work Experience</i></span>
+                </div>
+                <!-- WORK-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="workModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Work Experience</h4>
+                        </div>
+                        <div class="modal-body">
+                          <label></label>
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #workModal -->
+                </div>
+              </div> <!-- #work -->
+              <hr>
+
+              <div id="internship">
+                <h2>Internships</h2>
+                <div id="internship-detail">
+                  <span data-toggle="modal" data-target="#internshipModal">
+                  <i class="fa fa-plus">&nbsp; Add Your Intern Works</i></span>
+                </div>
+                <!-- INTERNSHIP-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="internshipModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Your Internships</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <div>
+                              <label>Worked as:</label><br>
+                              <input type="text" name="internship" placeholder="Front-End Developer">
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Worked From:</label><br>
+                                <input type="date" name="">
+                              </div>
+                              <div class="col-lg-6 col-xs-6">
+                                <label>To:</label><br>
+                                <input type="date" name="">
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Project Link</label><br>
+                                <input type="text" name="">
+                              </div>
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Location:</label><br>
+                                <input type="text" name="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #internshipModal -->
+                </div>
+              </div> <!-- internship -->
+              <hr>
+
+              <div id="research">
+                <h2>RESEARCH PAPERS/PATENTS</h2>
+                <div id="research-detail">
+                  <span data-toggle="modal" data-target="#researchModal">
+                  <i class="fa fa-plus">&nbsp; Add Your Research Paper/Patents</i></span>
+                </div>
+                <!-- RESEARCH-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="researchModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Research/Patents</h4>
+                        </div>
+                        <div class="modal-body">
+                          <label>NUMBER OF RESEARCH PAPERS:</label><br>
+                          <input type="number" name="research"><br><br>
+                          <label>NUMBER OF PATENTS:</label><br>
+                          <input type="number" name="research">
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #researchModal -->
+                </div>
+              </div> <!-- #research -->
+              <hr>
+
+              <div id="more-info">
+                <h2>Additional information</h2>
+                <div id="more-detail">
+                  <span data-toggle="modal" data-target="#moreInfoModal">
+                  <i class="fa fa-plus">&nbsp; Add Information</i></span>
+                </div>
+                <!-- MORE-INFO-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="moreInfoModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">More Informations</h4>
+                        </div>
+                        <div class="modal-body">
+                          <textarea placeholder="Enter any additional information">
+                          </textarea>
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #moreInfoModal -->
+                </div>
+              </div> <!-- #more-info -->
+              <hr>
             </div> <!-- #profile-card -->
           </div> <!-- #profile -->
+
+
           <div id="edit-documents" class="mycontent">
             <div id="document-card">
               <h3>Get your documents edited through the best professionals.</h3>
@@ -593,17 +841,8 @@
       event.currentTarget.className += " active";
     }
 
-    document.getElementById("default").click();
+    // document.getElementById("default").click();
 
-  //
-
-  $('.tabContent').on('mouseover', function () {
-    $('#edit-score').css('display', 'block');
-  });
-
-  $('.tabContent').on('mouseout', function () {
-    $('#edit-score').css('display', 'none');
-  });
 
   // INCREASE HEIGHT OF INNERBANNER ON CLICK OF NAVIGATION BAR
   $('.navbar-toggle').on('click', function () {
