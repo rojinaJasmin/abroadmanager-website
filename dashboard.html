@@ -143,292 +143,186 @@
           </div> <!-- #your-feed -->
           <div id="profile" class="mycontent">
             <div id="profile-card">
-              <div style="text-align: center;">
-                <h1 style="color:#02b3e4"><i>Manage your profiles here</i></h1>
-              </div>
-              <br>
-              <h2>Test Scores</h2>
-                <div class="form-group">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <label for="sel1">Select Course (select one):</label>
-                      <select class="form-control text-line" id="sel1" style="width:100px;height:30px;">
-                      <option>GRE</option>
-                      <option>GMAT</option>
-                      <option>TOFFEL</option>
-                      <option>IELTS</option>
-                      <option>MCAT</option>
-                      <option>SAT</option>
-                      </select>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="sel1">Select score:</label>
-                        <select class="form-control text-line" id="sel1" style="width:100px;height:30px;">
-                          <option>350</option>
-                          <option>340</option>
-                          <option>200</option>
-                          <option>300</option>
-                          <option>344</option>
-                          <option>360</option>
-                        </select>
-                    </div>
-                  </div> <!-- .row -->
-                  <div>
-                    <button type="submit" class="btn btn-info" onclick="click()" style="margin-top: 10px;">SAVE</button>
-                  </div>
-                </div> <!-- .form-group -->
+              <h1>MANAGE YOUR PROFILES HERE</h1>
+              <hr>
+              <div id="test">
+                <h3>Test Scores:</h3>
                 <hr>
-                <h2>Academic Qualifications</h2>
-                <div class="addMoreItemContainer" data-toggle="modal" data-dismiss="modal" data-target="#myModal" style="color:#02b3e4;">
-                <span style="cursor: pointer;">+ Add Qualifications</span>
-                </div>
-                <hr>
-                <form>
-                <div class="modal fade" id="myModal" role="dialog">
-                  <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="container">
-                        <div class="row" style="background-color:#00dfee;width:150px;">
-                          <div class="card bg-danger text-white">
-                            <h4 class="modal-title"> Qualifications</h4>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="modal-body">
-                            <div class="col-md-6">
-                              <b>School Name</b>:
-                              <div class="input-group">
-                                <input id="msg" type="text" class="form-control text-line" name="msg" placeholder="enter your score">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="modal-body">
-                          <div class="col-md-3">
-                            <b>From</b>:
-                            <div class="input-group">
-                              <input id="msg" type="date" class="form-control text-line" name="msg4" placeholder="Start date">
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <b>To:</b>
-                            <div class="input-group">
-                              <input id="msg" type="date" class="form-control text-line" name="msg6" placeholder="End date" class="text-line">
-                            </div>
-                          </div>
-                        </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div id="test-name">
+                      <h3>SELECT COURSE (SELECT ONE):</h3>
+                      <br>
+                      <div id="test-list">
+                        <div><button id="default" class="tabLink" onclick="openScore(event, 'gre')">GRE SCORES</button></div>
+                        <div><button class="tabLink" onclick="openScore(event, 'gmat')">GMAT SCORES</button></div>
+                        <div><button class="tabLink" onclick="openScore(event, 'toefl')">TOEFL SCORES</button></div>
+                        <div><button class="tabLink" onclick="openScore(event, 'ielts')">IELTS SCORES</button></div>
+                        <div><button class="tabLink" onclick="openScore(event, 'lsat')">LSAT SCORES</button></div>
+                        <div><button class="tabLink" onclick="openScore(event, 'mcat')">MCAT SCORES</button></div>
+                        <div><button class="tabLink" onclick="openScore(event, 'sat')">SAT SCORES</button></div>
                       </div>
-                      <div class="row">
-                        <div class="modal-body">
-                          <div class="col-md-3">
-                            <b>Intermediate</b>:
-                            <div class="input-group">
-                              <input id="msg" type="text" class="form-control text-line" name="msg3" placeholder="college name">
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <b>Graduation</b>:
-                            <div class="input-group">
-                              <input id="msg" type="text" class="form-control text-line" name="msg2" placeholder="Course">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="modal-body">
-                          <div class="col-md-3">
-                            <b>Grades</b>:
-                            <div class="input-group">
-                              <input id="msg" type="text" class="form-control text-line" name="msg1" placeholder="enter your grade">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    </div> <!-- #test-name -->
                   </div>
-                  <div class="modal-footer bg-warning">
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
-                  </div>
-                </div>
-              </div>
-            </div>  <!-- .modal -->
-          </form>
-
-          <div class="conatiner">
-            <div class="row">
-              <div class="col-md-4">
-                <h2>Work Experience</h2>
-              </div>
-              <div class="col-md-4">
-                <label for="sel1">months:</label>
-                  <select class="form-control text-line" id="sel1" style="width:100px;height:30px;">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                  </select>
-                </div>
-              </div>
-            </div> <!-- .container -->
-            <hr>
-            <h2>Internships</h2>
-            <div class="addMoreItemContainer" data-toggle="modal" data-dismiss="modal" data-target="#myModal1" style="color:#1295c9">
-              <span style="cursor: pointer;">+ Add intern work</span>
-            </div>
-            <hr>
-
-            <form action="modal.php" method="post">
-              <div class="modal fade" id="myModal1" role="dialog">
-                <div class="modal-dialog">
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <div class="container">
-                        <div class="row">
-                          <h4 class="modal-title" >Internships</h4>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div id="test-score">
+                        <div id="gre" class="tabContent">
+                          <h3>Your Score in GRE</h3>
+                          <div class="score">
+                              <ul>
+                                <li>
+                                  <strong>Verbal Score:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Quantitative Score:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Analytical Writing:</strong>
+                                  <strong></strong>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="edit-score">
+                            <span class="fa fa-edit"></span>
+                          </div>
+                        </div> <!-- #gre -->
+                        <div id="gmat" class="tabContent">
+                          <h3>Your Score in GMAT</h3>
+                          <div class="score">
+                              <ul>
+                                <li>
+                                  <strong>Analytical writing assessment:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Integrated reasoning:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Quantitative:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Verbal:</strong>
+                                  <strong></strong>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="edit-score">
+                            <span class="fa fa-edit"></span>
+                          </div>
+                        </div> <!-- #gmat -->
+                        <div id="toefl" class="tabContent">
+                          <h3>Your Score in TOEFL</h3>
+                          <div class="score">
+                              <ul>
+                                <li>
+                                  <strong>Reading:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Listening:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Speaking:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Writing:</strong>
+                                  <strong></strong>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="edit-score">
+                            <span class="fa fa-edit"></span>
+                          </div>
+                        </div> <!-- #toefl -->
+                        <div id="ielts" class="tabContent">
+                          <h3>Your Score in IELTS</h3>
+                          <div class="score">
+                              <ul>
+                                <li>
+                                  <strong>Reading:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Listening:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Speaking:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Writing:</strong>
+                                  <strong></strong>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="edit-score">
+                            <span class="fa fa-edit"></span>
+                          </div>
+                        </div> <!-- #ielts -->
+                        <div id="lsat" class="tabContent">
+                          <h3>Your Score in LSAT</h3>
+                          <div class="score">
+                              <ul>
+                                <li>
+                                  <strong>Total Score:</strong>
+                                  <strong></strong>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="edit-score">
+                            <span class="fa fa-edit"></span>
+                          </div>
+                        </div> <!-- #lsat -->
+                        <div id="mcat" class="tabContent">
+                          <h3>Your Score in MCAT</h3>
+                          <div class="score">
+                              <ul>
+                                <li>
+                                  <strong>Total Score:</strong>
+                                  <strong></strong>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="edit-score">
+                            <span class="fa fa-edit"></span>
+                          </div>
+                        </div> <!-- #mcat -->
+                        <div id="sat" class="tabContent">
+                          <h3>Your Score in SAT</h3>
+                          <div class="score">
+                              <ul>
+                                <li>
+                                  <strong>Evidence-Based Reading and Writing Section:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>Math Section:</strong>
+                                  <strong></strong>
+                                </li>
+                                <li>
+                                  <strong>SAT Essay:</strong>
+                                  <strong></strong>
+                                </li>
+                              </ul>
+                          </div>
+                        </div> <!-- #sat -->
+                        <div id="edit-score">
+                          <span class="fa fa-edit"></span>
                         </div>
-                        <div class="row">
-                          <div class="modal-body">
-                            <div class="col-md-6">
-                              <b>Worked as</b>:
-                              <div class="input-group">
-                                <input id="msg" type="text" class="form-control text-line"  name="m1" placeholder="Front end developer">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="modal-body">
-                            <div class="col-md-3">
-                              <span>From:</span>
-                              <div class="input-group">
-                                <input id="msg" type="date" class="form-control text-line" name="m2" placeholder="Start date">
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <b>To:</b>
-                              <div class="input-group">
-                                <input id="msg" type="date" class="form-control text-line" name="m3" placeholder="End date">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="modal-body">
-                            <div class="col-md-3">
-                              <b>Organisation</b>:
-                              <div class="input-group">
-                                <input id="msg" type="text" class="form-control text-line" name="m4" placeholder="Company">
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <b>Location</b>:
-                              <div class="input-group">
-                                <input id="msg" type="text" class="form-control text-line" name="m5" placeholder="Hyderabad">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer bg-warning">
-                      <button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-
-            <h2>Projects done</h2>
-            <div class="addMoreItemContainer" data-toggle="modal" data-dismiss="modal" data-target="#myModal2" style="color:#33acff">
-              <span style="cursor: pointer;">+ Add project work</span>
-            </div>
-            <hr>
-
-          <form action="modal.php" method="post">
-            <div class="modal fade" id="myModal2" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <div class="container">
-                      <div class="row">
-                        <h4 class="modal-title">Project </h4>
-                      </div>
-                      <div class="row">
-                        <div class="modal-body">
-                          <div class="col-md-6">
-                            <b>Name:</b>
-                            <div class="input-group">
-                              <input id="msg" type="text" class="form-control text-line" name="m1" placeholder="Front end developer">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="modal-body">
-                          <div class="col-md-3">
-                            <b>Worked From:</b>
-                            <div class="input-group">
-                              <input id="msg" type="date" class="form-control text-line" name="m2" placeholder="Start date">
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <b>To:</b>
-                            <div class="input-group">
-                              <input id="msg" type="date" class="form-control text-line" name="m3" placeholder="End date">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="modal-body">
-                          <div class="col-md-3">
-                            <b>Project link:</b>
-                            <div class="input-group">
-                              <input id="msg" type="text" class="form-control text-line" name="m4" placeholder="Company">
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <b>Location:</b>
-                            <div class="input-group">
-                              <input id="msg" type="text" class="form-control text-line" name="m5" placeholder="Hyderabad">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer bg-warning">
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    </div> <!-- #test-score -->
                   </div>
                 </div>
-              </div>
-            </div>
-          </form>
-
-          <h2>Additional information</h2>
-          <a href="#" id="info" style="color:#33acff">+ Add information</a>
-          <div id="myDiv">
-            <br>
-            <form>
-              <textarea class="form-control text-line" placeholder="Please add your lines here" rows="5" id="comment">
-              </textarea>
-            </form>
-          </div> <!-- #myDic -->
-
+              </div> <!-- #test -->
+              <hr>
             </div> <!-- #profile-card -->
-          </div>
+          </div> <!-- #profile -->
           <div id="edit-documents" class="mycontent">
             <div id="document-card">
               <h3>Get your documents edited through the best professionals.</h3>
@@ -682,6 +576,35 @@
 
     document.getElementById("defaultOpen").click();
 
+    // FOR DISPLAYING OF DIFFERENT SCORE-CARDS
+    function openScore(event, cardName) {
+      var tabLink, tabContent;
+      tabContent = document.getElementsByClassName("tabContent");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+
+      tabLink = document.getElementsByClassName("tabLink");
+      for (i = 0; i < tabLink.length; i++) {
+        tabLink[i].className = tabLink[i].className.replace(" active", "");
+      }
+
+      document.getElementById(cardName).style.display = "block";
+      event.currentTarget.className += " active";
+    }
+
+    document.getElementById("default").click();
+
+  //
+
+  $('.tabContent').on('mouseover', function () {
+    $('#edit-score').css('display', 'block');
+  });
+
+  $('.tabContent').on('mouseout', function () {
+    $('#edit-score').css('display', 'none');
+  });
+
   // INCREASE HEIGHT OF INNERBANNER ON CLICK OF NAVIGATION BAR
   $('.navbar-toggle').on('click', function () {
 
@@ -706,30 +629,6 @@
   $('#university-detail').on('mouseout', function () {
     $('#edit').css("display", "none");
   });
-
-  // profile section
-  var button = document.getElementById("info");
-  var myDiv = document.getElementById("myDiv");
-
-  function show() {
-      myDiv.style.visibility = "visible";
-  }
-
-  function hide() {
-      myDiv.style.visibility = "hidden";
-  }
-
-  function toggle() {
-      if (myDiv.style.visibility === "hidden") {
-          show();
-      } else {
-          hide();
-      }
-  }
-
-  hide();
-
-  button.addEventListener("click", toggle, false);
 </script>
 </body>
 </html>

@@ -110,16 +110,52 @@
 	font-size: 2em;
 }
 
-input.text-line {
-    background-color: transparent;
-    color: #black;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #000 1px;
-    padding: 3px 10px;
+#test-list button {
+  width: 300px;
+  margin: 5px 0px;
+  padding: 5px;
+  font-size: 1.5em;
+  border: 2px solid #02b3e4;
+  color: #02b3e4;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#test-list button.active {
+  background-color: #02b3e4;
+  color: #fff;
+}
+
+#test-score {
+  position: relative;
+}
+
+#edit-score {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  font-size: 2em;
+  color: #02b3e4;
+  cursor: pointer;
+  display: none;
+}
+
+#test-score h3{
+  margin-left: 20px;
+}
+
+.score {
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.14);
+  margin: 10px;
+  padding: 10px;
+}
+
+.score ul {
+  margin-left: -20px;
+}
+
+.score li {
+  padding: 10px 0px;
 }
 
 #document-card{
@@ -236,20 +272,26 @@ textarea {
 	border: 1px solid #02b3e4;
 }
 
+.form-control {
+    display: block;
+    width: 200px;
+}
 
 
-#university select {
+select, input {
     padding: 1px;
     text-transform: uppercase;
     width: 200px;
+    height: 34px;
     font-family:Cursive;
     border-radius:5px;
     font-size:20px;
     cursor: pointer;
     background-color: #fff;
+    border: 1px solid #ccc;
 }
 
-#university select:hover {
+select:hover, input:hover {
     border: 1px solid #02b3e4;
 }
 
