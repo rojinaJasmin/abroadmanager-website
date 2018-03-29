@@ -5,7 +5,6 @@
 
 /*Section body*/
 #innerbanner {
-	background: linear-gradient(160deg,#02cbba,#aa7efd);
 	height: 1250px;
 }
 /*Section body*/
@@ -14,6 +13,8 @@
 
 #header-nav  {
 	padding-bottom: 10px;
+  background: linear-gradient(160deg,#02cbba,#aa7efd);
+  height: 140px;
 }
 
 #logo-img {
@@ -111,12 +112,12 @@
 
 /*Main Content*/
 #main-content {
-padding-top: 50px;
+  padding-top: 50px;
   text-align: center;
 }
 
 #main-content > h1 {
-font-family: brandon-grotesque,Helvetica,sans-serif;
+  font-family: brandon-grotesque,Helvetica,sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   color: #fff;
