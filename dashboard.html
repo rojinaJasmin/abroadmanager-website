@@ -515,14 +515,68 @@
                 </div>
             </div>
           </div>
-          <div id="#interest" class="mycontent">
-            <h1>.skadjvljdbv</h1>
+          <div id="interest" class="mycontent">
+            <div class="interest-card">
+              <h1>Hello John Doe,</h1>
+              <hr>
+              <h3>You have Added these groups to your Interests</h3>
+            </div>
+          <div class="interest-card">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
           </div>
           <div id="university" class="mycontent">
             <h1>Manage all your Dream Universities here</h1>
             <hr>
             <div style="text-align: center;">
-              <button onclick="university();"><span class="fa fa-plus"></span> &nbsp; ADD</button>
+              <button data-toggle="modal" data-target="#universityModal" ><span class="fa fa-plus"></span> &nbsp; ADD</button>
+            </div>
+            <div class="modal fade" id="universityModal" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Edit/Add the credentials</h3>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="uni-detail">
+                        <label for="sel1">Applied on: &nbsp;</label>
+                        <input type="date" name="">
+                      </div>
+                      <hr>
+                      <div class="uni-detail">
+                        <label for="sel1">Review started on: &nbsp;</label>
+                        <input type="date" name="date">
+                      </div>
+                      <hr>
+                      <div class="uni-detail">
+                        <label for="sel1">Decision reviewed on: &nbsp;</label>
+                        <input type="date" name="date">
+                      </div>
+                      <hr>
+                      <div class="uni-detail">
+                        <label for="sel1">Current Staus: &nbsp;</label>
+                        <select class="form-control" id="sel1">
+                          <option>Pending</option>
+                          <option>Admit</option>
+                          <option>Reject</option>
+                        </select>
+                      </div>
+                      <hr>
+                    </form>
+                  </div>
+                  <div class="modal-footer bg-warning" style="text-align: center;">
+                    <button type="button" data-dismiss="modal" onclick="university()">SAVE</button>
+                  </div>
+                </div>
+              </div>
             </div>
             <hr>
             <div id="university-detail">
