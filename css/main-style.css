@@ -5,6 +5,7 @@
 
 /*Section body*/
 #innerbanner {
+	background: linear-gradient(160deg,#02cbba,#aa7efd);
 	height: 1250px;
 }
 /*Section body*/
@@ -13,8 +14,6 @@
 
 #header-nav  {
 	padding-bottom: 10px;
-  background: linear-gradient(160deg,#02cbba,#aa7efd);
-  height: 140px;
 }
 
 #logo-img {
