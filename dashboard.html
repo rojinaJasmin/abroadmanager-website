@@ -146,7 +146,7 @@
               <h1>MANAGE YOUR PROFILES HERE</h1>
               <hr>
               <div id="test">
-                <h3>Test Scores:</h3>
+                <h2>Test Scores:</h2>
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div id="test-name">
@@ -207,27 +207,31 @@
                               </ul>
                           </div>
                           <div class="edit-score">
-                            <span class="fa fa-edit" data-toggle="modal" data-target="#myModal"></span>
+                            <span class="fa fa-edit" data-toggle="modal" data-target="#greModal"></span>
                           </div>
+                          <!-- GRE-SCORE-MODAL SECTION-->
                           <div>
-                            <div class="modal fade" id="myModal" role="dialog">
-                              <div class="modal-dialog modal-sm">
+                            <div class="modal fade" id="greModal" role="dialog">
+                              <div class="modal-dialog modal-md">
                                 <div class="modal-content">
                                   <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Current Status</h4>
+                                    <h4 class="modal-title">GRE SCORES</h4>
                                   </div>
                                   <div class="modal-body">
-                                    <div class="form-group">
-
-                                    </div>
+                                    <label>Verbal Score:</label><br>
+                                    <input type="number" name="gre-verbal" min="130" max="170" placeholder="130-170"><br><br>
+                                    <label>Quantitative Score:</label><br>
+                                    <input type="number" name="gre-quantitative" min="130" max="170" placeholder="130-170"><br><br>
+                                    <label>Analytical Writing:</label><br>
+                                    <input type="number" name="ger-analytical" min="0" max="6" placeholder="0-6">
                                   </div>
-                                  <div class="modal-footer bg-warning">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">SAVE</button>
+                                  <div class="modal-footer" style="text-align: left;">
+                                    <button type="button" data-dismiss="modal">SAVE</button>
                                   </div>
-                                </div>
+                                </div> <!-- .modal-content -->
                               </div>
-                            </div>
+                            </div> <!-- #greModal -->
                           </div>
                         </div> <!-- #gre -->
                         <div id="gmat" class="tabContent">
@@ -253,7 +257,33 @@
                               </ul>
                           </div>
                           <div class="edit-score">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit" data-toggle="modal" data-target="#gmatModal"></span>
+                          </div>
+                          <!-- GMAT-SCORE-MODAL SECTION-->
+                          <div>
+                            <div class="modal fade" id="gmatModal" role="dialog">
+                              <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">GRE SCORES</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label>Analytical writing assessment:</label><br>
+                                    <input type="number" name="gmat-analytical" min="0" max="6" placeholder="0-6"><br><br>
+                                    <label>Integrated reasoning:</label><br>
+                                    <input type="number" name="gmat-integrated" min="1" max="8" placeholder="1-8"><br><br>
+                                    <label>Quantitative:</label><br>
+                                    <input type="number" name="gmat-quantitative" min="0" max="60" placeholder="0-60"><br><br>
+                                    <label>Verbal:</label><br>
+                                    <input type="number" name="gmat-verbal" min="0" max="60" placeholder="0-60">
+                                  </div>
+                                  <div class="modal-footer" style="text-align: left;">
+                                    <button type="button" data-dismiss="modal">SAVE</button>
+                                  </div>
+                                </div> <!-- .modal-content -->
+                              </div>
+                            </div> <!-- #gmatModal -->
                           </div>
                         </div> <!-- #gmat -->
                         <div id="toefl" class="tabContent">
@@ -279,7 +309,33 @@
                               </ul>
                           </div>
                           <div class="edit-score">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit" data-toggle="modal" data-target="#toeflModal"></span>
+                          </div>
+                          <!-- TOEFL-SCORE-MODAL SECTION-->
+                          <div>
+                            <div class="modal fade" id="toeflModal" role="dialog">
+                              <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">TOEFL SCORES</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label>Reading:</label><br>
+                                    <input type="number" name="toefl-reading" max="30" placeholder="0-30"><br><br>
+                                    <label>Listening:</label><br>
+                                    <input type="number" name="toefl-listening" max="30" placeholder="0-30"><br><br>
+                                    <label>Speaking:</label><br>
+                                    <input type="number" name="toefl-speaking" max="30" placeholder="0-30"><br><br>
+                                    <label>Writing:</label><br>
+                                    <input type="number" name="toefl-writing" max="30" placeholder="0-30">
+                                  </div>
+                                  <div class="modal-footer" style="text-align: left;">
+                                    <button type="button" data-dismiss="modal">SAVE</button>
+                                  </div>
+                                </div> <!-- .modal-content -->
+                              </div>
+                            </div> <!-- #toeflModal -->
                           </div>
                         </div> <!-- #toefl -->
                         <div id="ielts" class="tabContent">
@@ -305,7 +361,33 @@
                               </ul>
                           </div>
                           <div class="edit-score">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit" data-toggle="modal" data-target="#gmatModal"></span>
+                          </div>
+                          <!-- IELTS-SCORE-MODAL SECTION-->
+                          <div>
+                            <div class="modal fade" id="ieltsModal" role="dialog">
+                              <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">IELTS SCORES</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label>Reading:</label><br>
+                                    <input type="number" name="ielts-reading" min="1" max="9" placeholder="1-9"><br><br>
+                                    <label>Listening:</label><br>
+                                    <input type="number" name="ielts-listening" min="1" max="9" placeholder="1-9"><br><br>
+                                    <label>Speaking:</label><br>
+                                    <input type="number" name="ielts-speaking" min="1" max="9" placeholder="1-9"><br><br>
+                                    <label>Writing:</label><br>
+                                    <input type="number" name="ielts-writing" min="1" max="9" placeholder="1-9">
+                                  </div>
+                                  <div class="modal-footer" style="text-align: left;">
+                                    <button type="button" data-dismiss="modal">SAVE</button>
+                                  </div>
+                                </div> <!-- .modal-content -->
+                              </div>
+                            </div> <!-- #ieltsModal -->
                           </div>
                         </div> <!-- #ielts -->
                         <div id="lsat" class="tabContent">
@@ -319,7 +401,27 @@
                               </ul>
                           </div>
                           <div class="edit-score">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit" data-toggle="modal" data-target="#lsatModal"></span>
+                          </div>
+                          <!-- LSAT-SCORE-MODAL SECTION-->
+                          <div>
+                            <div class="modal fade" id="lsatModal" role="dialog">
+                              <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">LSAT SCORES</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label>Total Score:</label><br>
+                                    <input type="number" name="lsat-score" min="120" max="180" placeholder="120-180">
+                                  </div>
+                                  <div class="modal-footer" style="text-align: left;">
+                                    <button type="button" data-dismiss="modal">SAVE</button>
+                                  </div>
+                                </div> <!-- .modal-content -->
+                              </div>
+                            </div> <!-- #lsatModal -->
                           </div>
                         </div> <!-- #lsat -->
                         <div id="mcat" class="tabContent">
@@ -333,7 +435,27 @@
                               </ul>
                           </div>
                           <div class="edit-score">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit" data-toggle="modal" data-target="#mcatModal"></span>
+                          </div>
+                          <!-- MCAT-SCORE-MODAL SECTION-->
+                          <div>
+                            <div class="modal fade" id="mcatModal" role="dialog">
+                              <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">MCAT SCORES</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label>Total Score:</label><br>
+                                    <input type="number" name="mcat-score" min="472" max="528" placeholder="472-528">
+                                  </div>
+                                  <div class="modal-footer" style="text-align: left;">
+                                    <button type="button" data-dismiss="modal">SAVE</button>
+                                  </div>
+                                </div> <!-- .modal-content -->
+                              </div>
+                            </div> <!-- #lsatModal -->
                           </div>
                         </div> <!-- #mcat -->
                         <div id="sat" class="tabContent">
@@ -355,7 +477,31 @@
                               </ul>
                           </div>
                           <div class="edit-score">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit" data-toggle="modal" data-target="#satModal"></span>
+                          </div>
+                          <!-- SAT-SCORE-MODAL SECTION-->
+                          <div>
+                            <div class="modal fade" id="satModal" role="dialog">
+                              <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">SAT SCORES</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label>Evidence-Based Reading and Writing Section:</label><br>
+                                    <input type="number" name="sat-read-write" min="200" max="800" placeholder="200-800"><br><br>
+                                    <label>Math Section:</label><br>
+                                    <input type="number" name="sat-math" min="200" max="800" placeholder="200-800" placeholder="200-800"><br><br>
+                                    <label>SAT Essay:</label><br>
+                                    <input type="number" name="sat-essay" min="2" max="8" placeholder="2-8">
+                                  </div>
+                                  <div class="modal-footer" style="text-align: left;">
+                                    <button type="button" data-dismiss="modal">SAVE</button>
+                                  </div>
+                                </div> <!-- .modal-content -->
+                              </div>
+                            </div> <!-- #gmatModal -->
                           </div>
                         </div> <!-- #sat -->
                     </div> <!-- #test-score -->
@@ -441,7 +587,8 @@
                           <h4 class="modal-title">Work Experience</h4>
                         </div>
                         <div class="modal-body">
-                          <label></label>
+                          <label>Total months:</label><br>
+                          <input type="number" name="work-month">
                         </div>
                         <div class="modal-footer" style="text-align: left;">
                           <button type="button" data-dismiss="modal">SAVE</button>
