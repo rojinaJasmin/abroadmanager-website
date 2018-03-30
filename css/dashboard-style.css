@@ -191,7 +191,7 @@
   display: none;
 }
 
-#academic-detail, #work-detail {
+#academic-detail, #work-detail, #internship-detail, #research-detail, #more-detail {
   margin: 10px;
 }
 
