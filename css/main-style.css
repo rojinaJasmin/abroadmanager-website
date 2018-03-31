@@ -8,7 +8,7 @@
 	/* background: linear-gradient(160deg,#02cbba,#aa7efd); */
 	height: 1250px;
 	background: url('../images/inner-img5.jpg') no-repeat;
-	background-size: 100% 80%;
+	background-size: 100% 1100px;
 }
 /*Section body*/
 
@@ -655,6 +655,10 @@ footer {
 
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
+
+	#innerbanner {
+		background-size: 100% 600px;
+	}
 
   #nav-list button {
   	margin: 0px;
