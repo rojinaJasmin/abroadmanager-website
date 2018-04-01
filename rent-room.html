@@ -66,7 +66,7 @@
                     <a href="roommate-search.html">Room-mate Finder</a>
                   </li>
                   <li>
-                    <a href="rent.html">Rent a Room</a>
+                    <a href="#">Rent a Room</a>
                   </li>
                   <li>
                     <a href="#" id="notification">Notifications</a>
@@ -85,7 +85,111 @@
 
   <div id="main-section">
     <div class="container">
-
+      <div id="main-heading">
+        <h1>You are posting a room near University Lorem Ipsum</h1>
+      </div>
+      <hr>
+      <div id="main-card">
+        <h3>Fill out the details of your room in a very easy format:</h3>
+        <hr>
+        <div id="steps">
+          <span>
+            <strong>Step:</strong>
+            <strong id="step-count">1</strong>
+          </span>
+          <div id="progress bar">
+            <div class="progress">
+              <div id="progress" class="progress-bar progress-bar-striped active" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+            </div>
+          </div>
+        </div>
+        <div id="card1" class="form-card">
+          <h4>1. Choose the right Location:</h4>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div id="card2" class="form-card">
+          <h4>2. Upload room Images:</h4>
+          <input type="file" name="roomImages">
+        </div>
+        <div id="card3" class="form-card">
+          <h4>3. Rent Price:</h4>
+          <select name="currency">
+            <option>No Selection</option>
+            <option>Rupee</option>
+            <option>Doller</option>
+            <option>Currency</option>
+          </select>
+          <input type="number" name="price">
+          <span> / month</span>
+        </div>
+        <div id="card4" class="form-card">
+          <h4>4. One line to describe your awesome room:</h4>
+          <input type="text" name="tagline">
+        </div>
+        <div id="card5" class="form-card">
+          <h4>5. Type of room:</h4>
+          <label>
+            <input type="radio" name="roomtype">
+            Studio Apartment
+          </label><br>
+          <label>
+            <input type="radio" name="roomtype">
+            1 BHK
+          </label><br>
+          <label>
+            <input type="radio" name="roomtype">
+            2 BHK
+          </label><br>
+          <label>
+            <input type="radio" name="roomtype">
+            3 BHK
+          </label><br>
+          <label>
+            <input type="radio" name="roomtype">
+            <input type="text" name="owntype" placeholder="Enter your own type">
+          </label>
+        </div>
+        <div id="card6" class="form-card">
+          <h4>.6 Full Description of Room (write about all you to offer):</h4>
+          <textarea></textarea>
+        </div>
+        <div id="card7" class="form-card">
+          <h4>7. Room Rules:</h4>
+          <ul>
+          <li><input type="text" name="roomrule"><br></li>
+          <li><input type="text" name="roomrule"><br></li>
+          <li><input type="text" name="roomrule"><br></li>
+          <li><input type="text" name="roomrule"><br></li>
+          <li><input type="text" name="roomrule"><br></li>
+          </ul>
+        </div>
+        <div id="card8" class="form-card">
+          <h4>8. How many people are living currently in this room:</h4>
+          <input type="number" name="roomstrength">
+          <label>Boys</label><br>
+          <input type="number" name="roomstrength">
+          <label>Girls</label>
+        </div>
+        <div id="toggle-button">
+          <div class="row">
+            <div class="col-lg-6">
+              <div id="prev" class="pull-left toggle">
+                <button id="prev-btn" onclick="prevCard()">Prev</button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div id="next" class="pull-right toggle">
+                <button id="next-btn" onclick="nextCard()">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div> <!-- .container -->
   </div>
 
@@ -152,6 +256,29 @@
     }
 
   });
+
+  // TO TOGGLE BETEEN DIFFERENT QUESTIONS
+  var progress = document.getElementById('progress')
+  var card = document.getElementsByClassName('form-card');
+  var i = 0;
+
+  function prevCard() {
+    if (i >= 1) {
+      card[i].style.display = "none";
+      i--;
+      card[i].style.display = "block";
+    }
+  }
+
+  function nextCard() {
+    if (i < 3) {
+      card[i].style.display = "none";
+      i++;
+      card[i].style.display = "block";
+    }
+  }
+
+
   </script>
 </body>
 </html>
