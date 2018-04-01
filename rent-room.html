@@ -124,14 +124,14 @@
             <div id="card3" class="cards">
             <h4>3. Rent Price:</h4>
             <select name="currency">
-              <option>No Selection</option>
+              <option>Currency</option>
               <option>Indian rupee</option>
               <option>Doller</option>
               <option>Euro</option>
               <option>Pound</option>
               <option>Yen</option>
             </select>
-            <input type="number" name="price">
+            <input type="number" name="price" min="0">
             <span> / month</span>
           </div>
         </div>
@@ -179,9 +179,9 @@
           </div>
           <div id="card8" class="cards">
             <h4>8. How many people are living currently in this room:</h4>
-            <input type="number" name="roomstrength">
+            <input type="number" name="roomstrength" min="0">
             <label>Boys</label><br>
-            <input type="number" name="roomstrength">
+            <input type="number" name="roomstrength" min="0">
             <label>Girls</label>
           </div>
         </div>
