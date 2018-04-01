@@ -12,11 +12,39 @@ body {
 
 .progress-bar {
   background-color: #02b3e4;
-  width:100%;
+  width:25%;
 }
 
 .form-card {
   display: none;
+}
+
+.form-card select {
+  background-color: #fff;
+}
+
+.form-card input[type="text"] {
+  margin-top: 5px;
+  width: 90%;
+  border: #fff;
+}
+
+.form-card input[type="number"] {
+  margin-top: 5px;
+  width: 50px;
+}
+
+.form-card textarea {
+  width: 100%;
+  height: 150px;
+}
+
+.form-card ul {
+  margin-left: -20px;
+}
+
+#card7 input[type="text"] {
+  border-radius:
 }
 
 #defaultcard {

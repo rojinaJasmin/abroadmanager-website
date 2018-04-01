@@ -125,9 +125,11 @@
             <h4>3. Rent Price:</h4>
             <select name="currency">
               <option>No Selection</option>
-              <option>Rupee</option>
+              <option>Indian rupee</option>
               <option>Doller</option>
-              <option>Currency</option>
+              <option>Euro</option>
+              <option>Pound</option>
+              <option>Yen</option>
             </select>
             <input type="number" name="price">
             <span> / month</span>
@@ -162,7 +164,7 @@
             </label>
           </div>
           <div id="card6" class="cards">
-            <h4>.6 Full Description of Room (write about all you to offer):</h4>
+            <h4>6. Full Description of Room (write about all you to offer):</h4>
             <textarea></textarea>
           </div>
           <div id="card7" class="cards">
@@ -272,6 +274,9 @@
   // TO TOGGLE BETEEN DIFFERENT QUESTIONS
   var progress = document.getElementById('progress')
   var card = document.getElementsByClassName('form-card');
+  var save = document.getElementById('save');
+  var step = document.getElementById('step-count');
+  var count = 25;
   var i = 0;
 
   function prevCard() {
@@ -279,15 +284,21 @@
       card[i].style.display = "none";
       i--;
       card[i].style.display = "block";
+      step.innerHTML = i+1;
+      count = count - 25;
+      progress.style.width = count + "%";
     }
+    save.style.display = "none";
   }
 
   function nextCard() {
-    var save = document.getElementById("save");
     if (i < 3) {
       card[i].style.display = "none";
       i++;
       card[i].style.display = "block";
+      step.innerHTML = i+1;
+      count = count + 25;
+      progress.style.width = count + "%";
     }
     if (i == 3) {
       save.style.display = "block";
