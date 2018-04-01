@@ -5,10 +5,8 @@
 
 /*Section body*/
 #innerbanner {
-	/* background: linear-gradient(160deg,#02cbba,#aa7efd); */
+	background: linear-gradient(160deg,#02cbba,#aa7efd);
 	height: 1250px;
-	background: url('../images/inner-img5.jpg') no-repeat;
-	background-size: 100% 1100px;
 }
 /*Section body*/
 
