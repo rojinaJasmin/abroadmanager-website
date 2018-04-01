@@ -103,78 +103,87 @@
             </div>
           </div>
         </div>
-        <div id="card1" class="form-card">
-          <h4>1. Choose the right Location:</h4>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+        <div class="form-card" id="defaultcard">
+          <div id="card1" class="cards">
+            <h4>1. Choose the right Location:</h4>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
-        <div id="card2" class="form-card">
-          <h4>2. Upload room Images:</h4>
-          <input type="file" name="roomImages">
+        <div class="form-card">
+          <div id="card2" class="cards">
+            <h4>2. Upload room Images:</h4>
+            <input type="file" name="roomImages">
+          </div>
         </div>
-        <div id="card3" class="form-card">
-          <h4>3. Rent Price:</h4>
-          <select name="currency">
-            <option>No Selection</option>
-            <option>Rupee</option>
-            <option>Doller</option>
-            <option>Currency</option>
-          </select>
-          <input type="number" name="price">
-          <span> / month</span>
+        <div class="form-card">
+            <div id="card3" class="cards">
+            <h4>3. Rent Price:</h4>
+            <select name="currency">
+              <option>No Selection</option>
+              <option>Rupee</option>
+              <option>Doller</option>
+              <option>Currency</option>
+            </select>
+            <input type="number" name="price">
+            <span> / month</span>
+          </div>
         </div>
-        <div id="card4" class="form-card">
-          <h4>4. One line to describe your awesome room:</h4>
-          <input type="text" name="tagline">
+        <div class="form-card">
+          <div id="card4" class="cards">
+            <h4>4. One line to describe your awesome room:</h4>
+            <input type="text" name="tagline">
+          </div>
+          <div id="card5" class="cards">
+            <h4>5. Type of room:</h4>
+            <label>
+              <input type="radio" name="roomtype">
+              Studio Apartment
+            </label><br>
+            <label>
+              <input type="radio" name="roomtype">
+              1 BHK
+            </label><br>
+            <label>
+              <input type="radio" name="roomtype">
+              2 BHK
+            </label><br>
+            <label>
+              <input type="radio" name="roomtype">
+              3 BHK
+            </label><br>
+            <label>
+              <input type="radio" name="roomtype">
+              <input type="text" name="owntype" placeholder="Enter your own type">
+            </label>
+          </div>
+          <div id="card6" class="cards">
+            <h4>.6 Full Description of Room (write about all you to offer):</h4>
+            <textarea></textarea>
+          </div>
+          <div id="card7" class="cards">
+            <h4>7. Room Rules:</h4>
+            <ul>
+            <li><input type="text" name="roomrule"><br></li>
+            <li><input type="text" name="roomrule"><br></li>
+            <li><input type="text" name="roomrule"><br></li>
+            <li><input type="text" name="roomrule"><br></li>
+            <li><input type="text" name="roomrule"><br></li>
+            </ul>
+          </div>
+          <div id="card8" class="cards">
+            <h4>8. How many people are living currently in this room:</h4>
+            <input type="number" name="roomstrength">
+            <label>Boys</label><br>
+            <input type="number" name="roomstrength">
+            <label>Girls</label>
+          </div>
         </div>
-        <div id="card5" class="form-card">
-          <h4>5. Type of room:</h4>
-          <label>
-            <input type="radio" name="roomtype">
-            Studio Apartment
-          </label><br>
-          <label>
-            <input type="radio" name="roomtype">
-            1 BHK
-          </label><br>
-          <label>
-            <input type="radio" name="roomtype">
-            2 BHK
-          </label><br>
-          <label>
-            <input type="radio" name="roomtype">
-            3 BHK
-          </label><br>
-          <label>
-            <input type="radio" name="roomtype">
-            <input type="text" name="owntype" placeholder="Enter your own type">
-          </label>
-        </div>
-        <div id="card6" class="form-card">
-          <h4>.6 Full Description of Room (write about all you to offer):</h4>
-          <textarea></textarea>
-        </div>
-        <div id="card7" class="form-card">
-          <h4>7. Room Rules:</h4>
-          <ul>
-          <li><input type="text" name="roomrule"><br></li>
-          <li><input type="text" name="roomrule"><br></li>
-          <li><input type="text" name="roomrule"><br></li>
-          <li><input type="text" name="roomrule"><br></li>
-          <li><input type="text" name="roomrule"><br></li>
-          </ul>
-        </div>
-        <div id="card8" class="form-card">
-          <h4>8. How many people are living currently in this room:</h4>
-          <input type="number" name="roomstrength">
-          <label>Boys</label><br>
-          <input type="number" name="roomstrength">
-          <label>Girls</label>
-        </div>
+
         <div id="toggle-button">
           <div class="row">
             <div class="col-lg-6">
@@ -188,6 +197,9 @@
               </div>
             </div>
           </div>
+        </div> <!-- #toggle-button -->
+        <div id="save">
+          <input type="submit" name="">
         </div>
       </div>
     </div> <!-- .container -->
@@ -271,13 +283,16 @@
   }
 
   function nextCard() {
+    var save = document.getElementById("save");
     if (i < 3) {
       card[i].style.display = "none";
       i++;
       card[i].style.display = "block";
     }
+    if (i == 3) {
+      save.style.display = "block";
+    }
   }
-
 
   </script>
 </body>
