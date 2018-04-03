@@ -28,10 +28,13 @@
 
 #search-icon {
   color: #02b3e4;
+  margin-top: 5px;
 }
 
 #search-box input {
-  width: 104%;
+  width: 120%;
+  margin-left: -5%;
+  margin-top: 5px;
   padding: 0px;
   border-radius: 5px;
   border: 0;
@@ -55,14 +58,21 @@
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
-
+  #uni-box {
+    margin: 50px;
+  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+  #uni-box {
+    margin: 50px;
+  }
 
+  #uni-box h2 {
+    margin-right: 10px;
+  }
 }
 
 
@@ -73,6 +83,18 @@
     height: 100px;
   }
 
+  #uni-box {
+    margin: 50px;
+  }
+
+  #uni-box h2 {
+    margin-right: 10px;
+  }
+
+  #search-box input {
+    font-size: 0.8em;
+    width: 150%;
+  }
 }
 
 /********** Large Mobile devices only (ON SCREEN ROTATION) **********/
@@ -83,24 +105,26 @@
 
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
-  #roommate-box {
-    margin: 50px;
-    font-size: 3.5vw;
+
+  #uni-box {
+    margin: 10px;
+    font-size: 1.2em;
   }
 
+  #uni-box h2 {
+    margin-right: 10px;
+  }
 
+  #search-icon {
+    margin-top: 5px;
+  }
 
   #search-box input {
     width: 150%;
+    margin-top: 5px;
+    height: 25px;
     margin-left: -15px;
-  }
-
-  #roommate-box h1 {
-    margin-right: 20px;
-  }
-
-  #main-section {
-  height: 400px;
+    font-size: 3.5vw;
   }
 
 }
