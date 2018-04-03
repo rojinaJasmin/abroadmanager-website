@@ -98,7 +98,8 @@
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
 	#roommate-box {
-		margin: 4vw;
+    margin: 10px;
+    font-size: 5vw;
 	}
 
 	#search-box input {
@@ -107,7 +108,7 @@
 	}
 
 	#roommate-box h1 {
-		margin-right: 20px;
+		margin-right: 5px;
 	}
 
   #post-room {
