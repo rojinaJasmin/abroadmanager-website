@@ -23,9 +23,9 @@ body {
   background-color: #fff;
 }
 
-.form-card input[type="text"] {
+.form-card input[type="text"], .form-card input[type="tel"] {
   margin-top: 5px;
-  width: 90%;
+  width: 80%;
   border: #fff;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 #card7 input[type="text"] {
-  border-radius:
+  border-radius: 5px;
 }
 
 #defaultcard {

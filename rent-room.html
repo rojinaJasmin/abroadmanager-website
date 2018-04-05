@@ -185,6 +185,35 @@
             <label>Girls</label>
           </div>
         </div>
+        <div class="form-card">
+          <div id="card3" class="cards">
+          <h4>5. Final Step:</h4>
+          <label>Name:</label>
+          <input type="text" name="name" placeholder="John Doe" style="width: 90%;"><br>
+          <label>Contact Info:</label>
+          <input type="tel" name="contact" placeholder="+91 97xxxxxx20"><br>
+          <label>Address Line 1:</label>
+          <input type="text" name="" placeholder="Street address, P.O. box, Company Name"><br>
+          <label>Address Line 2:</label>
+          <input type="text" name="" placeholder="Apartment, suite, unit, building, floor, etc"><br>
+          <label>City:</label>
+          <input type="text" name="" placeholder="Vishakapatanam" style="width: 90%;"><br>
+          <label>State/ Province/ Region:</label>
+          <input type="text" name="" placeholder="Maharashtra" style="width: 70%;"><br>
+          <label>ZIP/ Postal Code:</label>
+          <input type="number" name="" placeholder="822102" style="width: 20%; border: #fff;"><br>
+          <label>Country:</label>
+          <select>
+            <option>India</option>
+            <option>United States</option>
+            <option>Russia</option>
+            <option>England</option>
+            <option>Britan</option>
+            <option>Japan</option>
+            <option>China</option>
+          </select>
+          </div>
+        </div>
 
         <div id="toggle-button">
           <div class="row">
@@ -276,7 +305,7 @@
   var card = document.getElementsByClassName('form-card');
   var save = document.getElementById('save');
   var step = document.getElementById('step-count');
-  var count = 25;
+  var count = 20;
   var i = 0;
 
   function prevCard() {
@@ -285,22 +314,22 @@
       i--;
       card[i].style.display = "block";
       step.innerHTML = i+1;
-      count = count - 25;
+      count = count - 20;
       progress.style.width = count + "%";
     }
     save.style.display = "none";
   }
 
   function nextCard() {
-    if (i < 3) {
+    if (i < 4) {
       card[i].style.display = "none";
       i++;
       card[i].style.display = "block";
       step.innerHTML = i+1;
-      count = count + 25;
+      count = count + 20;
       progress.style.width = count + "%";
     }
-    if (i == 3) {
+    if (i == 4) {
       save.style.display = "block";
     }
   }
