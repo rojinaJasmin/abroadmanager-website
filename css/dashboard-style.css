@@ -1,11 +1,9 @@
-
 #innerbanner {
 	height: 140px;
 }
 
 #main-dashboard {
 	position: relative;
-	top: 0;
 	background-color: #eee;
 	padding-bottom: 20px;
 }
