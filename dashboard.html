@@ -1038,6 +1038,32 @@
   $('#university-detail').on('mouseout', function () {
     $('#edit').css("display", "none");
   });
+
+  // STICKY DASHBOARD ON SCROLLING
+  $(window).on('scroll', function () {
+    // var scrollTop = $(window).scrollTop(),
+    //     elementOffSet = $('#left-panel').offset().top,
+    //     distance = (elementOffSet - scrollTop);
+
+    // if (distance < 0) {
+    //   $('#left-panel').addClass('sticky');
+    // }
+    // if (distance > 0) {
+    //   $('#left-panel').removeClass('sticky');
+    // }
+    if ($(document).scrollTop() > 145) {
+      $('#left-panel').addClass('sticky');
+      $('#left-panel').removeClass('absolute');
+    }
+    else {
+      $('#left-panel').removeClass('sticky');
+    }
+    if ($(document).scrollTop() > 800) {
+      $('#left-panel').removeClass('sticky');
+      $('#left-panel').addClass('absolute');
+    }
+  });
+
 </script>
 </body>
 </html>
