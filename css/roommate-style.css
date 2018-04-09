@@ -4,6 +4,7 @@
 
 #main-section {
 	background-color: #eee;
+	text-align: center;
 }
 
 
@@ -29,10 +30,12 @@
 }
 
 #search-box input {
-	width: 104%;
-	padding: 0px;
-	border-radius: 5px;
-	border: 0;
+  width: 120%;
+  margin-left: -5%;
+  margin-top: 5px;
+  padding: 0px;
+  border-radius: 5px;
+  border: 0;
 }
 
 #search-button button {

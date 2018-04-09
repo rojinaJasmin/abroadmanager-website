@@ -1,6 +1,4 @@
-body {
-  text-transform: uppercase
-}
+
 
 #innerbanner {
   height: 140px;
@@ -8,13 +6,14 @@ body {
 
 #main-section {
   background-color: #eee;
+  text-align: center;
 }
 
 #main-heading h1{
   margin: 100px;
   line-height: 1.5;
   font-weight: 700 !important;
-  font-size: 2.3em;
+  font-size: 2.5em;
 }
 
 #rent-box  {
@@ -24,7 +23,7 @@ body {
 
 #rent-box h2 {
   margin-right: 50px;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.5;
   font-weight: 700 !important;
 }
@@ -41,7 +40,9 @@ body {
 }
 
 #search-box input {
-  width: 104%;
+  width: 120%;
+  margin-left: -5%;
+  margin-top: 5px;
   padding: 0px;
   border-radius: 5px;
   border: 0;
