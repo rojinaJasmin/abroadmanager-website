@@ -25,14 +25,14 @@
 <body>
 
 <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#66ccff; left:47%; margin-top:50px;">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
   <div class="overlay-content">
     <a href="dashboard.html">Dashboard</a>
     <a href="gd.html">General Discussions</a>
 	<a href="ud.html">University Specific Discussions</a>
     <a href="roommate-search.html">Rommate Finder</a>
     <a href="rent.html">Rent A Room</a>
-	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:182px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">Account Login</button></a>
+	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
   </div>
 </div>
 
@@ -52,7 +52,7 @@
                   </a>
                 </div>
 
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="background-color:white;">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -83,7 +83,7 @@
                   </li>
 				
                   <li>
-                  	<a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-30px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
+                  	<a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
                   	</a>
                   </li>
                 </ul>
@@ -256,22 +256,10 @@
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
-
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
  
-	//function to change the color of navbar while scrolling 
-$(window).on('scroll', function(){
-    var scroll = $(window).scrollTop();
-    if (scroll >100) {
-	  $("#header-nav").css("background-color" , "#ffffff");
-	  }
-	else if(scroll <= 0){
-	  $("#header-nav").css("background-color" , "transparent");  	
-	}
-  });
-
   //function to change the color of navbar while scrolling 
   $(window).on('scroll', function(){
     var scroll = $(window).scrollTop();
@@ -280,18 +268,18 @@ $(window).on('scroll', function(){
     $("#header-nav h1").css("color" , "#02b3e4");
 	  $("#header-nav a").css("color" , "#02b3e4");
     $("#header-nav button").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#02b3e4");   
+    $("#header-nav button").css("background-color" , "#02b3e4");  
+$("#navbar-collapse-1").css("background-color" , "white")	;
     }
-
 	else if(scroll <= 0){
 	  $("#header-nav").css("background-color" , "transparent"); 
     $("#header-nav h1").css("color" , "#f1f1f1");  	
     $("#header-nav a").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#FF8DB2");
+    $("#header-nav button").css("background-color" , "#02b3e4");
     $("#header-nav button").css("color" , "#f1f1f1");
+	$("#navbar-collapse-1").css("background-color" , "transparent");
   }
   });
-
   </script>
 </body>
 </html>
