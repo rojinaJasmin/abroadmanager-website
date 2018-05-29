@@ -56,7 +56,9 @@
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   
-
+#uni-box{
+	margin-top:-100px;
+}
 }
 
 /********** Medium devices only **********/
