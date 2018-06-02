@@ -1,33 +1,81 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109559667-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'UA-109559667-1');
+        gtag('config', 'UA-109559667-1');
     </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <title>Abroad Manager | Form For Renting Room</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="images" href="images/logo_favi.ico">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/main-style.css">
-  <link rel="stylesheet" href="css/rent-room-style.css">
-  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <title>Abroad Manager | Form For Renting Room</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images" href="images/logo_favi.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/rent-room-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+<script>
 
+        $(document).ready(function () {
+            $('#next-btn').click(function () {
+                var color1 = $('#defaultcard').css('display');
+                var color2 = $('#form-card-two').css('display');
+                var color3 = $('#form-card-three').css('display');
+                var color4 = $('#form-card-four').css('display');
+                var color5 = $('#form-card-five').css('display');
+                if (color1 == 'block') { // =='blue' <- IE hack
+                    $('#main-section').css("background-color", "80dfff");
+                }
+                else if (color2 == 'block') { // =='blue' <- IE hack
+                    $('#main-section').css("background-color", "#33ff99");
+                }
+                else if (color3 == 'block') {
+                    $('#main-section').css("background-color", "#bf80ff");
+                }
+                else if (color4 == 'block') {
+                    $('#main-section').css("background-color", "#3399ff");
+                }
+                else if (color5 == 'block') {
+                    $('#main-section').css("background-color", "#ff6666");
+                }
+            });
+            $('#prev-btn').click(function () {
+                var color1 = $('#defaultcard').css('display');
+                var color2 = $('#form-card-two').css('display');
+                var color3 = $('#form-card-three').css('display');
+                var color4 = $('#form-card-four').css('display');
+                var color5 = $('#form-card-five').css('display');
+                if (color1 == 'block') { // =='blue' <- IE hack
+                    $('#main-section').css("background-color", " #ff6666");
+                }
+                else if (color2 == 'block') { // =='blue' <- IE hack
+                    $('#main-section').css("background-color", "80dfff");
+                }
+                else if (color3 == 'block') {
+                    $('#main-section').css("background-color", "#33ff99");
+                }
+                else if (color4 == 'block') {
+                    $('#main-section').css("background-color", "#bf80ff");
+                }
+                else if (color5 == 'block') {
+                    $('#main-section').css("background-color", "#3399ff");
+                }
+            });
+        });
+</script>
 
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
@@ -85,7 +133,7 @@
                     <a href="#" id="notification"><span class="fa fa-bell"></span></a>
                   </li>
                   <li>
-                     <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login / Signup</button>
+                     <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:20px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login / Signup</button>
                     </a>
                   </li>
                 </ul>
@@ -95,9 +143,9 @@
       </div>
     </header>
   </section> <!-- #innerbanner -->
-
-  <div id="main-section" style="margin-top:120px;">
-    <div class="container">
+<div id="card" class="box" style="margin-top:150px;">
+  <div id="main-section" style="background-color:#ff6666">
+    <div class="container" id="step-screen">
       <div id="main-heading">
         <h1>You are posting a room near University Lorem Ipsum</h1>
       </div>
@@ -127,13 +175,13 @@
             </ul>
           </div>
         </div>
-        <div class="form-card">
+        <div class="form-card" id="form-card-two">
           <div id="card2" class="cards">
             <h4>2. Upload room Images:</h4>
             <input type="file" name="roomImages">
           </div>
         </div>
-        <div class="form-card">
+        <div class="form-card" id="form-card-three">
             <div id="card3" class="cards">
             <h4>3. Rent Price:</h4>
             <select name="currency">
@@ -148,7 +196,7 @@
             <span> / month</span>
           </div>
         </div>
-        <div class="form-card">
+        <div class="form-card" id="form-card-four"> 
           <div id="card4" class="cards">
             <h4>4. One line to describe your awesome room:</h4>
             <input type="text" name="tagline">
@@ -198,7 +246,7 @@
             <label>Girls</label>
           </div>
         </div>
-        <div class="form-card">
+        <div class="form-card" id="form-card-five">
           <div id="card3" class="cards">
           <h4>5. Final Step:</h4>
           <label>Name:</label>
@@ -247,6 +295,7 @@
         </div>
       </div>
     </div> <!-- .container -->
+  </div>
   </div>
 
   <footer>
@@ -300,6 +349,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script>
+
 
   // INCREASE HEIGHT OF INNERBANNER ON CLICK OF NAVIGATION BAR
   $('.navbar-toggle').on('click', function () {
