@@ -16,6 +16,10 @@
 	padding-bottom: 10px;
 }
 
+.navbar-brand h1{
+	padding-left:10px;
+}
+
 .overlay {
     height: 100%;
     width: 0;
@@ -414,44 +418,42 @@
 /*Connect-abroad*/
 
 /*FOOTER*/
-
-footer {
-	background-color: #edfafd;
-	text-transform: uppercase;
-	color: #7a97af;
+.footer-content{
+	color:#00bfff;
+	margin:10px;
+	font-size:15px;
 }
 
-
-.footer-content {
-	padding: 20px 0px 0px 40px;
-	margin-top: 20px;
-	text-transform: uppercase;
-	font-family: 'brandon-grotesque','Helvetica',sans-serif;
+.footer-list a{
+	color:#bfbfbf;
+	line-height:15px;
+	font-size:14px;
+	margin-bottom:16px;
 }
 
-.footer-list ul {
-	list-style-type: none;
-	text-transform: uppercase;
-	padding-left: 40px;
+footer a,p{
+	margin-bottom: 16px;
 }
 
-.footer-list li {
-	padding: 5px;
-	font-size: 1.2em;
+footer{
+	text-align:center;
+	background-color: #f2f2f2;
 }
 
-.footer-list i {
-	padding-right: 20px;
-	font-size: 1.8em;
+footer.col-xs-12{
+	margin:30px;
+}
+footer.col-lg-4, .col-md-4, .col-sm-4{
+	margin-top: 30px;
+	margin-bottom:30px;
 }
 
-.footer-list a:hover {
-	text-decoration: none;
+.fa {
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+   
 }
 
-.span {
-	color: #337ab7;
-}
 
 /*FOOTER*/
 
