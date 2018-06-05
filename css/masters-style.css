@@ -400,7 +400,8 @@ textarea {
   #dropdown5 {
     left: -200px;
   }
-
+  #first-card{
+	margin-top:22%;	}
 }
 
 /********** Medium Mobile devices only **********/
