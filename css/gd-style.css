@@ -6,13 +6,17 @@
 }
 #main-screen{
 	position:relative;
+    height:800px;
 }
 #screen{
 	 position:absolute;
-    bottom: 0;
-    background: rgba(172, 57, 172, 0.8);
+    top: 0;
     color: #f1f1f1;
     width: 100%;
+    height:1000px;
+}
+#color-screen {
+    background-color: rgba(172, 57, 172, 0.8);
     height:800px;
 }
 #sheet {
@@ -55,7 +59,12 @@
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  
+    #screen {
+        background-image: url('../images/alexis-brown-85793-unsplash.jpg');
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 #uni-box{
 	margin-top:-100px;
 }
@@ -68,12 +77,44 @@
 		height: 150px;
 	}
 	#main-screen{
-		height:100%;
+		
 	}
+    #screen {
+        background-image: url('../images/alexis-brown-85793-unsplashnew-crop-1.jpg');
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+}
+@media (min-width: 601px) and (max-width: 991px) {
+
+    #screen {
+        background-image: url('../images/alexis-brown-85793-unsplashnew-crop-1.jpg');
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 /********** Small devices only **********/
+@media (max-width: 600px) {
+
+    #screen {
+        background-image: url('../images/alexis-brown-85793-unsplashnew-crop-3.jpg');
+        height: 1100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #main-screen {
+        position: relative;
+        height: 1100px;
+    }
+    #color-screen {
+        background-color: rgba(172, 57, 172, 0.8);
+        height: 1100px;
+    }
+}
 @media (min-width: 768px) and (max-width: 991px) {
 
 	#innerbanner1 {
@@ -84,7 +125,7 @@
 		width: 200px;
 	}
 	#main-screen{
-		height:100%;
+		
 	}
 
 
@@ -92,7 +133,7 @@
 
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width:599px) {
 	#innerbanner1 {
 		height: 100px;
 	}	
@@ -105,9 +146,23 @@
 		font-size: 1.5em;
 	}
 	#main-screen{
-		height:100%;
+	
 	}
-
+    #screen {
+        height: 500px;
+        background-image: url('../images/alexis-brown-85793-unsplashnew-crop-2.jpg');
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #main-screen {
+        position: relative;
+        height: 1000px;
+    }
+    #color-screen {
+        background-color: rgba(172, 57, 172, 0.8);
+        height: 1000px;
+    }
 }
 
 /********** Large Mobile devices only **********/
@@ -117,7 +172,7 @@
 	height:750px;
   }
   #main-screen{
-		height:100%;
+		
 	}
 	#sheet{
 	padding:0px 40px 100px 40px;
@@ -140,7 +195,7 @@
   	width: 250px;
   }
   #main-screen, #screen{
-		height:100%;
+	
 	}
 	#sheet{
 		padding-top:0;
